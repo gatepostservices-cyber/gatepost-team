@@ -4,8 +4,8 @@ Phone-first web app (PWA) for Gatepost Property Services team members. No login,
 Questions: (505) 750-3019.
 
 ## Door-to-door route tracker
-- Pick a neighborhood and session (Red / Blue / Gold). The map draws the route; the Parking button (P) opens Google Maps directions.
-- Live GPS blue dot with accuracy circle. Floating glass directions panel shows the current step (instruction, street, knock mode/side/pass, distance left) and the next 2 steps. Tap the handle to cycle: normal → expanded (all steps, streets, parking, rules) → slim bar.
+- Start screen: pick neighborhood, pick session (Red / Blue / Gold), Start. Dark map (OSM tiles with a CSS dark filter) with glowing animated route; done steps grey out. HUD shows a progress ring, doors, streets and miles; the nav card shows a big turn arrow, the next action, knock mode and distance left. Checklist, streets, parking and rules live in a bottom sheet. Session end shows a stats screen with badges (full route, GPS tracked, day streak, neighborhood cleared).
+- Pulsing GPS dot with heading cone and accuracy circle; auto-follow keeps the dot centered in the visible map area above the panels. Step/street completion pops a toast and vibrates where supported.
 - Auto-check: the position is projected onto the current step's segment (only forward of the progress already made, so out-and-back cul-de-sac legs are not confused). When progress reaches within 20 m of the segment end (and the walker is near the end point), the step is checked and the next one starts. Readings with accuracy worse than 50 m are ignored. A street is checked once all its knocking steps are done. Steps can also be checked/unchecked by hand.
 - Progress is saved in localStorage per neighborhood + round + session (`gpteam_progress_v1:<slug>:r<round>:s<n>`).
 - If location is blocked, the app says so and manual checking still works.

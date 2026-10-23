@@ -1,2 +1,2 @@
-{"id":"./","name":"Gatepost Team","short_name":"Gatepost Team","description":"Gatepost Property Services team routes","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#fbf8f1","theme_color":"#1f3a2b",
+{"id":"./","name":"Gatepost Team","short_name":"Gatepost Team","description":"Gatepost Property Services team routes","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#0b1410","theme_color":"#0b1410",
 "icons":[{"src":"img/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"img/icon-512.png","sizes":"512x512","type":"image/png"}]}

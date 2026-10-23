@@ -1,42 +1,99 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#1f3a2b"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b1410"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Gatepost Team">
 <link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><link rel="icon" href="img/icon-192.png">
 <title>Gatepost Team</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="app.css?v=2">
+<link rel="stylesheet" href="app.css?v=3">
 </head><body>
-<div id="map"></div>
-<div class="top glass">
- <div class="brand"><img src="img/arch-mark.png" alt="Gatepost" width="28" height="28"><b>Gatepost Team</b></div>
- <select id="nb" aria-label="Neighborhood"></select>
- <div class="sess" id="sess"></div>
-</div>
-<div class="fab">
- <button id="recenter" class="glass round" aria-label="Recenter on me">◎</button>
- <a id="parkbtn" class="glass round" target="_blank" rel="noopener" aria-label="Parking in Google Maps">P</a>
-</div>
-<section id="panel" class="glass panel normal" aria-live="polite">
- <button id="grab" class="grab" aria-label="Expand or collapse directions"><span></span></button>
- <div class="slim" id="slim"></div>
- <div class="nowcard">
-  <div class="hrow"><span class="pill" id="stepno"></span><span class="mode" id="mode"></span><span class="left" id="left"></span></div>
-  <div id="ntext" class="ntext">Loading routes…</div>
-  <div class="street" id="street"></div>
-  <div class="nrow"><button id="done" class="primary">Mark done ✓</button><button id="back" class="secondary">Undo</button></div>
-  <ol id="upnext" class="upnext"></ol>
-  <div id="gps" class="gps"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <symbol id="i-straight" viewBox="0 0 48 48"><path d="M24 42V10M12 21 24 9l12 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-right" viewBox="0 0 48 48"><path d="M14 42V26a8 8 0 0 1 8-8h16M30 9l9 9-9 9" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-left" viewBox="0 0 48 48"><path d="M34 42V26a8 8 0 0 0-8-8H10M18 9l-9 9 9 9" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-bright" viewBox="0 0 48 48"><path d="M18 42V28l14-14M22 12h12v12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-bleft" viewBox="0 0 48 48"><path d="M30 42V28L16 14M26 12H14v12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-uturn" viewBox="0 0 48 48"><path d="M32 42V18a9 9 0 0 0-18 0v6M6 18l8 8 8-8" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-flag" viewBox="0 0 48 48"><path d="M12 44V6M12 8h22l-5 7 5 7H12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5M4 9h10a6 6 0 0 1 0 12h-3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+ <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="12" r="2.6" fill="currentColor"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+ <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16V11l2-5h10l2 5v5M3.5 16h17v3h-17zM7 11h10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+ <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+ <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+ <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 21V4h12v17M3 21h18M14.5 12.5h.01" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-road" viewBox="0 0 24 24"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 11v2M12 17v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+ <symbol id="i-boot" viewBox="0 0 24 24"><path d="M7 3h6v8l6 3a2 2 0 0 1 1 2v3H4V3h3M4 15h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+ <symbol id="i-gps" viewBox="0 0 24 24"><path d="M12 2 4 21l8-4 8 4z" fill="currentColor"/></symbol>
+</defs></svg>
+
+<div id="map" aria-label="Route map"></div>
+
+<!-- HUD -->
+<div id="hud" class="hud" hidden>
+ <div class="hud-top">
+  <button id="menu" class="glass chip-btn" aria-label="Change session"><span class="sdot" id="sdot"></span><span id="sname">Red</span><svg><use href="#i-pause"/></svg></button>
+  <div class="glass xp" id="xp">
+   <svg class="ring" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" class="ring-bg"/><circle cx="22" cy="22" r="18" class="ring-fg" id="ringfg"/></svg>
+   <b class="ring-pct" id="pct">0%</b>
+   <div class="xp-stats"><span><svg><use href="#i-door"/></svg><b id="xdoors">0</b></span><span><svg><use href="#i-road"/></svg><b id="xstreets">0/0</b></span><span><svg><use href="#i-boot"/></svg><b id="xmiles">0.0</b> mi</span></div>
+  </div>
  </div>
- <div class="full">
-  <div class="row"><h2>All steps</h2><span id="prog" class="pill"></span></div><ol id="steps"></ol>
-  <h2>Streets</h2><ul id="streets" class="streets"></ul>
-  <h2>Parking</h2><div id="park"></div>
-  <h2>Rules</h2><ul id="rules" class="rules"></ul>
-  <button id="reset" class="link">Reset this session's progress</button>
-  <p class="foot">Gatepost Property Services · (505) 750-3019</p>
+ <div class="fabs" id="fabs">
+  <button id="recenter" class="glass fab" aria-label="Follow my location"><svg><use href="#i-target"/></svg></button>
+  <a id="parkbtn" class="glass fab" target="_blank" rel="noopener" aria-label="Directions to parking"><svg><use href="#i-car"/></svg></a>
+ </div>
+ <section id="nav" class="glass nav">
+  <div class="nav-main">
+   <div class="arrow" id="arrow"><svg><use href="#i-straight"/></svg></div>
+   <div class="nav-txt"><div class="action" id="action">Loading…</div><div class="sub" id="sub"></div></div>
+  </div>
+  <div class="meter"><i id="meter"></i></div>
+  <div class="then" id="then"></div>
+  <div class="nav-btns">
+   <button id="back" class="btn ghost sq" aria-label="Undo last step"><svg><use href="#i-undo"/></svg></button>
+   <button id="done" class="btn primary"><svg><use href="#i-check"/></svg><span>Step done</span></button>
+   <button id="open" class="btn ghost sq" aria-label="Checklist and rules"><svg><use href="#i-list"/></svg></button>
+  </div>
+  <div class="gps" id="gps"></div>
+ </section>
+ <div class="toast" id="toast"><svg><use href="#i-check"/></svg><span id="toasttxt"></span></div>
+</div>
+
+<!-- Bottom sheet -->
+<div id="scrim" class="scrim"></div>
+<section id="sheet" class="sheet glass" aria-hidden="true">
+ <div class="grab"></div>
+ <div class="tabs" role="tablist"><button data-t="steps" class="on">Steps</button><button data-t="streets">Streets</button><button data-t="info">Parking &amp; rules</button><button class="sq close" id="sheetclose" aria-label="Close"><svg><use href="#i-close"/></svg></button></div>
+ <div class="tab on" id="t-steps"><ol id="steps"></ol></div>
+ <div class="tab" id="t-streets"><ul id="streets"></ul></div>
+ <div class="tab" id="t-info"><div id="park"></div><h3>Rules</h3><ul id="rules"></ul><button id="reset" class="link">Reset this session's progress</button></div>
+ <p class="foot">Gatepost Property Services · (505) 750-3019</p>
+</section>
+
+<!-- Start screen -->
+<section id="start" class="start">
+ <div class="start-card glass">
+  <div class="brand"><img src="img/arch-mark.png" alt="" width="40" height="40"><div><b>Gatepost Team</b><span>Door-to-door routes</span></div></div>
+  <h2 class="lbl">1 · Neighborhood</h2><div id="nbs" class="nbs"></div>
+  <h2 class="lbl">2 · Session</h2><div id="sess" class="sess"></div>
+  <button id="go" class="btn primary big"><span id="golabel">Start route</span></button>
+  <p class="foot">Questions? Call (505) 750-3019</p>
+ </div>
+</section>
+
+<!-- Done screen -->
+<section id="fin" class="fin" hidden>
+ <div class="fin-card glass">
+  <div class="medal" id="medal"><svg><use href="#i-flag"/></svg></div>
+  <h1>Route complete</h1><p class="fin-sub" id="finsub"></p>
+  <div class="fin-stats" id="finstats"></div>
+  <div class="badges" id="badges"></div>
+  <a id="finpark" class="btn ghost big" target="_blank" rel="noopener"><svg><use href="#i-car"/></svg><span>Back to parking</span></a>
+  <button id="finclose" class="btn primary big"><span>Pick next session</span></button>
  </div>
 </section>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body></html>
