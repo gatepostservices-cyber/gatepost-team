@@ -28,3 +28,9 @@ python3 -m http.server 47613 --bind 127.0.0.1 &
 python3 tools/test_playwright.py   # Chromium + WebKit at 390x844, mocked GPS walk along Red steps 1-6, screenshots to /workspace/team-preview
 ```
 Logo/icons in `img/` are copied from the official Gatepost assets.
+
+## Home, clock in/out and shift data
+- First run asks for the worker's name and an optional 4-digit PIN (stored as a SHA-256 hash with a generated worker id in localStorage `gpteam_worker_v1`). If a PIN is set it is required to clock in/out.
+- Home: Clock In/Out with running timer, hours this week + total hours (computed only from this phone's own shifts, `gpteam_hours_v1`), and the route tracker button. Workers see no houses, pace, miles or other performance data.
+- While clocked in the app silently records, per checked step: estimated homes (session homes x step length / knocking length), estimated minutes (20 min/mi + 0.75 min/home), miles; plus time actually spent in route sessions. On Clock Out one row goes to Supabase `public.team_shifts` (anon INSERT only; admins read via `is_admin()`), queued in `gpteam_outbox_v1` and retried every 60 s / when back online. `pace_ratio` = actual route minutes / estimated minutes (under 1.0 = faster).
+- `config.js` holds the public Supabase URL + publishable key only.

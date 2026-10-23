@@ -94,3 +94,20 @@ h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)
 .pk{width:34px;height:34px;border-radius:11px;background:#fff;color:var(--pine);display:grid;place-items:center;font-weight:900;font-size:19px;box-shadow:0 0 0 3px var(--pine),0 4px 12px rgba(0,0,0,.5)}
 @media (prefers-reduced-motion:reduce){.rt-flow,.me .pulse{animation:none}}
 img.leaflet-tile{filter:invert(1) hue-rotate(180deg) brightness(.78) contrast(1.05) saturate(.35)}
+/* v3: home / clock */
+.field{width:100%;min-height:54px;border-radius:14px;border:1.5px solid var(--edge);background:rgba(255,255,255,.08);color:var(--ink);font:700 18px inherit;font-family:inherit;padding:0 var(--s4)}
+.field:focus{outline:none;border-color:var(--leaf)}.start .btn.big[type=submit]{margin-top:var(--s5)}
+.home{position:fixed;inset:0;z-index:1009;display:flex;flex-direction:column;padding:calc(var(--s4) + var(--top)) var(--s4) calc(var(--s4) + var(--bot));background:radial-gradient(120% 70% at 50% 35%,rgba(31,58,43,.55),rgba(8,14,11,.96) 70%),rgba(8,14,11,.9);overflow:auto}
+.home .brand b{font-size:20px}.clock-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:300px}
+.clockbtn{position:relative;width:230px;height:230px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#04130b;background:radial-gradient(circle at 35% 28%,#8ff0bf,var(--leaf) 45%,var(--leaf2));box-shadow:0 0 0 10px rgba(70,201,138,.12),0 18px 50px rgba(70,201,138,.35);transition:transform .2s var(--spring)}
+.clockbtn:active{transform:scale(.95)}.clockbtn svg{width:40px;height:40px}.clockbtn b{font-size:30px;font-weight:900;letter-spacing:-.01em}
+.clockbtn .cb-timer{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
+.clockbtn.on{color:#fff;background:radial-gradient(circle at 35% 28%,#ff9a8a,#e5484d 50%,#a9262b);box-shadow:0 0 0 10px rgba(229,72,77,.14),0 18px 50px rgba(229,72,77,.35)}
+.clockbtn.on .cb-ring{position:absolute;inset:-10px;border-radius:50%;border:3px solid rgba(229,72,77,.6);animation:pulse 2s ease-out infinite}
+.cb-since{color:var(--dim);font-size:15px;margin:var(--s4) 0 0;min-height:20px}
+.hours{display:grid;grid-template-columns:1fr 1fr;border-radius:20px;padding:var(--s4);gap:var(--s3);text-align:center}.hours b{display:block;font-size:30px;font-weight:900;font-variant-numeric:tabular-nums}.hours span{font-size:13px;color:var(--dim)}
+.hours div+div{border-left:1px solid var(--edge)}
+.sync{font-size:13px;color:#ffcf8a;text-align:center;min-height:18px;margin:var(--s2) 0}.home .btn.big{margin-top:var(--s2)}
+.xp{padding:6px var(--s4)}.xp-stats{justify-content:flex-start;gap:var(--s4)}
+.shift-dot{width:10px;height:10px;border-radius:50%;background:#e5484d;box-shadow:0 0 8px #e5484d;margin-left:auto;animation:pulse 2s ease-out infinite}
+.brand .btn.sq{flex:none}
