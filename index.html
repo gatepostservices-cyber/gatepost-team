@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f3a2b"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Gatepost Team">
+<link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><link rel="icon" href="img/icon-192.png">
+<title>Gatepost Team</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="app.css?v=2">
+</head><body>
+<div id="map"></div>
+<div class="top glass">
+ <div class="brand"><img src="img/arch-mark.png" alt="Gatepost" width="28" height="28"><b>Gatepost Team</b></div>
+ <select id="nb" aria-label="Neighborhood"></select>
+ <div class="sess" id="sess"></div>
+</div>
+<div class="fab">
+ <button id="recenter" class="glass round" aria-label="Recenter on me">◎</button>
+ <a id="parkbtn" class="glass round" target="_blank" rel="noopener" aria-label="Parking in Google Maps">P</a>
+</div>
+<section id="panel" class="glass panel normal" aria-live="polite">
+ <button id="grab" class="grab" aria-label="Expand or collapse directions"><span></span></button>
+ <div class="slim" id="slim"></div>
+ <div class="nowcard">
+  <div class="hrow"><span class="pill" id="stepno"></span><span class="mode" id="mode"></span><span class="left" id="left"></span></div>
+  <div id="ntext" class="ntext">Loading routes…</div>
+  <div class="street" id="street"></div>
+  <div class="nrow"><button id="done" class="primary">Mark done ✓</button><button id="back" class="secondary">Undo</button></div>
+  <ol id="upnext" class="upnext"></ol>
+  <div id="gps" class="gps"></div>
+ </div>
+ <div class="full">
+  <div class="row"><h2>All steps</h2><span id="prog" class="pill"></span></div><ol id="steps"></ol>
+  <h2>Streets</h2><ul id="streets" class="streets"></ul>
+  <h2>Parking</h2><div id="park"></div>
+  <h2>Rules</h2><ul id="rules" class="rules"></ul>
+  <button id="reset" class="link">Reset this session's progress</button>
+  <p class="foot">Gatepost Property Services · (505) 750-3019</p>
+ </div>
+</section>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js?v=2"></script>
+</body></html>
