@@ -5,7 +5,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const ico=n=>`<svg><use href="#i-${n}"/></svg>`;
 let NBS=[],RULES={},nb=null,ss=null,st=null,map,stepLayer,hiLayer,flowLayer,me=null,acc=null,last=null,prevFix=null,follow=true,prog=0,pickN=0,pickS=0,started=false;
-const key=(n,s)=>`gpteam_progress_v3:${n.slug}:r${n.round||1}:s${s.n}`;
+const key=(n,s)=>`gpteam_progress_v4:${n.slug}:r${n.round||1}:s${s.n}`;
 function hav(a,b){const r=Math.PI/180,dl=(b[0]-a[0])*r,dn=(b[1]-a[1])*r,x=Math.sin(dl/2)**2+Math.cos(a[0]*r)*Math.cos(b[0]*r)*Math.sin(dn/2)**2;return 12742000*Math.asin(Math.sqrt(x))}
 function brg(a,b){const r=Math.PI/180,y=Math.sin((b[1]-a[1])*r)*Math.cos(b[0]*r),x=Math.cos(a[0]*r)*Math.sin(b[0]*r)-Math.sin(a[0]*r)*Math.cos(b[0]*r)*Math.cos((b[1]-a[1])*r);return(Math.atan2(y,x)/r+360)%360}
 const fmt=m=>{const f=m*3.281;return f<1000?Math.max(0,Math.round(f/10)*10)+' ft':(m/1609).toFixed(2)+' mi'};
@@ -17,8 +17,11 @@ function adapt(meta,gj){const fs=gj.features,pk=fs.find(f=>f.properties.kind==='
     const path=f.geometry.coordinates.map(c=>[c[1],c[0]]),cum=[0];for(let i=1;i<path.length;i++)cum.push(cum[i-1]+hav(path[i-1],path[i]));
     s.steps.push({...f.properties,path,cum,len:cum[cum.length-1]})});
   sess.forEach(s=>{s.steps.sort((a,b)=>a.step-b.step);s.totalLen=s.steps.reduce((t,x)=>t+x.len,0);s.knockLen=s.steps.reduce((t,x)=>t+(x.mode==='walk_no_knock'?0:x.len),0)});
-  const pc=pk?pk.geometry.coordinates:meta.parking.coordinates;
-  return {...meta,park:{...(meta.parking||{}),...(pk?pk.properties:{}),lat:pc[1],lng:pc[0]},sessions:sess}}
+  const pc=pk?pk.geometry.coordinates:meta.parking.coordinates,np={...(meta.parking||{}),...(pk?pk.properties:{}),lat:pc[1],lng:pc[0]};
+  // v4: each session has its own parking spot (parking feature with properties.session, or session_path.parking)
+  sess.forEach(s=>{const f=fs.find(x=>x.properties.kind==='parking'&&x.properties.session===s.n),q=f?{...f.properties,c:f.geometry.coordinates}:(s.parking?{...s.parking,c:s.parking.coordinates}:null);
+    s.park=q?{...np,...q,restroom:q.restroom||np.restroom,lat:q.c[1],lng:q.c[0],label:q.label||('P'+s.n)}:{...np,label:'P'}});
+  return {...meta,park:np,sessions:sess}}
 function getSt(n,s){let v=null;try{v=JSON.parse(localStorage.getItem(key(n,s)))}catch(e){}return v&&Array.isArray(v.done)?v:{done:[]}}
 function save(){localStorage.setItem(key(nb,ss),JSON.stringify(st));localStorage.setItem('gpteam_last_v1',JSON.stringify([nb.slug,nb.round||1,ss.n]))}
 const isDone=i=>st.done.includes(i);
@@ -41,7 +44,7 @@ function followTo(ll,anim){const [t,b]=freeArea(),H=map.getSize().y,off=(H-b-t)/
 function fitRoute(){const [t,b]=freeArea();map.fitBounds(L.latLngBounds(ss.path),{paddingTopLeft:[16,t+12],paddingBottomRight:[16,map.getSize().y-b+12]})}
 function drawRoute(){stepLayer.clearLayers();const c=ss.color_hex;
   ss.steps.forEach((s,i)=>{s._l=L.polyline(s.path,{color:c,weight:s.mode==='walk_no_knock'?3:5,dashArray:s.mode==='walk_no_knock'?'2 7':null,lineCap:'round',lineJoin:'round',interactive:false}).addTo(stepLayer)});
-  const p=nb.park;L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:'<div class="pk">P</div>',iconSize:[34,34],iconAnchor:[17,17]}),keyboard:false}).addTo(stepLayer).bindPopup(esc(p.name));styleRoute()}
+  const p=ss.park||nb.park;L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:`<div class="pk">${esc(p.label||'P')}</div>`,iconSize:[34,34],iconAnchor:[17,17]}),keyboard:false}).addTo(stepLayer).bindPopup(esc(p.name));styleRoute()}
 function styleRoute(){const c=cur(),col=ss.color_hex;
   ss.steps.forEach((s,i)=>{const d=isDone(i);s._l.setStyle({color:d?'#56635b':col,opacity:d?.55:(i===c?1:.8)})});
   hiLayer.clearLayers();flowLayer.clearLayers();if(c<0)return;
@@ -54,7 +57,7 @@ function nbProgress(n){let d=0,t=0;n.sessions.forEach(s=>{d+=getSt(n,s).done.len
 function renderStart(){if(MYROUTES&&!MYROUTES.includes((NBS[pickN]||{}).slug)){const f=NBS.findIndex(n=>MYROUTES.includes(n.slug));if(f>=0){pickN=f;pickS=0}}
   $('nbs').innerHTML=NBS.map((n,i)=>{if(!MYROUTES||!MYROUTES.includes(n.slug))return '';const p=nbProgress(n);return `<button class="nb ${i===pickN?'on':''}" data-i="${i}"><span><b>${esc(n.name)}${(n.round||1)>1?' · R'+n.round:''}</b><small>${n.sessions.length} sessions · ${n.total_mi} mi</small></span><span class="pr">${p?p+'%':''}</span></button>`}).join('');
   const n=NBS[pickN];
-  $('sess').innerHTML=n.sessions.map((s,j)=>{const g=getSt(n,s),done=g.done.length>=s.steps.length;return `<button class="ses ${j===pickS?'on':''}" style="--c:${s.color_hex}" data-j="${j}">${done?`<span class="dn">${ico('check')}</span>`:''}<b>${cap(s.color)}</b><small>${s.mi} mi</small><small>${g.done.length?g.done.length+'/'+s.steps.length+' steps':s.steps.length+' steps'}</small></button>`}).join('');
+  $('sess').innerHTML=n.sessions.map((s,j)=>{const g=getSt(n,s),done=g.done.length>=s.steps.length;return `<button class="ses ${j===pickS?'on':''}" style="--c:${s.color_hex}" data-j="${j}">${done?`<span class="dn">${ico('check')}</span>`:''}<b>${cap(s.color)}</b><small>${s.mi} mi</small><small class="spk">${esc(s.park&&s.park.label||'P')}: ${esc(s.park?s.park.name.replace(/^Street parking /,''):'')}</small><small>${g.done.length?g.done.length+'/'+s.steps.length+' steps':s.steps.length+' steps'}</small></button>`}).join('');
   const s=n.sessions[pickS],g=getSt(n,s);
   $('golabel').textContent=g.done.length>=s.steps.length?`Review ${cap(s.color)}`:g.done.length?`Resume ${cap(s.color)} · step ${g.done.length+1}`:`Start ${cap(s.color)} · ${s.mi} mi`;
   $('go').style.background=`linear-gradient(180deg,${s.color_hex},color-mix(in srgb,${s.color_hex} 70%,#000))`;$('go').style.color='#fff';$('go').style.boxShadow=`0 8px 22px color-mix(in srgb,${s.color_hex} 45%,transparent)`;
@@ -64,8 +67,8 @@ function showStart(){if(!MYROUTES||!MYROUTES.some(s=>NBS.some(n=>n.slug===s)))re
 function begin(){if(!(MYROUTES||[]).includes(NBS[pickN].slug))return goHome();nb=NBS[pickN];ss=nb.sessions[pickS];st=getSt(nb,ss);prog=0;started=true;save();SH.routeStart();
   document.documentElement.style.setProperty('--sc',ss.color_hex);
   $('sdot').style.background=ss.color_hex;$('sname').textContent=cap(ss.color);
-  const p=nb.park,u=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;$('parkbtn').href=u;$('finpark').href=u;
-  $('park').innerHTML=`<b>${esc(p.name)}</b><p>${esc(p.address)}</p>${p.restroom?`<p>${esc(p.restroom)}</p>`:''}<a class="btn primary big" href="${u}" target="_blank" rel="noopener">${ico('car')}<span>Open in Google Maps</span></a>`;
+  const p=ss.park||nb.park,u=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;$('parkbtn').href=u;$('finpark').href=u;
+  $('park').innerHTML=`<b>${esc((p.label?p.label+' · ':'')+p.name)}</b><p>${esc(p.address)}</p>${p.restroom?`<p>${esc(p.restroom)}</p>`:''}<a class="btn primary big" href="${u}" target="_blank" rel="noopener">${ico('car')}<span>Open in Google Maps</span></a>`;
   $('start').classList.add('out');setTimeout(()=>{if(started)$('start').hidden=true},350);$('hud').hidden=false;
   drawRoute();renderAll();requestAnimationFrame(()=>{measure();if(last&&follow)followTo(last,false);else fitRoute()});
   if(cur()<0)finish(false)}

@@ -1,0 +1,5278 @@
+{
+ "type": "FeatureCollection",
+ "schema_version": 1,
+ "name": "South Rio Rancho Numbered Streets",
+ "slug": "South_Rio_Rancho_Numbered_Streets",
+ "round": 1,
+ "total_mi": 12.1,
+ "total_homes": 707,
+ "verification": [
+  {
+   "session": 1,
+   "steps": 20,
+   "fixes": 0,
+   "problems_after": 0
+  },
+  {
+   "session": 2,
+   "steps": 27,
+   "fixes": 0,
+   "problems_after": 0
+  },
+  {
+   "session": 3,
+   "steps": 42,
+   "fixes": 0,
+   "problems_after": 0
+  }
+ ],
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.6623,
+     35.223
+    ]
+   },
+   "properties": {
+    "kind": "parking",
+    "name": "Haynes Park lot (off Grande Blvd SE)",
+    "address": "Grande Boulevard Southeast, Rio Rancho",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.223,-106.6623",
+    "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Latitudes New World Convenience, 2401 NM 528 (0.3 mi); Valero, 2401 Pat D'Arco Highway (0.3 mi)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.664778,
+      35.223257
+     ],
+     [
+      -106.66487,
+      35.223108
+     ],
+     [
+      -106.664937,
+      35.22295
+     ],
+     [
+      -106.66505,
+      35.22262
+     ],
+     [
+      -106.665102,
+      35.221936
+     ],
+     [
+      -106.66522,
+      35.22187
+     ],
+     [
+      -106.667293,
+      35.221896
+     ],
+     [
+      -106.667288,
+      35.222417
+     ],
+     [
+      -106.667223,
+      35.222898
+     ],
+     [
+      -106.667147,
+      35.223195
+     ],
+     [
+      -106.66703,
+      35.223526
+     ],
+     [
+      -106.666895,
+      35.22381
+     ],
+     [
+      -106.6667,
+      35.224142
+     ],
+     [
+      -106.666291,
+      35.224732
+     ],
+     [
+      -106.666226,
+      35.224925
+     ],
+     [
+      -106.666228,
+      35.225164
+     ],
+     [
+      -106.667075,
+      35.22515
+     ],
+     [
+      -106.668072,
+      35.225151
+     ],
+     [
+      -106.669075,
+      35.225151
+     ],
+     [
+      -106.669075,
+      35.225221
+     ],
+     [
+      -106.669078,
+      35.229919
+     ],
+     [
+      -106.67037,
+      35.229917
+     ],
+     [
+      -106.671068,
+      35.22992
+     ],
+     [
+      -106.67228,
+      35.22992
+     ],
+     [
+      -106.673061,
+      35.229919
+     ],
+     [
+      -106.67228,
+      35.22992
+     ],
+     [
+      -106.671068,
+      35.22992
+     ],
+     [
+      -106.671083,
+      35.225233
+     ],
+     [
+      -106.671084,
+      35.225153
+     ],
+     [
+      -106.671369,
+      35.225153
+     ],
+     [
+      -106.673009,
+      35.225154
+     ],
+     [
+      -106.673058,
+      35.225154
+     ],
+     [
+      -106.673058,
+      35.225232
+     ],
+     [
+      -106.673061,
+      35.229919
+     ],
+     [
+      -106.675051,
+      35.229921
+     ],
+     [
+      -106.67505,
+      35.23156
+     ],
+     [
+      -106.675051,
+      35.229921
+     ],
+     [
+      -106.675066,
+      35.225233
+     ],
+     [
+      -106.675066,
+      35.225155
+     ],
+     [
+      -106.676975,
+      35.225166
+     ],
+     [
+      -106.677089,
+      35.225167
+     ],
+     [
+      -106.67708,
+      35.224079
+     ],
+     [
+      -106.677064,
+      35.223634
+     ],
+     [
+      -106.677127,
+      35.223537
+     ],
+     [
+      -106.676987,
+      35.223537
+     ],
+     [
+      -106.66703,
+      35.223526
+     ],
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66317,
+      35.223506
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 1,
+    "color": "RED",
+    "color_hex": "#d62020",
+    "line_dash": [],
+    "mi": 3.8,
+    "homes": 254,
+    "minutes": 270,
+    "steps": 20,
+    "streets": [
+     "20th Avenue Southeast",
+     "Yucca Street Southeast",
+     "34th Street Southeast",
+     "16th Avenue Southeast",
+     "33rd Street Southeast",
+     "32nd Street Southeast",
+     "31st Street Southeast"
+    ],
+    "length_m": 6187.4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.664602,
+      35.22353
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along 20th Avenue Southeast toward the corner of Leonard Street Southeast, 450 feet. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 427,
+    "street": "20th Avenue Southeast",
+    "turn": "start",
+    "destination": "the corner of Leonard Street Southeast",
+    "start": [
+     -106.66317,
+     35.223506
+    ],
+    "end": [
+     -106.664602,
+     35.22353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.664778,
+      35.223257
+     ],
+     [
+      -106.66487,
+      35.223108
+     ],
+     [
+      -106.664937,
+      35.22295
+     ],
+     [
+      -106.66505,
+      35.22262
+     ],
+     [
+      -106.665102,
+      35.221936
+     ],
+     [
+      -106.66522,
+      35.22187
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 2,
+    "text": "Turn left onto Leonard Street Southeast. Walk 650 feet to the corner of 21st Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 653,
+    "street": "Leonard Street Southeast",
+    "turn": "L",
+    "destination": "the corner of 21st Avenue Southeast",
+    "start": [
+     -106.664602,
+     35.22353
+    ],
+    "end": [
+     -106.66522,
+     35.22187
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66522,
+      35.22187
+     ],
+     [
+      -106.667293,
+      35.221896
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 3,
+    "text": "Turn right onto 21st Avenue Southeast. Walk 600 feet to the corner of Yucca Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 619,
+    "street": "21st Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Yucca Street Southeast",
+    "start": [
+     -106.66522,
+     35.22187
+    ],
+    "end": [
+     -106.667293,
+     35.221896
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.667293,
+      35.221896
+     ],
+     [
+      -106.667288,
+      35.222417
+     ],
+     [
+      -106.667223,
+      35.222898
+     ],
+     [
+      -106.667147,
+      35.223195
+     ],
+     [
+      -106.66703,
+      35.223526
+     ],
+     [
+      -106.666895,
+      35.22381
+     ],
+     [
+      -106.6667,
+      35.224142
+     ],
+     [
+      -106.666291,
+      35.224732
+     ],
+     [
+      -106.666226,
+      35.224925
+     ],
+     [
+      -106.666228,
+      35.225164
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 4,
+    "text": "Turn right onto Yucca Street Southeast. Walk 1,250 feet to the corner of 19th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1258,
+    "street": "Yucca Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 19th Avenue Southeast",
+    "start": [
+     -106.667293,
+     35.221896
+    ],
+    "end": [
+     -106.666228,
+     35.225164
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.666228,
+      35.225164
+     ],
+     [
+      -106.667075,
+      35.22515
+     ],
+     [
+      -106.668072,
+      35.225151
+     ],
+     [
+      -106.669075,
+      35.225151
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 5,
+    "text": "Turn left onto 19th Avenue Southeast. Walk 850 feet to the corner of 34th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 850,
+    "street": "19th Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of 34th Street Southeast",
+    "start": [
+     -106.666228,
+     35.225164
+    ],
+    "end": [
+     -106.669075,
+     35.225151
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.669075,
+      35.225151
+     ],
+     [
+      -106.669075,
+      35.225221
+     ],
+     [
+      -106.669078,
+      35.229919
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 6,
+    "text": "Turn right onto 34th Street Southeast. Walk 1,750 feet to the corner of 16th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1742,
+    "street": "34th Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 16th Avenue Southeast",
+    "start": [
+     -106.669075,
+     35.225151
+    ],
+    "end": [
+     -106.669078,
+     35.229919
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.669078,
+      35.229919
+     ],
+     [
+      -106.67037,
+      35.229917
+     ],
+     [
+      -106.671068,
+      35.22992
+     ],
+     [
+      -106.67228,
+      35.22992
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 7,
+    "text": "Turn left onto 16th Avenue Southeast. Walk 950 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 955,
+    "street": "16th Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.669078,
+     35.229919
+    ],
+    "end": [
+     -106.67228,
+     35.22992
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.67228,
+      35.22992
+     ],
+     [
+      -106.673061,
+      35.229919
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 8,
+    "text": "Go straight on 16th Avenue Southeast. Walk 250 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 233,
+    "street": "16th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the next corner",
+    "start": [
+     -106.67228,
+     35.22992
+    ],
+    "end": [
+     -106.673061,
+     35.229919
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.673061,
+      35.229919
+     ],
+     [
+      -106.67228,
+      35.22992
+     ],
+     [
+      -106.671068,
+      35.22992
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 9,
+    "text": "Turn around and walk back on 16th Avenue Southeast. Walk 600 feet to the corner of 33rd Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 595,
+    "street": "16th Avenue Southeast",
+    "turn": "around",
+    "destination": "the corner of 33rd Street Southeast",
+    "start": [
+     -106.673061,
+     35.229919
+    ],
+    "end": [
+     -106.671068,
+     35.22992
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.671068,
+      35.22992
+     ],
+     [
+      -106.671083,
+      35.225233
+     ],
+     [
+      -106.671084,
+      35.225153
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 10,
+    "text": "Turn right onto 33rd Street Southeast. Walk 1,750 feet to the corner of 19th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1741,
+    "street": "33rd Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 19th Avenue Southeast",
+    "start": [
+     -106.671068,
+     35.22992
+    ],
+    "end": [
+     -106.671084,
+     35.225153
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.671084,
+      35.225153
+     ],
+     [
+      -106.671369,
+      35.225153
+     ],
+     [
+      -106.673009,
+      35.225154
+     ],
+     [
+      -106.673058,
+      35.225154
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 11,
+    "text": "Turn right onto 19th Avenue Southeast. Walk 600 feet to the corner of 32nd Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 589,
+    "street": "19th Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of 32nd Street Southeast",
+    "start": [
+     -106.671084,
+     35.225153
+    ],
+    "end": [
+     -106.673058,
+     35.225154
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.673058,
+      35.225154
+     ],
+     [
+      -106.673058,
+      35.225232
+     ],
+     [
+      -106.673061,
+      35.229919
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 12,
+    "text": "Turn right onto 32nd Street Southeast. Walk 1,750 feet to the corner of 16th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1741,
+    "street": "32nd Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 16th Avenue Southeast",
+    "start": [
+     -106.673058,
+     35.225154
+    ],
+    "end": [
+     -106.673061,
+     35.229919
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.673061,
+      35.229919
+     ],
+     [
+      -106.675051,
+      35.229921
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 13,
+    "text": "Turn left onto 16th Avenue Southeast. Walk 600 feet to the corner of 31st Street Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 594,
+    "street": "16th Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of 31st Street Southeast",
+    "start": [
+     -106.673061,
+     35.229919
+    ],
+    "end": [
+     -106.675051,
+     35.229921
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.675051,
+      35.229921
+     ],
+     [
+      -106.67505,
+      35.23156
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 14,
+    "text": "Turn right onto 31st Street Southeast. Walk 600 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 599,
+    "street": "31st Street Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.675051,
+     35.229921
+    ],
+    "end": [
+     -106.67505,
+     35.23156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.67505,
+      35.23156
+     ],
+     [
+      -106.675051,
+      35.229921
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 15,
+    "text": "Turn around and walk back on 31st Street Southeast. Walk 600 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 599,
+    "street": "31st Street Southeast",
+    "turn": "around",
+    "destination": "the next corner",
+    "start": [
+     -106.67505,
+     35.23156
+    ],
+    "end": [
+     -106.675051,
+     35.229921
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.675051,
+      35.229921
+     ],
+     [
+      -106.675066,
+      35.225233
+     ],
+     [
+      -106.675066,
+      35.225155
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 16,
+    "text": "Go straight on 31st Street Southeast. Walk 1,750 feet to the corner of 19th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1740,
+    "street": "31st Street Southeast",
+    "turn": "straight",
+    "destination": "the corner of 19th Avenue Southeast",
+    "start": [
+     -106.675051,
+     35.229921
+    ],
+    "end": [
+     -106.675066,
+     35.225155
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.675066,
+      35.225155
+     ],
+     [
+      -106.676975,
+      35.225166
+     ],
+     [
+      -106.677089,
+      35.225167
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 17,
+    "text": "Turn right onto 19th Avenue Southeast. Walk 600 feet to the corner of Golf Course Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 604,
+    "street": "19th Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Golf Course Road Southeast",
+    "start": [
+     -106.675066,
+     35.225155
+    ],
+    "end": [
+     -106.677089,
+     35.225167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.677089,
+      35.225167
+     ],
+     [
+      -106.67708,
+      35.224079
+     ],
+     [
+      -106.677064,
+      35.223634
+     ],
+     [
+      -106.677127,
+      35.223537
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 18,
+    "text": "Turn left onto Golf Course Road Southeast. Walk 600 feet to the corner of 20th Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 600,
+    "street": "Golf Course Road Southeast",
+    "turn": "L",
+    "destination": "the corner of 20th Avenue Southeast",
+    "start": [
+     -106.677089,
+     35.225167
+    ],
+    "end": [
+     -106.677127,
+     35.223537
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.677127,
+      35.223537
+     ],
+     [
+      -106.676987,
+      35.223537
+     ],
+     [
+      -106.66703,
+      35.223526
+     ],
+     [
+      -106.664602,
+      35.22353
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 19,
+    "text": "Turn left onto 20th Avenue Southeast. Walk 3,750 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 3737,
+    "street": "20th Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.677127,
+     35.223537
+    ],
+    "end": [
+     -106.664602,
+     35.22353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66317,
+      35.223506
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 20,
+    "text": "Go straight on 20th Avenue Southeast. Walk 450 feet to the parking spot P. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 427,
+    "street": "20th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the parking spot P",
+    "start": [
+     -106.664602,
+     35.22353
+    ],
+    "end": [
+     -106.66317,
+     35.223506
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66703,
+      35.223526
+     ],
+     [
+      -106.666895,
+      35.22381
+     ],
+     [
+      -106.6667,
+      35.224142
+     ],
+     [
+      -106.666291,
+      35.224732
+     ],
+     [
+      -106.666226,
+      35.224925
+     ],
+     [
+      -106.666228,
+      35.225164
+     ],
+     [
+      -106.667075,
+      35.22515
+     ],
+     [
+      -106.667076,
+      35.225224
+     ],
+     [
+      -106.667087,
+      35.229917
+     ],
+     [
+      -106.668482,
+      35.229918
+     ],
+     [
+      -106.669078,
+      35.229919
+     ],
+     [
+      -106.67037,
+      35.229917
+     ],
+     [
+      -106.670377,
+      35.230336
+     ],
+     [
+      -106.670328,
+      35.230884
+     ],
+     [
+      -106.670213,
+      35.231502
+     ],
+     [
+      -106.670062,
+      35.232018
+     ],
+     [
+      -106.669845,
+      35.232595
+     ],
+     [
+      -106.669601,
+      35.233094
+     ],
+     [
+      -106.669256,
+      35.233674
+     ],
+     [
+      -106.668927,
+      35.234126
+     ],
+     [
+      -106.668499,
+      35.234631
+     ],
+     [
+      -106.668071,
+      35.235062
+     ],
+     [
+      -106.667524,
+      35.235529
+     ],
+     [
+      -106.667059,
+      35.235903
+     ],
+     [
+      -106.666995,
+      35.236002
+     ],
+     [
+      -106.667941,
+      35.236768
+     ],
+     [
+      -106.668329,
+      35.237081
+     ],
+     [
+      -106.669681,
+      35.235994
+     ],
+     [
+      -106.670331,
+      35.235593
+     ],
+     [
+      -106.67074,
+      35.235353
+     ],
+     [
+      -106.671525,
+      35.234965
+     ],
+     [
+      -106.672301,
+      35.234645
+     ],
+     [
+      -106.673049,
+      35.234393
+     ],
+     [
+      -106.672301,
+      35.234645
+     ],
+     [
+      -106.671525,
+      35.234965
+     ],
+     [
+      -106.67074,
+      35.235353
+     ],
+     [
+      -106.670331,
+      35.235593
+     ],
+     [
+      -106.669681,
+      35.235994
+     ],
+     [
+      -106.67067,
+      35.234801
+     ],
+     [
+      -106.671031,
+      35.234267
+     ],
+     [
+      -106.671385,
+      35.233669
+     ],
+     [
+      -106.671621,
+      35.233182
+     ],
+     [
+      -106.671831,
+      35.232644
+     ],
+     [
+      -106.672005,
+      35.232117
+     ],
+     [
+      -106.672145,
+      35.231545
+     ],
+     [
+      -106.672005,
+      35.232117
+     ],
+     [
+      -106.671831,
+      35.232644
+     ],
+     [
+      -106.671621,
+      35.233182
+     ],
+     [
+      -106.673067,
+      35.233184
+     ],
+     [
+      -106.675052,
+      35.233182
+     ],
+     [
+      -106.673067,
+      35.233184
+     ],
+     [
+      -106.673049,
+      35.234393
+     ],
+     [
+      -106.674053,
+      35.234134
+     ],
+     [
+      -106.675051,
+      35.233956
+     ],
+     [
+      -106.675052,
+      35.233182
+     ],
+     [
+      -106.67505,
+      35.23156
+     ],
+     [
+      -106.672145,
+      35.231545
+     ],
+     [
+      -106.672224,
+      35.231057
+     ],
+     [
+      -106.672278,
+      35.230487
+     ],
+     [
+      -106.67228,
+      35.22992
+     ],
+     [
+      -106.671068,
+      35.22992
+     ],
+     [
+      -106.67037,
+      35.229917
+     ],
+     [
+      -106.669078,
+      35.229919
+     ],
+     [
+      -106.668482,
+      35.229918
+     ],
+     [
+      -106.667087,
+      35.229917
+     ],
+     [
+      -106.666622,
+      35.229917
+     ],
+     [
+      -106.665097,
+      35.229915
+     ],
+     [
+      -106.665114,
+      35.225169
+     ],
+     [
+      -106.664033,
+      35.225157
+     ],
+     [
+      -106.664035,
+      35.225107
+     ],
+     [
+      -106.664053,
+      35.224674
+     ],
+     [
+      -106.664109,
+      35.224306
+     ],
+     [
+      -106.664255,
+      35.223955
+     ],
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66317,
+      35.223506
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 2,
+    "color": "BLUE",
+    "color_hex": "#1f5fd6",
+    "line_dash": [
+     7,
+     2.5
+    ],
+    "mi": 4.4,
+    "homes": 249,
+    "minutes": 270,
+    "steps": 27,
+    "streets": [
+     "35th Street Southeast",
+     "16th Avenue Southeast",
+     "33rd Circle Southeast",
+     "Ann Circle Southeast",
+     "32nd Circle Southeast",
+     "14th Avenue Southeast",
+     "32nd Street Southeast",
+     "31st Street Southeast",
+     "15th Avenue Southeast",
+     "36th Street Southeast",
+     "Leonard Street Southeast"
+    ],
+    "length_m": 7148.2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66703,
+      35.223526
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along 20th Avenue Southeast toward the corner of Yucca Street Southeast, 1,150 feet. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 1152,
+    "street": "20th Avenue Southeast",
+    "turn": "start",
+    "destination": "the corner of Yucca Street Southeast",
+    "start": [
+     -106.66317,
+     35.223506
+    ],
+    "end": [
+     -106.66703,
+     35.223526
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66703,
+      35.223526
+     ],
+     [
+      -106.666895,
+      35.22381
+     ],
+     [
+      -106.6667,
+      35.224142
+     ],
+     [
+      -106.666291,
+      35.224732
+     ],
+     [
+      -106.666226,
+      35.224925
+     ],
+     [
+      -106.666228,
+      35.225164
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 2,
+    "text": "Turn right onto Yucca Street Southeast. Walk 650 feet to the corner of 19th Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 654,
+    "street": "Yucca Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 19th Avenue Southeast",
+    "start": [
+     -106.66703,
+     35.223526
+    ],
+    "end": [
+     -106.666228,
+     35.225164
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.666228,
+      35.225164
+     ],
+     [
+      -106.667075,
+      35.22515
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 3,
+    "text": "Turn left onto 19th Avenue Southeast. Walk 250 feet to the corner of 35th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 253,
+    "street": "19th Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of 35th Street Southeast",
+    "start": [
+     -106.666228,
+     35.225164
+    ],
+    "end": [
+     -106.667075,
+     35.22515
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.667075,
+      35.22515
+     ],
+     [
+      -106.667076,
+      35.225224
+     ],
+     [
+      -106.667087,
+      35.229917
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 4,
+    "text": "Turn right onto 35th Street Southeast. Walk 1,750 feet to the corner of 16th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1741,
+    "street": "35th Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 16th Avenue Southeast",
+    "start": [
+     -106.667075,
+     35.22515
+    ],
+    "end": [
+     -106.667087,
+     35.229917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.667087,
+      35.229917
+     ],
+     [
+      -106.668482,
+      35.229918
+     ],
+     [
+      -106.669078,
+      35.229919
+     ],
+     [
+      -106.67037,
+      35.229917
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 5,
+    "text": "Turn left onto 16th Avenue Southeast. Walk 1,000 feet to the corner of 33rd Circle Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 979,
+    "street": "16th Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of 33rd Circle Southeast",
+    "start": [
+     -106.667087,
+     35.229917
+    ],
+    "end": [
+     -106.67037,
+     35.229917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.67037,
+      35.229917
+     ],
+     [
+      -106.670377,
+      35.230336
+     ],
+     [
+      -106.670328,
+      35.230884
+     ],
+     [
+      -106.670213,
+      35.231502
+     ],
+     [
+      -106.670062,
+      35.232018
+     ],
+     [
+      -106.669845,
+      35.232595
+     ],
+     [
+      -106.669601,
+      35.233094
+     ],
+     [
+      -106.669256,
+      35.233674
+     ],
+     [
+      -106.668927,
+      35.234126
+     ],
+     [
+      -106.668499,
+      35.234631
+     ],
+     [
+      -106.668071,
+      35.235062
+     ],
+     [
+      -106.667524,
+      35.235529
+     ],
+     [
+      -106.667059,
+      35.235903
+     ],
+     [
+      -106.666995,
+      35.236002
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 6,
+    "text": "Turn right onto 33rd Circle Southeast. Walk 2,500 feet to the corner of Sara Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 2519,
+    "street": "33rd Circle Southeast",
+    "turn": "R",
+    "destination": "the corner of Sara Road Southeast",
+    "start": [
+     -106.67037,
+     35.229917
+    ],
+    "end": [
+     -106.666995,
+     35.236002
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.666995,
+      35.236002
+     ],
+     [
+      -106.667941,
+      35.236768
+     ],
+     [
+      -106.668329,
+      35.237081
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 7,
+    "text": "Turn left onto Sara Road Southeast. Walk 550 feet to the corner of 32nd Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 560,
+    "street": "Sara Road Southeast",
+    "turn": "L",
+    "destination": "the corner of 32nd Circle Southeast",
+    "start": [
+     -106.666995,
+     35.236002
+    ],
+    "end": [
+     -106.668329,
+     35.237081
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.668329,
+      35.237081
+     ],
+     [
+      -106.669681,
+      35.235994
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 8,
+    "text": "Turn left onto 32nd Circle Southeast. Walk 550 feet to the corner of Ann Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 566,
+    "street": "32nd Circle Southeast",
+    "turn": "L",
+    "destination": "the corner of Ann Circle Southeast",
+    "start": [
+     -106.668329,
+     35.237081
+    ],
+    "end": [
+     -106.669681,
+     35.235994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.669681,
+      35.235994
+     ],
+     [
+      -106.670331,
+      35.235593
+     ],
+     [
+      -106.67074,
+      35.235353
+     ],
+     [
+      -106.671525,
+      35.234965
+     ],
+     [
+      -106.672301,
+      35.234645
+     ],
+     [
+      -106.673049,
+      35.234393
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 9,
+    "text": "Go straight onto Ann Circle Southeast. Walk 1,150 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1168,
+    "street": "Ann Circle Southeast",
+    "turn": "straight",
+    "destination": "the next corner",
+    "start": [
+     -106.669681,
+     35.235994
+    ],
+    "end": [
+     -106.673049,
+     35.234393
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.673049,
+      35.234393
+     ],
+     [
+      -106.672301,
+      35.234645
+     ],
+     [
+      -106.671525,
+      35.234965
+     ],
+     [
+      -106.67074,
+      35.235353
+     ],
+     [
+      -106.670331,
+      35.235593
+     ],
+     [
+      -106.669681,
+      35.235994
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 10,
+    "text": "Turn around and walk back on Ann Circle Southeast. Walk 1,150 feet to the corner of 32nd Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 1168,
+    "street": "Ann Circle Southeast",
+    "turn": "around",
+    "destination": "the corner of 32nd Circle Southeast",
+    "start": [
+     -106.673049,
+     35.234393
+    ],
+    "end": [
+     -106.669681,
+     35.235994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.669681,
+      35.235994
+     ],
+     [
+      -106.67067,
+      35.234801
+     ],
+     [
+      -106.671031,
+      35.234267
+     ],
+     [
+      -106.671385,
+      35.233669
+     ],
+     [
+      -106.671621,
+      35.233182
+     ],
+     [
+      -106.671831,
+      35.232644
+     ],
+     [
+      -106.672005,
+      35.232117
+     ],
+     [
+      -106.672145,
+      35.231545
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 11,
+    "text": "Turn around and walk back on 32nd Circle Southeast. Walk 1,800 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1802,
+    "street": "32nd Circle Southeast",
+    "turn": "around",
+    "destination": "the next corner",
+    "start": [
+     -106.669681,
+     35.235994
+    ],
+    "end": [
+     -106.672145,
+     35.231545
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.672145,
+      35.231545
+     ],
+     [
+      -106.672005,
+      35.232117
+     ],
+     [
+      -106.671831,
+      35.232644
+     ],
+     [
+      -106.671621,
+      35.233182
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 12,
+    "text": "Turn around and walk back on 32nd Circle Southeast. Walk 600 feet to the corner of 14th Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 619,
+    "street": "32nd Circle Southeast",
+    "turn": "around",
+    "destination": "the corner of 14th Avenue Southeast",
+    "start": [
+     -106.672145,
+     35.231545
+    ],
+    "end": [
+     -106.671621,
+     35.233182
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.671621,
+      35.233182
+     ],
+     [
+      -106.673067,
+      35.233184
+     ],
+     [
+      -106.675052,
+      35.233182
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 13,
+    "text": "Turn left onto 14th Avenue Southeast. Walk 1,000 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1024,
+    "street": "14th Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.671621,
+     35.233182
+    ],
+    "end": [
+     -106.675052,
+     35.233182
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.675052,
+      35.233182
+     ],
+     [
+      -106.673067,
+      35.233184
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 14,
+    "text": "Turn around and walk back on 14th Avenue Southeast. Walk 600 feet to the corner of 32nd Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 592,
+    "street": "14th Avenue Southeast",
+    "turn": "around",
+    "destination": "the corner of 32nd Street Southeast",
+    "start": [
+     -106.675052,
+     35.233182
+    ],
+    "end": [
+     -106.673067,
+     35.233184
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.673067,
+      35.233184
+     ],
+     [
+      -106.673049,
+      35.234393
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 15,
+    "text": "Turn left onto 32nd Street Southeast. Walk 450 feet to the corner of Ann Circle Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 442,
+    "street": "32nd Street Southeast",
+    "turn": "L",
+    "destination": "the corner of Ann Circle Southeast",
+    "start": [
+     -106.673067,
+     35.233184
+    ],
+    "end": [
+     -106.673049,
+     35.234393
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.673049,
+      35.234393
+     ],
+     [
+      -106.674053,
+      35.234134
+     ],
+     [
+      -106.675051,
+      35.233956
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 16,
+    "text": "Turn left onto Ann Circle Southeast. Walk 600 feet to the corner of 31st Street Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 619,
+    "street": "Ann Circle Southeast",
+    "turn": "L",
+    "destination": "the corner of 31st Street Southeast",
+    "start": [
+     -106.673049,
+     35.234393
+    ],
+    "end": [
+     -106.675051,
+     35.233956
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.675051,
+      35.233956
+     ],
+     [
+      -106.675052,
+      35.233182
+     ],
+     [
+      -106.67505,
+      35.23156
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 17,
+    "text": "Turn left onto 31st Street Southeast. Walk 900 feet to the corner of 15th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 875,
+    "street": "31st Street Southeast",
+    "turn": "L",
+    "destination": "the corner of 15th Avenue Southeast",
+    "start": [
+     -106.675051,
+     35.233956
+    ],
+    "end": [
+     -106.67505,
+     35.23156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.67505,
+      35.23156
+     ],
+     [
+      -106.672145,
+      35.231545
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 18,
+    "text": "Turn left onto 15th Avenue Southeast. Walk 850 feet to the corner of 32nd Circle Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 867,
+    "street": "15th Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of 32nd Circle Southeast",
+    "start": [
+     -106.67505,
+     35.23156
+    ],
+    "end": [
+     -106.672145,
+     35.231545
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.672145,
+      35.231545
+     ],
+     [
+      -106.672224,
+      35.231057
+     ],
+     [
+      -106.672278,
+      35.230487
+     ],
+     [
+      -106.67228,
+      35.22992
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 19,
+    "text": "Turn right onto 32nd Circle Southeast. Walk 600 feet to the corner of 16th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 596,
+    "street": "32nd Circle Southeast",
+    "turn": "R",
+    "destination": "the corner of 16th Avenue Southeast",
+    "start": [
+     -106.672145,
+     35.231545
+    ],
+    "end": [
+     -106.67228,
+     35.22992
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.67228,
+      35.22992
+     ],
+     [
+      -106.671068,
+      35.22992
+     ],
+     [
+      -106.67037,
+      35.229917
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 20,
+    "text": "Turn left onto 16th Avenue Southeast. Walk 550 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 570,
+    "street": "16th Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.67228,
+     35.22992
+    ],
+    "end": [
+     -106.67037,
+     35.229917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.67037,
+      35.229917
+     ],
+     [
+      -106.669078,
+      35.229919
+     ],
+     [
+      -106.668482,
+      35.229918
+     ],
+     [
+      -106.667087,
+      35.229917
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 21,
+    "text": "Go straight on 16th Avenue Southeast. Walk 1,000 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 979,
+    "street": "16th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the next corner",
+    "start": [
+     -106.67037,
+     35.229917
+    ],
+    "end": [
+     -106.667087,
+     35.229917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.667087,
+      35.229917
+     ],
+     [
+      -106.666622,
+      35.229917
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 22,
+    "text": "Go straight on 16th Avenue Southeast. Walk 150 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 139,
+    "street": "16th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the next corner",
+    "start": [
+     -106.667087,
+     35.229917
+    ],
+    "end": [
+     -106.666622,
+     35.229917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.666622,
+      35.229917
+     ],
+     [
+      -106.665097,
+      35.229915
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 23,
+    "text": "Go straight on 16th Avenue Southeast. Walk 450 feet to the corner of 36th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 455,
+    "street": "16th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the corner of 36th Street Southeast",
+    "start": [
+     -106.666622,
+     35.229917
+    ],
+    "end": [
+     -106.665097,
+     35.229915
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.665097,
+      35.229915
+     ],
+     [
+      -106.665114,
+      35.225169
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 24,
+    "text": "Turn right onto 36th Street Southeast. Walk 1,750 feet to the corner of 19th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1734,
+    "street": "36th Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 19th Avenue Southeast",
+    "start": [
+     -106.665097,
+     35.229915
+    ],
+    "end": [
+     -106.665114,
+     35.225169
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.665114,
+      35.225169
+     ],
+     [
+      -106.664033,
+      35.225157
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 25,
+    "text": "Turn left onto 19th Avenue Southeast. Walk 300 feet to the corner of Leonard Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 322,
+    "street": "19th Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of Leonard Street Southeast",
+    "start": [
+     -106.665114,
+     35.225169
+    ],
+    "end": [
+     -106.664033,
+     35.225157
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664033,
+      35.225157
+     ],
+     [
+      -106.664035,
+      35.225107
+     ],
+     [
+      -106.664053,
+      35.224674
+     ],
+     [
+      -106.664109,
+      35.224306
+     ],
+     [
+      -106.664255,
+      35.223955
+     ],
+     [
+      -106.664602,
+      35.22353
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 26,
+    "text": "Turn right onto Leonard Street Southeast. Walk 650 feet to the corner of 20th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 634,
+    "street": "Leonard Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 20th Avenue Southeast",
+    "start": [
+     -106.664033,
+     35.225157
+    ],
+    "end": [
+     -106.664602,
+     35.22353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66317,
+      35.223506
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 27,
+    "text": "Turn left onto 20th Avenue Southeast. Walk 450 feet to the parking spot P. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 427,
+    "street": "20th Avenue Southeast",
+    "turn": "L",
+    "destination": "the parking spot P",
+    "start": [
+     -106.664602,
+     35.22353
+    ],
+    "end": [
+     -106.66317,
+     35.223506
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.664778,
+      35.223257
+     ],
+     [
+      -106.66487,
+      35.223108
+     ],
+     [
+      -106.664937,
+      35.22295
+     ],
+     [
+      -106.66505,
+      35.22262
+     ],
+     [
+      -106.665102,
+      35.221936
+     ],
+     [
+      -106.66522,
+      35.22187
+     ],
+     [
+      -106.665102,
+      35.221936
+     ],
+     [
+      -106.66505,
+      35.22262
+     ],
+     [
+      -106.664937,
+      35.22295
+     ],
+     [
+      -106.66487,
+      35.223108
+     ],
+     [
+      -106.664778,
+      35.223257
+     ],
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.663022,
+      35.224012
+     ],
+     [
+      -106.662878,
+      35.224557
+     ],
+     [
+      -106.662857,
+      35.224644
+     ],
+     [
+      -106.662757,
+      35.225026
+     ],
+     [
+      -106.662756,
+      35.225119
+     ],
+     [
+      -106.662756,
+      35.225162
+     ],
+     [
+      -106.662509,
+      35.225266
+     ],
+     [
+      -106.662234,
+      35.225442
+     ],
+     [
+      -106.66229,
+      35.225573
+     ],
+     [
+      -106.66232,
+      35.225722
+     ],
+     [
+      -106.662314,
+      35.22586
+     ],
+     [
+      -106.66215,
+      35.226437
+     ],
+     [
+      -106.662338,
+      35.226437
+     ],
+     [
+      -106.662646,
+      35.225406
+     ],
+     [
+      -106.662338,
+      35.226437
+     ],
+     [
+      -106.661395,
+      35.22991
+     ],
+     [
+      -106.663243,
+      35.229914
+     ],
+     [
+      -106.663323,
+      35.229915
+     ],
+     [
+      -106.663243,
+      35.229914
+     ],
+     [
+      -106.663204,
+      35.230405
+     ],
+     [
+      -106.663041,
+      35.230749
+     ],
+     [
+      -106.662844,
+      35.230973
+     ],
+     [
+      -106.662398,
+      35.230728
+     ],
+     [
+      -106.662844,
+      35.230973
+     ],
+     [
+      -106.662539,
+      35.231334
+     ],
+     [
+      -106.661927,
+      35.231836
+     ],
+     [
+      -106.662145,
+      35.232016
+     ],
+     [
+      -106.66255,
+      35.232351
+     ],
+     [
+      -106.663022,
+      35.232739
+     ],
+     [
+      -106.662936,
+      35.232799
+     ],
+     [
+      -106.662794,
+      35.232911
+     ],
+     [
+      -106.662677,
+      35.233029
+     ],
+     [
+      -106.662576,
+      35.233162
+     ],
+     [
+      -106.662462,
+      35.233333
+     ],
+     [
+      -106.662417,
+      35.233441
+     ],
+     [
+      -106.662314,
+      35.233793
+     ],
+     [
+      -106.662417,
+      35.233441
+     ],
+     [
+      -106.662814,
+      35.23356
+     ],
+     [
+      -106.662875,
+      35.233576
+     ],
+     [
+      -106.662941,
+      35.233589
+     ],
+     [
+      -106.662875,
+      35.233576
+     ],
+     [
+      -106.662814,
+      35.23356
+     ],
+     [
+      -106.662417,
+      35.233441
+     ],
+     [
+      -106.662462,
+      35.233333
+     ],
+     [
+      -106.662576,
+      35.233162
+     ],
+     [
+      -106.662677,
+      35.233029
+     ],
+     [
+      -106.662794,
+      35.232911
+     ],
+     [
+      -106.662936,
+      35.232799
+     ],
+     [
+      -106.663022,
+      35.232739
+     ],
+     [
+      -106.663115,
+      35.23268
+     ],
+     [
+      -106.663505,
+      35.232368
+     ],
+     [
+      -106.663951,
+      35.231969
+     ],
+     [
+      -106.664355,
+      35.231506
+     ],
+     [
+      -106.664586,
+      35.231036
+     ],
+     [
+      -106.664749,
+      35.230539
+     ],
+     [
+      -106.664813,
+      35.229914
+     ],
+     [
+      -106.665097,
+      35.229915
+     ],
+     [
+      -106.666622,
+      35.229917
+     ],
+     [
+      -106.667087,
+      35.229917
+     ],
+     [
+      -106.668482,
+      35.229918
+     ],
+     [
+      -106.668431,
+      35.230658
+     ],
+     [
+      -106.668337,
+      35.23124
+     ],
+     [
+      -106.668122,
+      35.231822
+     ],
+     [
+      -106.667848,
+      35.232446
+     ],
+     [
+      -106.667522,
+      35.232993
+     ],
+     [
+      -106.667144,
+      35.233504
+     ],
+     [
+      -106.666758,
+      35.233904
+     ],
+     [
+      -106.666349,
+      35.234291
+     ],
+     [
+      -106.665631,
+      35.234883
+     ],
+     [
+      -106.665282,
+      35.234591
+     ],
+     [
+      -106.665201,
+      35.234657
+     ],
+     [
+      -106.664999,
+      35.23482
+     ],
+     [
+      -106.664578,
+      35.235103
+     ],
+     [
+      -106.663934,
+      35.235446
+     ],
+     [
+      -106.663307,
+      35.235664
+     ],
+     [
+      -106.662807,
+      35.235784
+     ],
+     [
+      -106.662518,
+      35.234784
+     ],
+     [
+      -106.66266,
+      35.234754
+     ],
+     [
+      -106.662762,
+      35.23473
+     ],
+     [
+      -106.662857,
+      35.234705
+     ],
+     [
+      -106.662967,
+      35.234673
+     ],
+     [
+      -106.663082,
+      35.234637
+     ],
+     [
+      -106.6632,
+      35.234595
+     ],
+     [
+      -106.663315,
+      35.234549
+     ],
+     [
+      -106.663437,
+      35.234497
+     ],
+     [
+      -106.663548,
+      35.234444
+     ],
+     [
+      -106.663648,
+      35.234393
+     ],
+     [
+      -106.663745,
+      35.234339
+     ],
+     [
+      -106.663832,
+      35.234289
+     ],
+     [
+      -106.663917,
+      35.234236
+     ],
+     [
+      -106.664005,
+      35.234177
+     ],
+     [
+      -106.664095,
+      35.234113
+     ],
+     [
+      -106.66432,
+      35.233936
+     ],
+     [
+      -106.664402,
+      35.233872
+     ],
+     [
+      -106.664315,
+      35.233803
+     ],
+     [
+      -106.664766,
+      35.233427
+     ],
+     [
+      -106.665161,
+      35.233105
+     ],
+     [
+      -106.665513,
+      35.232782
+     ],
+     [
+      -106.665857,
+      35.232305
+     ],
+     [
+      -106.66614,
+      35.231878
+     ],
+     [
+      -106.666363,
+      35.231401
+     ],
+     [
+      -106.666509,
+      35.230819
+     ],
+     [
+      -106.666616,
+      35.230234
+     ],
+     [
+      -106.666622,
+      35.229917
+     ],
+     [
+      -106.665097,
+      35.229915
+     ],
+     [
+      -106.664813,
+      35.229914
+     ],
+     [
+      -106.663323,
+      35.229915
+     ],
+     [
+      -106.663316,
+      35.226437
+     ],
+     [
+      -106.662338,
+      35.226437
+     ],
+     [
+      -106.66215,
+      35.226437
+     ],
+     [
+      -106.662314,
+      35.22586
+     ],
+     [
+      -106.66232,
+      35.225722
+     ],
+     [
+      -106.66229,
+      35.225573
+     ],
+     [
+      -106.662234,
+      35.225442
+     ],
+     [
+      -106.662509,
+      35.225266
+     ],
+     [
+      -106.662756,
+      35.225162
+     ],
+     [
+      -106.662756,
+      35.225119
+     ],
+     [
+      -106.662757,
+      35.225026
+     ],
+     [
+      -106.662857,
+      35.224644
+     ],
+     [
+      -106.662878,
+      35.224557
+     ],
+     [
+      -106.663022,
+      35.224012
+     ],
+     [
+      -106.66317,
+      35.223506
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 3,
+    "color": "GOLD",
+    "color_hex": "#c77800",
+    "line_dash": [
+     5,
+     1.6,
+     1.2,
+     1.6
+    ],
+    "mi": 3.9,
+    "homes": 204,
+    "minutes": 225,
+    "steps": 42,
+    "streets": [
+     "Leonard Street Southeast",
+     "Grande Boulevard Southeast",
+     "18th Avenue Southeast",
+     "16th Avenue Southeast",
+     "37th Street Southeast",
+     "Ag Place Southeast",
+     "Margie Road Southeast",
+     "Margie Court Southeast",
+     "36th Circle Southeast",
+     "34th Circle Southeast",
+     "Rose Circle Southeast",
+     "35th Circle Southeast"
+    ],
+    "length_m": 6336.4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.664602,
+      35.22353
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along 20th Avenue Southeast toward the corner of Leonard Street Southeast, 450 feet. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 427,
+    "street": "20th Avenue Southeast",
+    "turn": "start",
+    "destination": "the corner of Leonard Street Southeast",
+    "start": [
+     -106.66317,
+     35.223506
+    ],
+    "end": [
+     -106.664602,
+     35.22353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.664778,
+      35.223257
+     ],
+     [
+      -106.66487,
+      35.223108
+     ],
+     [
+      -106.664937,
+      35.22295
+     ],
+     [
+      -106.66505,
+      35.22262
+     ],
+     [
+      -106.665102,
+      35.221936
+     ],
+     [
+      -106.66522,
+      35.22187
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 2,
+    "text": "Turn left onto Leonard Street Southeast. Walk 650 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 653,
+    "street": "Leonard Street Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.664602,
+     35.22353
+    ],
+    "end": [
+     -106.66522,
+     35.22187
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66522,
+      35.22187
+     ],
+     [
+      -106.665102,
+      35.221936
+     ],
+     [
+      -106.66505,
+      35.22262
+     ],
+     [
+      -106.664937,
+      35.22295
+     ],
+     [
+      -106.66487,
+      35.223108
+     ],
+     [
+      -106.664778,
+      35.223257
+     ],
+     [
+      -106.664602,
+      35.22353
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 3,
+    "text": "Turn around and walk back on Leonard Street Southeast. Walk 650 feet to the corner of 20th Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 653,
+    "street": "Leonard Street Southeast",
+    "turn": "around",
+    "destination": "the corner of 20th Avenue Southeast",
+    "start": [
+     -106.66522,
+     35.22187
+    ],
+    "end": [
+     -106.664602,
+     35.22353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664602,
+      35.22353
+     ],
+     [
+      -106.66317,
+      35.223506
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 4,
+    "text": "Turn right onto 20th Avenue Southeast. Walk 450 feet to the corner of Grande Boulevard Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 427,
+    "street": "20th Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Grande Boulevard Southeast",
+    "start": [
+     -106.664602,
+     35.22353
+    ],
+    "end": [
+     -106.66317,
+     35.223506
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66317,
+      35.223506
+     ],
+     [
+      -106.663022,
+      35.224012
+     ],
+     [
+      -106.662878,
+      35.224557
+     ],
+     [
+      -106.662857,
+      35.224644
+     ],
+     [
+      -106.662757,
+      35.225026
+     ],
+     [
+      -106.662756,
+      35.225119
+     ],
+     [
+      -106.662756,
+      35.225162
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 5,
+    "text": "Turn left onto Grande Boulevard Southeast. Walk 600 feet to the corner of 19th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 618,
+    "street": "Grande Boulevard Southeast",
+    "turn": "L",
+    "destination": "the corner of 19th Avenue Southeast",
+    "start": [
+     -106.66317,
+     35.223506
+    ],
+    "end": [
+     -106.662756,
+     35.225162
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662756,
+      35.225162
+     ],
+     [
+      -106.662509,
+      35.225266
+     ],
+     [
+      -106.662234,
+      35.225442
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 6,
+    "text": "Bear right onto 19th Avenue Southeast. Walk 200 feet to the corner of Grande Boulevard Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 187,
+    "street": "19th Avenue Southeast",
+    "turn": "Rbear",
+    "destination": "the corner of Grande Boulevard Southeast",
+    "start": [
+     -106.662756,
+     35.225162
+    ],
+    "end": [
+     -106.662234,
+     35.225442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662234,
+      35.225442
+     ],
+     [
+      -106.66229,
+      35.225573
+     ],
+     [
+      -106.66232,
+      35.225722
+     ],
+     [
+      -106.662314,
+      35.22586
+     ],
+     [
+      -106.66215,
+      35.226437
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 7,
+    "text": "Turn left onto Grande Boulevard Southeast. Walk 350 feet to the corner of 18th Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 373,
+    "street": "Grande Boulevard Southeast",
+    "turn": "L",
+    "destination": "the corner of 18th Avenue Southeast",
+    "start": [
+     -106.662234,
+     35.225442
+    ],
+    "end": [
+     -106.66215,
+     35.226437
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66215,
+      35.226437
+     ],
+     [
+      -106.662338,
+      35.226437
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 8,
+    "text": "Turn left onto 18th Avenue Southeast. Walk 50 feet to the corner of Grande Boulevard Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 56,
+    "street": "18th Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of Grande Boulevard Southeast",
+    "start": [
+     -106.66215,
+     35.226437
+    ],
+    "end": [
+     -106.662338,
+     35.226437
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662338,
+      35.226437
+     ],
+     [
+      -106.662646,
+      35.225406
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 9,
+    "text": "Turn left onto Grande Boulevard Southeast. Walk 400 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 388,
+    "street": "Grande Boulevard Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.662338,
+     35.226437
+    ],
+    "end": [
+     -106.662646,
+     35.225406
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662646,
+      35.225406
+     ],
+     [
+      -106.662338,
+      35.226437
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 10,
+    "text": "Turn around and walk back on Grande Boulevard Southeast. Walk 400 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 388,
+    "street": "Grande Boulevard Southeast",
+    "turn": "around",
+    "destination": "the next corner",
+    "start": [
+     -106.662646,
+     35.225406
+    ],
+    "end": [
+     -106.662338,
+     35.226437
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662338,
+      35.226437
+     ],
+     [
+      -106.661395,
+      35.22991
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 11,
+    "text": "Go straight on Grande Boulevard Southeast. Walk 1,300 feet to the corner of 16th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1299,
+    "street": "Grande Boulevard Southeast",
+    "turn": "straight",
+    "destination": "the corner of 16th Avenue Southeast",
+    "start": [
+     -106.662338,
+     35.226437
+    ],
+    "end": [
+     -106.661395,
+     35.22991
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.661395,
+      35.22991
+     ],
+     [
+      -106.663243,
+      35.229914
+     ],
+     [
+      -106.663323,
+      35.229915
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 12,
+    "text": "Turn left onto 16th Avenue Southeast. Walk 600 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 575,
+    "street": "16th Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.661395,
+     35.22991
+    ],
+    "end": [
+     -106.663323,
+     35.229915
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.663323,
+      35.229915
+     ],
+     [
+      -106.663243,
+      35.229914
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 13,
+    "text": "Turn around and walk back on 16th Avenue Southeast. Walk under 50 feet to the corner of 37th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 24,
+    "street": "16th Avenue Southeast",
+    "turn": "around",
+    "destination": "the corner of 37th Street Southeast",
+    "start": [
+     -106.663323,
+     35.229915
+    ],
+    "end": [
+     -106.663243,
+     35.229914
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.663243,
+      35.229914
+     ],
+     [
+      -106.663204,
+      35.230405
+     ],
+     [
+      -106.663041,
+      35.230749
+     ],
+     [
+      -106.662844,
+      35.230973
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 14,
+    "text": "Turn left onto 37th Street Southeast. Walk 400 feet to the corner of Ag Place Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 415,
+    "street": "37th Street Southeast",
+    "turn": "L",
+    "destination": "the corner of Ag Place Southeast",
+    "start": [
+     -106.663243,
+     35.229914
+    ],
+    "end": [
+     -106.662844,
+     35.230973
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662844,
+      35.230973
+     ],
+     [
+      -106.662398,
+      35.230728
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 15,
+    "text": "Turn right onto Ag Place Southeast. Walk 150 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 161,
+    "street": "Ag Place Southeast",
+    "turn": "R",
+    "destination": "the dead end",
+    "start": [
+     -106.662844,
+     35.230973
+    ],
+    "end": [
+     -106.662398,
+     35.230728
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662398,
+      35.230728
+     ],
+     [
+      -106.662844,
+      35.230973
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 16,
+    "text": "Turn around and walk back on Ag Place Southeast. Walk 150 feet to the corner of 37th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 161,
+    "street": "Ag Place Southeast",
+    "turn": "around",
+    "destination": "the corner of 37th Street Southeast",
+    "start": [
+     -106.662398,
+     35.230728
+    ],
+    "end": [
+     -106.662844,
+     35.230973
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662844,
+      35.230973
+     ],
+     [
+      -106.662539,
+      35.231334
+     ],
+     [
+      -106.661927,
+      35.231836
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 17,
+    "text": "Turn right onto 37th Street Southeast. Walk 400 feet to the corner of Sara Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 419,
+    "street": "37th Street Southeast",
+    "turn": "R",
+    "destination": "the corner of Sara Road Southeast",
+    "start": [
+     -106.662844,
+     35.230973
+    ],
+    "end": [
+     -106.661927,
+     35.231836
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.661927,
+      35.231836
+     ],
+     [
+      -106.662145,
+      35.232016
+     ],
+     [
+      -106.66255,
+      35.232351
+     ],
+     [
+      -106.663022,
+      35.232739
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 18,
+    "text": "Turn left onto Sara Road Southeast. Walk 450 feet to the corner of Margie Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 464,
+    "street": "Sara Road Southeast",
+    "turn": "L",
+    "destination": "the corner of Margie Road Southeast",
+    "start": [
+     -106.661927,
+     35.231836
+    ],
+    "end": [
+     -106.663022,
+     35.232739
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.663022,
+      35.232739
+     ],
+     [
+      -106.662936,
+      35.232799
+     ],
+     [
+      -106.662794,
+      35.232911
+     ],
+     [
+      -106.662677,
+      35.233029
+     ],
+     [
+      -106.662576,
+      35.233162
+     ],
+     [
+      -106.662462,
+      35.233333
+     ],
+     [
+      -106.662417,
+      35.233441
+     ],
+     [
+      -106.662314,
+      35.233793
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 19,
+    "text": "Turn right onto Margie Road Southeast. Walk 450 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 450,
+    "street": "Margie Road Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.663022,
+     35.232739
+    ],
+    "end": [
+     -106.662314,
+     35.233793
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662314,
+      35.233793
+     ],
+     [
+      -106.662417,
+      35.233441
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 20,
+    "text": "Turn around and walk back on Margie Road Southeast. Walk 150 feet to the corner of Margie Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 132,
+    "street": "Margie Road Southeast",
+    "turn": "around",
+    "destination": "the corner of Margie Court Southeast",
+    "start": [
+     -106.662314,
+     35.233793
+    ],
+    "end": [
+     -106.662417,
+     35.233441
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662417,
+      35.233441
+     ],
+     [
+      -106.662814,
+      35.23356
+     ],
+     [
+      -106.662875,
+      35.233576
+     ],
+     [
+      -106.662941,
+      35.233589
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 21,
+    "text": "Turn right onto Margie Court Southeast. Walk 150 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 166,
+    "street": "Margie Court Southeast",
+    "turn": "R",
+    "destination": "the dead end",
+    "start": [
+     -106.662417,
+     35.233441
+    ],
+    "end": [
+     -106.662941,
+     35.233589
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662941,
+      35.233589
+     ],
+     [
+      -106.662875,
+      35.233576
+     ],
+     [
+      -106.662814,
+      35.23356
+     ],
+     [
+      -106.662417,
+      35.233441
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 22,
+    "text": "Turn around and walk back on Margie Court Southeast. Walk 150 feet to the corner of Margie Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 166,
+    "street": "Margie Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Margie Road Southeast",
+    "start": [
+     -106.662941,
+     35.233589
+    ],
+    "end": [
+     -106.662417,
+     35.233441
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662417,
+      35.233441
+     ],
+     [
+      -106.662462,
+      35.233333
+     ],
+     [
+      -106.662576,
+      35.233162
+     ],
+     [
+      -106.662677,
+      35.233029
+     ],
+     [
+      -106.662794,
+      35.232911
+     ],
+     [
+      -106.662936,
+      35.232799
+     ],
+     [
+      -106.663022,
+      35.232739
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 23,
+    "text": "Turn right onto Margie Road Southeast. Walk 300 feet to the corner of 36th Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 318,
+    "street": "Margie Road Southeast",
+    "turn": "R",
+    "destination": "the corner of 36th Circle Southeast",
+    "start": [
+     -106.662417,
+     35.233441
+    ],
+    "end": [
+     -106.663022,
+     35.232739
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.663022,
+      35.232739
+     ],
+     [
+      -106.663115,
+      35.23268
+     ],
+     [
+      -106.663505,
+      35.232368
+     ],
+     [
+      -106.663951,
+      35.231969
+     ],
+     [
+      -106.664355,
+      35.231506
+     ],
+     [
+      -106.664586,
+      35.231036
+     ],
+     [
+      -106.664749,
+      35.230539
+     ],
+     [
+      -106.664813,
+      35.229914
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 24,
+    "text": "Go straight onto 36th Circle Southeast. Walk 1,200 feet to the corner of 16th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1205,
+    "street": "36th Circle Southeast",
+    "turn": "straight",
+    "destination": "the corner of 16th Avenue Southeast",
+    "start": [
+     -106.663022,
+     35.232739
+    ],
+    "end": [
+     -106.664813,
+     35.229914
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664813,
+      35.229914
+     ],
+     [
+      -106.665097,
+      35.229915
+     ],
+     [
+      -106.666622,
+      35.229917
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 25,
+    "text": "Turn right onto 16th Avenue Southeast. Walk 550 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 540,
+    "street": "16th Avenue Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.664813,
+     35.229914
+    ],
+    "end": [
+     -106.666622,
+     35.229917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.666622,
+      35.229917
+     ],
+     [
+      -106.667087,
+      35.229917
+     ],
+     [
+      -106.668482,
+      35.229918
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 26,
+    "text": "Go straight on 16th Avenue Southeast. Walk 550 feet to the corner of 34th Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 555,
+    "street": "16th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the corner of 34th Circle Southeast",
+    "start": [
+     -106.666622,
+     35.229917
+    ],
+    "end": [
+     -106.668482,
+     35.229918
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.668482,
+      35.229918
+     ],
+     [
+      -106.668431,
+      35.230658
+     ],
+     [
+      -106.668337,
+      35.23124
+     ],
+     [
+      -106.668122,
+      35.231822
+     ],
+     [
+      -106.667848,
+      35.232446
+     ],
+     [
+      -106.667522,
+      35.232993
+     ],
+     [
+      -106.667144,
+      35.233504
+     ],
+     [
+      -106.666758,
+      35.233904
+     ],
+     [
+      -106.666349,
+      35.234291
+     ],
+     [
+      -106.665631,
+      35.234883
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 27,
+    "text": "Turn right onto 34th Circle Southeast. Walk 2,050 feet to the corner of Sara Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 2067,
+    "street": "34th Circle Southeast",
+    "turn": "R",
+    "destination": "the corner of Sara Road Southeast",
+    "start": [
+     -106.668482,
+     35.229918
+    ],
+    "end": [
+     -106.665631,
+     35.234883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.665631,
+      35.234883
+     ],
+     [
+      -106.665282,
+      35.234591
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 28,
+    "text": "Turn right onto Sara Road Southeast. Walk 150 feet to the corner of Rose Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 149,
+    "street": "Sara Road Southeast",
+    "turn": "R",
+    "destination": "the corner of Rose Circle Southeast",
+    "start": [
+     -106.665631,
+     35.234883
+    ],
+    "end": [
+     -106.665282,
+     35.234591
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.665282,
+      35.234591
+     ],
+     [
+      -106.665201,
+      35.234657
+     ],
+     [
+      -106.664999,
+      35.23482
+     ],
+     [
+      -106.664578,
+      35.235103
+     ],
+     [
+      -106.663934,
+      35.235446
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 29,
+    "text": "Turn left onto Rose Circle Southeast. Walk 500 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 511,
+    "street": "Rose Circle Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.665282,
+     35.234591
+    ],
+    "end": [
+     -106.663934,
+     35.235446
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.663934,
+      35.235446
+     ],
+     [
+      -106.663307,
+      35.235664
+     ],
+     [
+      -106.662807,
+      35.235784
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 30,
+    "text": "Go straight on Rose Circle Southeast. Walk 350 feet to the corner of Margie Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 359,
+    "street": "Rose Circle Southeast",
+    "turn": "straight",
+    "destination": "the corner of Margie Road Southeast",
+    "start": [
+     -106.663934,
+     35.235446
+    ],
+    "end": [
+     -106.662807,
+     35.235784
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662807,
+      35.235784
+     ],
+     [
+      -106.662518,
+      35.234784
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 31,
+    "text": "Turn right onto Margie Road Southeast. Walk 400 feet to the corner of 35th Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 375,
+    "street": "Margie Road Southeast",
+    "turn": "R",
+    "destination": "the corner of 35th Circle Southeast",
+    "start": [
+     -106.662807,
+     35.235784
+    ],
+    "end": [
+     -106.662518,
+     35.234784
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662518,
+      35.234784
+     ],
+     [
+      -106.66266,
+      35.234754
+     ],
+     [
+      -106.662762,
+      35.23473
+     ],
+     [
+      -106.662857,
+      35.234705
+     ],
+     [
+      -106.662967,
+      35.234673
+     ],
+     [
+      -106.663082,
+      35.234637
+     ],
+     [
+      -106.6632,
+      35.234595
+     ],
+     [
+      -106.663315,
+      35.234549
+     ],
+     [
+      -106.663437,
+      35.234497
+     ],
+     [
+      -106.663548,
+      35.234444
+     ],
+     [
+      -106.663648,
+      35.234393
+     ],
+     [
+      -106.663745,
+      35.234339
+     ],
+     [
+      -106.663832,
+      35.234289
+     ],
+     [
+      -106.663917,
+      35.234236
+     ],
+     [
+      -106.664005,
+      35.234177
+     ],
+     [
+      -106.664095,
+      35.234113
+     ],
+     [
+      -106.66432,
+      35.233936
+     ],
+     [
+      -106.664402,
+      35.233872
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 32,
+    "text": "Turn right onto 35th Circle Southeast. Walk 650 feet to the corner of Sara Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 663,
+    "street": "35th Circle Southeast",
+    "turn": "R",
+    "destination": "the corner of Sara Road Southeast",
+    "start": [
+     -106.662518,
+     35.234784
+    ],
+    "end": [
+     -106.664402,
+     35.233872
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664402,
+      35.233872
+     ],
+     [
+      -106.664315,
+      35.233803
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 33,
+    "text": "Turn left onto Sara Road Southeast. Walk under 50 feet to the corner of 35th Circle Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 36,
+    "street": "Sara Road Southeast",
+    "turn": "L",
+    "destination": "the corner of 35th Circle Southeast",
+    "start": [
+     -106.664402,
+     35.233872
+    ],
+    "end": [
+     -106.664315,
+     35.233803
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664315,
+      35.233803
+     ],
+     [
+      -106.664766,
+      35.233427
+     ],
+     [
+      -106.665161,
+      35.233105
+     ],
+     [
+      -106.665513,
+      35.232782
+     ],
+     [
+      -106.665857,
+      35.232305
+     ],
+     [
+      -106.66614,
+      35.231878
+     ],
+     [
+      -106.666363,
+      35.231401
+     ],
+     [
+      -106.666509,
+      35.230819
+     ],
+     [
+      -106.666616,
+      35.230234
+     ],
+     [
+      -106.666622,
+      35.229917
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 34,
+    "text": "Turn right onto 35th Circle Southeast. Walk 1,650 feet to the corner of 16th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1632,
+    "street": "35th Circle Southeast",
+    "turn": "R",
+    "destination": "the corner of 16th Avenue Southeast",
+    "start": [
+     -106.664315,
+     35.233803
+    ],
+    "end": [
+     -106.666622,
+     35.229917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.666622,
+      35.229917
+     ],
+     [
+      -106.665097,
+      35.229915
+     ],
+     [
+      -106.664813,
+      35.229914
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 35,
+    "text": "Turn left onto 16th Avenue Southeast. Walk 550 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 540,
+    "street": "16th Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.666622,
+     35.229917
+    ],
+    "end": [
+     -106.664813,
+     35.229914
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.664813,
+      35.229914
+     ],
+     [
+      -106.663323,
+      35.229915
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 36,
+    "text": "Go straight on 16th Avenue Southeast. Walk 450 feet to the corner of 37th Street Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 445,
+    "street": "16th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the corner of 37th Street Southeast",
+    "start": [
+     -106.664813,
+     35.229914
+    ],
+    "end": [
+     -106.663323,
+     35.229915
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.663323,
+      35.229915
+     ],
+     [
+      -106.663316,
+      35.226437
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 37,
+    "text": "Turn right onto 37th Street Southeast. Walk 1,250 feet to the corner of 18th Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1270,
+    "street": "37th Street Southeast",
+    "turn": "R",
+    "destination": "the corner of 18th Avenue Southeast",
+    "start": [
+     -106.663323,
+     35.229915
+    ],
+    "end": [
+     -106.663316,
+     35.226437
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.663316,
+      35.226437
+     ],
+     [
+      -106.662338,
+      35.226437
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 38,
+    "text": "Turn left onto 18th Avenue Southeast. Walk 300 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 292,
+    "street": "18th Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.663316,
+     35.226437
+    ],
+    "end": [
+     -106.662338,
+     35.226437
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662338,
+      35.226437
+     ],
+     [
+      -106.66215,
+      35.226437
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 39,
+    "text": "Go straight on 18th Avenue Southeast. Walk 50 feet to the corner of Grande Boulevard Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 56,
+    "street": "18th Avenue Southeast",
+    "turn": "straight",
+    "destination": "the corner of Grande Boulevard Southeast",
+    "start": [
+     -106.662338,
+     35.226437
+    ],
+    "end": [
+     -106.66215,
+     35.226437
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.66215,
+      35.226437
+     ],
+     [
+      -106.662314,
+      35.22586
+     ],
+     [
+      -106.66232,
+      35.225722
+     ],
+     [
+      -106.66229,
+      35.225573
+     ],
+     [
+      -106.662234,
+      35.225442
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 40,
+    "text": "Turn right onto Grande Boulevard Southeast. Walk 350 feet to the corner of 19th Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 373,
+    "street": "Grande Boulevard Southeast",
+    "turn": "R",
+    "destination": "the corner of 19th Avenue Southeast",
+    "start": [
+     -106.66215,
+     35.226437
+    ],
+    "end": [
+     -106.662234,
+     35.225442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662234,
+      35.225442
+     ],
+     [
+      -106.662509,
+      35.225266
+     ],
+     [
+      -106.662756,
+      35.225162
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 41,
+    "text": "Turn right onto 19th Avenue Southeast. Walk 200 feet to the corner of Grande Boulevard Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 187,
+    "street": "19th Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Grande Boulevard Southeast",
+    "start": [
+     -106.662234,
+     35.225442
+    ],
+    "end": [
+     -106.662756,
+     35.225162
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.662756,
+      35.225162
+     ],
+     [
+      -106.662756,
+      35.225119
+     ],
+     [
+      -106.662757,
+      35.225026
+     ],
+     [
+      -106.662857,
+      35.224644
+     ],
+     [
+      -106.662878,
+      35.224557
+     ],
+     [
+      -106.663022,
+      35.224012
+     ],
+     [
+      -106.66317,
+      35.223506
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 42,
+    "text": "Bear left onto Grande Boulevard Southeast. Walk 600 feet to the parking spot P. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 618,
+    "street": "Grande Boulevard Southeast",
+    "turn": "Lbear",
+    "destination": "the parking spot P",
+    "start": [
+     -106.662756,
+     35.225162
+    ],
+    "end": [
+     -106.66317,
+     35.223506
+    ]
+   }
+  }
+ ]
+}

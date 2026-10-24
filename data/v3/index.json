@@ -1,0 +1,109 @@
+{
+ "schema_version": 1,
+ "neighborhoods": [
+  {
+   "name": "Vista Grande / Villa Verde",
+   "slug": "Vista_Grande_Villa_Verde",
+   "round": 1,
+   "file": "Vista_Grande_Villa_Verde.geojson",
+   "center": [
+    -106.644001,
+    35.244524
+   ],
+   "bbox": [
+    -106.65095,
+    35.238824,
+    -106.637052,
+    35.250225
+   ],
+   "parking": {
+    "name": "Sabana Heights Park (on-street parking, Sabana Grande Ave SE)",
+    "address": "Sabana Grande Ave SE at Benjamin Dr SE, Rio Rancho, NM 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.2418,-106.6453",
+    "coordinates": [
+     -106.6453,
+     35.2418
+    ]
+   },
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Smith's Fuel Center, 1000 Pat D'Arco Highway (0.6 mi); Murphy Express, 4150 Southern Boulevard Southeast (0.7 mi).",
+   "sessions": 3,
+   "total_mi": 11.6,
+   "total_homes": 714,
+   "total_steps": 126,
+   "total_minutes": 780
+  },
+  {
+   "name": "South Rio Rancho Numbered Streets",
+   "slug": "South_Rio_Rancho_Numbered_Streets",
+   "round": 1,
+   "file": "South_Rio_Rancho_Numbered_Streets.geojson",
+   "center": [
+    -106.669261,
+    35.229476
+   ],
+   "bbox": [
+    -106.677127,
+    35.22187,
+    -106.661395,
+    35.237081
+   ],
+   "parking": {
+    "name": "Haynes Park lot (off Grande Blvd SE)",
+    "address": "Grande Boulevard Southeast, Rio Rancho",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.223,-106.6623",
+    "coordinates": [
+     -106.6623,
+     35.223
+    ]
+   },
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Latitudes New World Convenience, 2401 NM 528 (0.3 mi); Valero, 2401 Pat D'Arco Highway (0.3 mi).",
+   "sessions": 3,
+   "total_mi": 12.1,
+   "total_homes": 707,
+   "total_steps": 89,
+   "total_minutes": 765
+  },
+  {
+   "name": "Star Heights / Arlene Rd",
+   "slug": "Star_Heights_Arlene_Rd",
+   "round": 1,
+   "file": "Star_Heights_Arlene_Rd.geojson",
+   "center": [
+    -106.703414,
+    35.250573
+   ],
+   "bbox": [
+    -106.708983,
+    35.244947,
+    -106.697845,
+    35.256198
+   ],
+   "parking": {
+    "name": "Star Heights Park (Polaris Blvd SE)",
+    "address": "Polaris Boulevard Southeast, Rio Rancho",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.2473,-106.703",
+    "coordinates": [
+     -106.703,
+     35.2473
+    ]
+   },
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.3 mi); Speedway, 2101 Southern Boulevard Southeast (0.7 mi).",
+   "sessions": 3,
+   "total_mi": 10.6,
+   "total_homes": 611,
+   "total_steps": 131,
+   "total_minutes": 675
+  }
+ ],
+ "rules": {
+  "phone": "(505) 750-3019",
+  "permit": "A Rio Rancho City Clerk solicitation permit is required for door-to-door order taking (Municipal Code Ch. 113). Apply at City Hall, 3200 Civic Center Cir NE, at least 5 business days ahead, with a current RR business registration ($20 residential solicitor permit incl. background check).",
+  "badge": "Wear the city ID badge where it can be seen.",
+  "no_soliciting": "Skip any home with a 'No Soliciting' / 'No Trespassing' sign: do not knock or leave a flyer. Note the address on the sheet. (Honor 'No Solicitation' signs, 113.13.)",
+  "hours": "Knock 9 a.m. to 8 p.m. only.",
+  "mailboxes": "Never put flyers in mailboxes (federal law). Tuck them in the door frame or leave them at the door.",
+  "restroom": "Parks may have no public restroom; each neighborhood's 'restroom' field lists the nearest restroom / water / gas-station stop.",
+  "contact": "Lost or have a question? Call (505) 750-3019.",
+  "full_text": "Rio Rancho rules (Municipal Code Ch. 113): a City Clerk solicitation permit is required for taking orders door to door; apply at City Hall, 3200 Civic Center Cir NE, at least 5 business days ahead, with a current RR business registration ($20 residential solicitor permit incl. background check). Knock only 9 a.m. to 8 p.m. at homes. Wear the city ID badge where it can be seen. Honor 'No Solicitation' signs (113.13)."
+ }
+}

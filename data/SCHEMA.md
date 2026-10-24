@@ -1,4 +1,6 @@
-# Gatepost D2D app data (schema_version 1, route v3)
+# Gatepost D2D app data (schema_version 1, route v4)
+
+v4 (2026-10-24): every session has its own parking spot right at its first door. `parking` features carry `session` and `label` (P1/P2/P3); each `session_path` has `parking {label,name,address,url,coordinates}`; index entries add `parking_by_session[]` (`parking` = session 1, kept for older clients). Each walk starts and ends at its own spot. v3 data kept in `data/v3/`.
 
 v3 (2026-10-23): every street is knocked in a single zigzag pass (`knock_both_sides`); repeat passes are `walk_no_knock`. `knock_one_side` is no longer produced. Step text is plain language ("Turn right onto ... Walk N feet to ... Knock both sides."); steps also carry `turn` (start/R/L/Rbear/Lbear/straight/around) and `destination`. v2 data is kept in `data/v2/`.
 

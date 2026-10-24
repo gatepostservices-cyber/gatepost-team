@@ -1,0 +1,8328 @@
+{
+ "type": "FeatureCollection",
+ "schema_version": 1,
+ "name": "Vista Grande / Villa Verde",
+ "slug": "Vista_Grande_Villa_Verde",
+ "round": 1,
+ "total_mi": 11.6,
+ "total_homes": 714,
+ "verification": [
+  {
+   "session": 1,
+   "steps": 38,
+   "fixes": 0,
+   "problems_after": 0
+  },
+  {
+   "session": 2,
+   "steps": 44,
+   "fixes": 0,
+   "problems_after": 0
+  },
+  {
+   "session": 3,
+   "steps": 44,
+   "fixes": 0,
+   "problems_after": 0
+  }
+ ],
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.6453,
+     35.2418
+    ]
+   },
+   "properties": {
+    "kind": "parking",
+    "name": "Sabana Heights Park (on-street parking, Sabana Grande Ave SE)",
+    "address": "Sabana Grande Ave SE at Benjamin Dr SE, Rio Rancho, NM 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.2418,-106.6453",
+    "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Smith's Fuel Center, 1000 Pat D'Arco Highway (0.6 mi); Murphy Express, 4150 Southern Boulevard Southeast (0.7 mi)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645235,
+      35.2418
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64536,
+      35.242671
+     ],
+     [
+      -106.645249,
+      35.242605
+     ],
+     [
+      -106.645151,
+      35.242527
+     ],
+     [
+      -106.645069,
+      35.242446
+     ],
+     [
+      -106.644877,
+      35.242186
+     ],
+     [
+      -106.6445,
+      35.242403
+     ],
+     [
+      -106.644169,
+      35.242649
+     ],
+     [
+      -106.643974,
+      35.242833
+     ],
+     [
+      -106.643791,
+      35.243035
+     ],
+     [
+      -106.64356,
+      35.243395
+     ],
+     [
+      -106.64328,
+      35.243863
+     ],
+     [
+      -106.644113,
+      35.244287
+     ],
+     [
+      -106.644556,
+      35.243711
+     ],
+     [
+      -106.644113,
+      35.244287
+     ],
+     [
+      -106.645021,
+      35.244756
+     ],
+     [
+      -106.644113,
+      35.244287
+     ],
+     [
+      -106.64328,
+      35.243863
+     ],
+     [
+      -106.642754,
+      35.24453
+     ],
+     [
+      -106.644494,
+      35.245423
+     ],
+     [
+      -106.642754,
+      35.24453
+     ],
+     [
+      -106.642393,
+      35.244874
+     ],
+     [
+      -106.642067,
+      35.245168
+     ],
+     [
+      -106.643869,
+      35.246058
+     ],
+     [
+      -106.642067,
+      35.245168
+     ],
+     [
+      -106.641715,
+      35.245455
+     ],
+     [
+      -106.641329,
+      35.245708
+     ],
+     [
+      -106.643157,
+      35.246591
+     ],
+     [
+      -106.641329,
+      35.245708
+     ],
+     [
+      -106.640651,
+      35.246223
+     ],
+     [
+      -106.640419,
+      35.246426
+     ],
+     [
+      -106.639956,
+      35.247022
+     ],
+     [
+      -106.639475,
+      35.247702
+     ],
+     [
+      -106.641501,
+      35.248711
+     ],
+     [
+      -106.639475,
+      35.247702
+     ],
+     [
+      -106.639956,
+      35.247022
+     ],
+     [
+      -106.642239,
+      35.248172
+     ],
+     [
+      -106.639956,
+      35.247022
+     ],
+     [
+      -106.640419,
+      35.246426
+     ],
+     [
+      -106.640651,
+      35.246223
+     ],
+     [
+      -106.639904,
+      35.245704
+     ],
+     [
+      -106.640651,
+      35.246223
+     ],
+     [
+      -106.641406,
+      35.246763
+     ],
+     [
+      -106.641681,
+      35.246952
+     ],
+     [
+      -106.64205,
+      35.247106
+     ],
+     [
+      -106.643861,
+      35.247695
+     ],
+     [
+      -106.643689,
+      35.2482
+     ],
+     [
+      -106.643449,
+      35.24848
+     ],
+     [
+      -106.643226,
+      35.248676
+     ],
+     [
+      -106.642934,
+      35.248866
+     ],
+     [
+      -106.642574,
+      35.249237
+     ],
+     [
+      -106.642606,
+      35.249261
+     ],
+     [
+      -106.643251,
+      35.249736
+     ],
+     [
+      -106.643277,
+      35.249756
+     ],
+     [
+      -106.643998,
+      35.250225
+     ],
+     [
+      -106.64477,
+      35.249672
+     ],
+     [
+      -106.646238,
+      35.24862
+     ],
+     [
+      -106.646193,
+      35.248586
+     ],
+     [
+      -106.646184,
+      35.248579
+     ],
+     [
+      -106.645998,
+      35.248438
+     ],
+     [
+      -106.645681,
+      35.248298
+     ],
+     [
+      -106.644754,
+      35.248003
+     ],
+     [
+      -106.643861,
+      35.247695
+     ],
+     [
+      -106.644161,
+      35.247131
+     ],
+     [
+      -106.644496,
+      35.246668
+     ],
+     [
+      -106.644882,
+      35.246283
+     ],
+     [
+      -106.645242,
+      35.245918
+     ],
+     [
+      -106.646143,
+      35.244715
+     ],
+     [
+      -106.646059,
+      35.244658
+     ],
+     [
+      -106.645973,
+      35.244593
+     ],
+     [
+      -106.645897,
+      35.244527
+     ],
+     [
+      -106.645612,
+      35.244215
+     ],
+     [
+      -106.645457,
+      35.243864
+     ],
+     [
+      -106.645408,
+      35.243548
+     ],
+     [
+      -106.645431,
+      35.24324
+     ],
+     [
+      -106.645483,
+      35.242981
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645235,
+      35.2418
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 1,
+    "color": "RED",
+    "color_hex": "#d62020",
+    "line_dash": [],
+    "mi": 4.0,
+    "homes": 188,
+    "minutes": 225,
+    "steps": 38,
+    "streets": [
+     "El Fresno Court Southeast",
+     "El Olmo Court Southeast",
+     "La Pacana Court Southeast",
+     "La Encina Court Southeast",
+     "El Alamo Court Southeast",
+     "La Cantora Court Southeast",
+     "El Hachero Court Southeast",
+     "Pepe Ortiz Road Southeast",
+     "Las Marias Drive Southeast",
+     "San Jose Road Southeast",
+     "San Juan de Rio Drive Southeast"
+    ],
+    "length_m": 6382.4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645235,
+      35.2418
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.646499,
+      35.24159
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along Benjamin Drive Southeast toward the corner of Bursum Lane Southeast, 400 feet. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 388,
+    "street": "Benjamin Drive Southeast",
+    "turn": "start",
+    "destination": "the corner of Bursum Lane Southeast",
+    "start": [
+     -106.645235,
+     35.2418
+    ],
+    "end": [
+     -106.646499,
+     35.24159
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.242753
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 2,
+    "text": "Turn right onto Bursum Lane Southeast. Walk 400 feet to the corner of Sabana Grande Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 425,
+    "street": "Bursum Lane Southeast",
+    "turn": "R",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.646499,
+     35.24159
+    ],
+    "end": [
+     -106.646499,
+     35.242753
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64536,
+      35.242671
+     ],
+     [
+      -106.645249,
+      35.242605
+     ],
+     [
+      -106.645151,
+      35.242527
+     ],
+     [
+      -106.645069,
+      35.242446
+     ],
+     [
+      -106.644877,
+      35.242186
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 3,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk 600 feet to the corner of Villa Verde Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 575,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.646499,
+     35.242753
+    ],
+    "end": [
+     -106.644877,
+     35.242186
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644877,
+      35.242186
+     ],
+     [
+      -106.6445,
+      35.242403
+     ],
+     [
+      -106.644169,
+      35.242649
+     ],
+     [
+      -106.643974,
+      35.242833
+     ],
+     [
+      -106.643791,
+      35.243035
+     ],
+     [
+      -106.64356,
+      35.243395
+     ],
+     [
+      -106.64328,
+      35.243863
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 4,
+    "text": "Turn left onto Villa Verde Drive Southeast. Walk 800 feet to the corner of El Fresno Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 790,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of El Fresno Court Southeast",
+    "start": [
+     -106.644877,
+     35.242186
+    ],
+    "end": [
+     -106.64328,
+     35.243863
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.64328,
+      35.243863
+     ],
+     [
+      -106.644113,
+      35.244287
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 5,
+    "text": "Turn left onto El Fresno Court Southeast. Walk 300 feet to the corner of El Olmo Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 293,
+    "street": "El Fresno Court Southeast",
+    "turn": "L",
+    "destination": "the corner of El Olmo Court Southeast",
+    "start": [
+     -106.64328,
+     35.243863
+    ],
+    "end": [
+     -106.644113,
+     35.244287
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644113,
+      35.244287
+     ],
+     [
+      -106.644556,
+      35.243711
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 6,
+    "text": "Turn left onto El Olmo Court Southeast. Walk 250 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 249,
+    "street": "El Olmo Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.644113,
+     35.244287
+    ],
+    "end": [
+     -106.644556,
+     35.243711
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644556,
+      35.243711
+     ],
+     [
+      -106.644113,
+      35.244287
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 7,
+    "text": "Turn around and walk back on El Olmo Court Southeast. Walk 250 feet to the corner of El Fresno Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 249,
+    "street": "El Olmo Court Southeast",
+    "turn": "around",
+    "destination": "the corner of El Fresno Court Southeast",
+    "start": [
+     -106.644556,
+     35.243711
+    ],
+    "end": [
+     -106.644113,
+     35.244287
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644113,
+      35.244287
+     ],
+     [
+      -106.645021,
+      35.244756
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 8,
+    "text": "Turn left onto El Fresno Court Southeast. Walk 300 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 320,
+    "street": "El Fresno Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.644113,
+     35.244287
+    ],
+    "end": [
+     -106.645021,
+     35.244756
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645021,
+      35.244756
+     ],
+     [
+      -106.644113,
+      35.244287
+     ],
+     [
+      -106.64328,
+      35.243863
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 9,
+    "text": "Turn around and walk back on El Fresno Court Southeast. Walk 600 feet to the corner of Villa Verde Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 613,
+    "street": "El Fresno Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.645021,
+     35.244756
+    ],
+    "end": [
+     -106.64328,
+     35.243863
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.64328,
+      35.243863
+     ],
+     [
+      -106.642754,
+      35.24453
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 10,
+    "text": "Turn left onto Villa Verde Drive Southeast. Walk 300 feet to the corner of La Pacana Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 290,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of La Pacana Court Southeast",
+    "start": [
+     -106.64328,
+     35.243863
+    ],
+    "end": [
+     -106.642754,
+     35.24453
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642754,
+      35.24453
+     ],
+     [
+      -106.644494,
+      35.245423
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 11,
+    "text": "Turn left onto La Pacana Court Southeast. Walk 600 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 613,
+    "street": "La Pacana Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.642754,
+     35.24453
+    ],
+    "end": [
+     -106.644494,
+     35.245423
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644494,
+      35.245423
+     ],
+     [
+      -106.642754,
+      35.24453
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 12,
+    "text": "Turn around and walk back on La Pacana Court Southeast. Walk 600 feet to the corner of Villa Verde Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 613,
+    "street": "La Pacana Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.644494,
+     35.245423
+    ],
+    "end": [
+     -106.642754,
+     35.24453
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642754,
+      35.24453
+     ],
+     [
+      -106.642393,
+      35.244874
+     ],
+     [
+      -106.642067,
+      35.245168
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 13,
+    "text": "Turn left onto Villa Verde Drive Southeast. Walk 300 feet to the corner of La Encina Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 310,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of La Encina Court Southeast",
+    "start": [
+     -106.642754,
+     35.24453
+    ],
+    "end": [
+     -106.642067,
+     35.245168
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642067,
+      35.245168
+     ],
+     [
+      -106.643869,
+      35.246058
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 14,
+    "text": "Turn left onto La Encina Court Southeast. Walk 650 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 628,
+    "street": "La Encina Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.642067,
+     35.245168
+    ],
+    "end": [
+     -106.643869,
+     35.246058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643869,
+      35.246058
+     ],
+     [
+      -106.642067,
+      35.245168
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 15,
+    "text": "Turn around and walk back on La Encina Court Southeast. Walk 650 feet to the corner of Villa Verde Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 628,
+    "street": "La Encina Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.643869,
+     35.246058
+    ],
+    "end": [
+     -106.642067,
+     35.245168
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642067,
+      35.245168
+     ],
+     [
+      -106.641715,
+      35.245455
+     ],
+     [
+      -106.641329,
+      35.245708
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 16,
+    "text": "Turn left onto Villa Verde Drive Southeast. Walk 300 feet to the corner of El Alamo Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 296,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of El Alamo Court Southeast",
+    "start": [
+     -106.642067,
+     35.245168
+    ],
+    "end": [
+     -106.641329,
+     35.245708
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641329,
+      35.245708
+     ],
+     [
+      -106.643157,
+      35.246591
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 17,
+    "text": "Turn left onto El Alamo Court Southeast. Walk 650 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 634,
+    "street": "El Alamo Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.641329,
+     35.245708
+    ],
+    "end": [
+     -106.643157,
+     35.246591
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643157,
+      35.246591
+     ],
+     [
+      -106.641329,
+      35.245708
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 18,
+    "text": "Turn around and walk back on El Alamo Court Southeast. Walk 650 feet to the corner of Villa Verde Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 634,
+    "street": "El Alamo Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.643157,
+     35.246591
+    ],
+    "end": [
+     -106.641329,
+     35.245708
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641329,
+      35.245708
+     ],
+     [
+      -106.640651,
+      35.246223
+     ],
+     [
+      -106.640419,
+      35.246426
+     ],
+     [
+      -106.639956,
+      35.247022
+     ],
+     [
+      -106.639475,
+      35.247702
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 19,
+    "text": "Turn left onto Villa Verde Drive Southeast. Walk 900 feet to the corner of La Cantora Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 922,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of La Cantora Court Southeast",
+    "start": [
+     -106.641329,
+     35.245708
+    ],
+    "end": [
+     -106.639475,
+     35.247702
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639475,
+      35.247702
+     ],
+     [
+      -106.641501,
+      35.248711
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 20,
+    "text": "Turn left onto La Cantora Court Southeast. Walk 700 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 708,
+    "street": "La Cantora Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.639475,
+     35.247702
+    ],
+    "end": [
+     -106.641501,
+     35.248711
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641501,
+      35.248711
+     ],
+     [
+      -106.639475,
+      35.247702
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 21,
+    "text": "Turn around and walk back on La Cantora Court Southeast. Walk 700 feet to the corner of Villa Verde Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 708,
+    "street": "La Cantora Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.641501,
+     35.248711
+    ],
+    "end": [
+     -106.639475,
+     35.247702
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639475,
+      35.247702
+     ],
+     [
+      -106.639956,
+      35.247022
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 22,
+    "text": "Turn right onto Villa Verde Drive Southeast. Walk 300 feet to the corner of El Hachero Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 287,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of El Hachero Court Southeast",
+    "start": [
+     -106.639475,
+     35.247702
+    ],
+    "end": [
+     -106.639956,
+     35.247022
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639956,
+      35.247022
+     ],
+     [
+      -106.642239,
+      35.248172
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 23,
+    "text": "Turn right onto El Hachero Court Southeast. Walk 800 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 800,
+    "street": "El Hachero Court Southeast",
+    "turn": "R",
+    "destination": "the dead end",
+    "start": [
+     -106.639956,
+     35.247022
+    ],
+    "end": [
+     -106.642239,
+     35.248172
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642239,
+      35.248172
+     ],
+     [
+      -106.639956,
+      35.247022
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 24,
+    "text": "Turn around and walk back on El Hachero Court Southeast. Walk 800 feet to the corner of Villa Verde Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 800,
+    "street": "El Hachero Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.642239,
+     35.248172
+    ],
+    "end": [
+     -106.639956,
+     35.247022
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639956,
+      35.247022
+     ],
+     [
+      -106.640419,
+      35.246426
+     ],
+     [
+      -106.640651,
+      35.246223
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 25,
+    "text": "Turn right onto Villa Verde Drive Southeast. Walk 350 feet to the corner of Pepe Ortiz Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 359,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Pepe Ortiz Road Southeast",
+    "start": [
+     -106.639956,
+     35.247022
+    ],
+    "end": [
+     -106.640651,
+     35.246223
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.640651,
+      35.246223
+     ],
+     [
+      -106.639904,
+      35.245704
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 26,
+    "text": "Turn left onto Pepe Ortiz Road Southeast. Walk 300 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 292,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.640651,
+     35.246223
+    ],
+    "end": [
+     -106.639904,
+     35.245704
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639904,
+      35.245704
+     ],
+     [
+      -106.640651,
+      35.246223
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 27,
+    "text": "Turn around and walk back on Pepe Ortiz Road Southeast. Walk 300 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 292,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "around",
+    "destination": "the next corner",
+    "start": [
+     -106.639904,
+     35.245704
+    ],
+    "end": [
+     -106.640651,
+     35.246223
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.640651,
+      35.246223
+     ],
+     [
+      -106.641406,
+      35.246763
+     ],
+     [
+      -106.641681,
+      35.246952
+     ],
+     [
+      -106.64205,
+      35.247106
+     ],
+     [
+      -106.643861,
+      35.247695
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 28,
+    "text": "Go straight on Pepe Ortiz Road Southeast. Walk 1,100 feet to the corner of Las Marias Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1112,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "straight",
+    "destination": "the corner of Las Marias Drive Southeast",
+    "start": [
+     -106.640651,
+     35.246223
+    ],
+    "end": [
+     -106.643861,
+     35.247695
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643861,
+      35.247695
+     ],
+     [
+      -106.643689,
+      35.2482
+     ],
+     [
+      -106.643449,
+      35.24848
+     ],
+     [
+      -106.643226,
+      35.248676
+     ],
+     [
+      -106.642934,
+      35.248866
+     ],
+     [
+      -106.642574,
+      35.249237
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 29,
+    "text": "Turn right onto Las Marias Drive Southeast. Walk 700 feet to the corner of San Jose Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 698,
+    "street": "Las Marias Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of San Jose Road Southeast",
+    "start": [
+     -106.643861,
+     35.247695
+    ],
+    "end": [
+     -106.642574,
+     35.249237
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642574,
+      35.249237
+     ],
+     [
+      -106.642606,
+      35.249261
+     ],
+     [
+      -106.643251,
+      35.249736
+     ],
+     [
+      -106.643277,
+      35.249756
+     ],
+     [
+      -106.643998,
+      35.250225
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 30,
+    "text": "Turn left onto San Jose Road Southeast. Walk 550 feet to the corner of San Juan de Rio Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 558,
+    "street": "San Jose Road Southeast",
+    "turn": "L",
+    "destination": "the corner of San Juan de Rio Drive Southeast",
+    "start": [
+     -106.642574,
+     35.249237
+    ],
+    "end": [
+     -106.643998,
+     35.250225
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643998,
+      35.250225
+     ],
+     [
+      -106.64477,
+      35.249672
+     ],
+     [
+      -106.646238,
+      35.24862
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 31,
+    "text": "Turn left onto San Juan de Rio Drive Southeast. Walk 900 feet to the corner of Pepe Ortiz Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 889,
+    "street": "San Juan de Rio Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of Pepe Ortiz Road Southeast",
+    "start": [
+     -106.643998,
+     35.250225
+    ],
+    "end": [
+     -106.646238,
+     35.24862
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646238,
+      35.24862
+     ],
+     [
+      -106.646193,
+      35.248586
+     ],
+     [
+      -106.646184,
+      35.248579
+     ],
+     [
+      -106.645998,
+      35.248438
+     ],
+     [
+      -106.645681,
+      35.248298
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 32,
+    "text": "Turn left onto Pepe Ortiz Road Southeast. Walk 200 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 205,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.646238,
+     35.24862
+    ],
+    "end": [
+     -106.645681,
+     35.248298
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645681,
+      35.248298
+     ],
+     [
+      -106.644754,
+      35.248003
+     ],
+     [
+      -106.643861,
+      35.247695
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 33,
+    "text": "Go straight on Pepe Ortiz Road Southeast. Walk 600 feet to the corner of Las Marias Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 586,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "straight",
+    "destination": "the corner of Las Marias Drive Southeast",
+    "start": [
+     -106.645681,
+     35.248298
+    ],
+    "end": [
+     -106.643861,
+     35.247695
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643861,
+      35.247695
+     ],
+     [
+      -106.644161,
+      35.247131
+     ],
+     [
+      -106.644496,
+      35.246668
+     ],
+     [
+      -106.644882,
+      35.246283
+     ],
+     [
+      -106.645242,
+      35.245918
+     ],
+     [
+      -106.646143,
+      35.244715
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 34,
+    "text": "Turn right onto Las Marias Drive Southeast. Walk 1,300 feet to the corner of Los Reyes Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1289,
+    "street": "Las Marias Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Los Reyes Road Southeast",
+    "start": [
+     -106.643861,
+     35.247695
+    ],
+    "end": [
+     -106.646143,
+     35.244715
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646143,
+      35.244715
+     ],
+     [
+      -106.646059,
+      35.244658
+     ],
+     [
+      -106.645973,
+      35.244593
+     ],
+     [
+      -106.645897,
+      35.244527
+     ],
+     [
+      -106.645612,
+      35.244215
+     ],
+     [
+      -106.645457,
+      35.243864
+     ],
+     [
+      -106.645408,
+      35.243548
+     ],
+     [
+      -106.645431,
+      35.24324
+     ],
+     [
+      -106.645483,
+      35.242981
+     ],
+     [
+      -106.645578,
+      35.242736
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 35,
+    "text": "Turn left onto Los Reyes Road Southeast. Walk 800 feet to the corner of Sabana Grande Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 798,
+    "street": "Los Reyes Road Southeast",
+    "turn": "L",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.646143,
+     35.244715
+    ],
+    "end": [
+     -106.645578,
+     35.242736
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.242753
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 36,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk 300 feet to the corner of Bursum Lane Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 275,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Bursum Lane Southeast",
+    "start": [
+     -106.645578,
+     35.242736
+    ],
+    "end": [
+     -106.646499,
+     35.242753
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24159
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 37,
+    "text": "Turn left onto Bursum Lane Southeast. Walk 400 feet to the corner of Benjamin Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 425,
+    "street": "Bursum Lane Southeast",
+    "turn": "L",
+    "destination": "the corner of Benjamin Drive Southeast",
+    "start": [
+     -106.646499,
+     35.242753
+    ],
+    "end": [
+     -106.646499,
+     35.24159
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645235,
+      35.2418
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 38,
+    "text": "Turn left onto Benjamin Drive Southeast. Walk 400 feet to the parking spot P. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 388,
+    "street": "Benjamin Drive Southeast",
+    "turn": "L",
+    "destination": "the parking spot P",
+    "start": [
+     -106.646499,
+     35.24159
+    ],
+    "end": [
+     -106.645235,
+     35.2418
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645235,
+      35.2418
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64536,
+      35.242671
+     ],
+     [
+      -106.645249,
+      35.242605
+     ],
+     [
+      -106.645151,
+      35.242527
+     ],
+     [
+      -106.645069,
+      35.242446
+     ],
+     [
+      -106.644877,
+      35.242186
+     ],
+     [
+      -106.644805,
+      35.242087
+     ],
+     [
+      -106.64447,
+      35.241628
+     ],
+     [
+      -106.644376,
+      35.241529
+     ],
+     [
+      -106.644239,
+      35.241416
+     ],
+     [
+      -106.644106,
+      35.241338
+     ],
+     [
+      -106.643947,
+      35.241264
+     ],
+     [
+      -106.643734,
+      35.241195
+     ],
+     [
+      -106.643655,
+      35.24118
+     ],
+     [
+      -106.643564,
+      35.241164
+     ],
+     [
+      -106.643578,
+      35.241089
+     ],
+     [
+      -106.643637,
+      35.24078
+     ],
+     [
+      -106.643693,
+      35.240532
+     ],
+     [
+      -106.643724,
+      35.240434
+     ],
+     [
+      -106.643766,
+      35.240324
+     ],
+     [
+      -106.643858,
+      35.240348
+     ],
+     [
+      -106.6442,
+      35.240436
+     ],
+     [
+      -106.644313,
+      35.240465
+     ],
+     [
+      -106.644279,
+      35.240568
+     ],
+     [
+      -106.644255,
+      35.240682
+     ],
+     [
+      -106.644264,
+      35.240755
+     ],
+     [
+      -106.644287,
+      35.240805
+     ],
+     [
+      -106.644335,
+      35.240854
+     ],
+     [
+      -106.644415,
+      35.240895
+     ],
+     [
+      -106.644505,
+      35.240904
+     ],
+     [
+      -106.644602,
+      35.240898
+     ],
+     [
+      -106.645654,
+      35.240744
+     ],
+     [
+      -106.645748,
+      35.240718
+     ],
+     [
+      -106.645821,
+      35.24068
+     ],
+     [
+      -106.645893,
+      35.240629
+     ],
+     [
+      -106.645957,
+      35.240557
+     ],
+     [
+      -106.646777,
+      35.238892
+     ],
+     [
+      -106.646698,
+      35.238872
+     ],
+     [
+      -106.646536,
+      35.238829
+     ],
+     [
+      -106.646409,
+      35.238824
+     ],
+     [
+      -106.646281,
+      35.238845
+     ],
+     [
+      -106.646005,
+      35.238941
+     ],
+     [
+      -106.645745,
+      35.239049
+     ],
+     [
+      -106.645466,
+      35.239182
+     ],
+     [
+      -106.645269,
+      35.239302
+     ],
+     [
+      -106.645097,
+      35.239434
+     ],
+     [
+      -106.644913,
+      35.239592
+     ],
+     [
+      -106.644735,
+      35.23977
+     ],
+     [
+      -106.64452,
+      35.240051
+     ],
+     [
+      -106.644439,
+      35.240188
+     ],
+     [
+      -106.644366,
+      35.240333
+     ],
+     [
+      -106.644313,
+      35.240465
+     ],
+     [
+      -106.6442,
+      35.240436
+     ],
+     [
+      -106.643858,
+      35.240348
+     ],
+     [
+      -106.643766,
+      35.240324
+     ],
+     [
+      -106.643724,
+      35.240434
+     ],
+     [
+      -106.643693,
+      35.240532
+     ],
+     [
+      -106.643637,
+      35.24078
+     ],
+     [
+      -106.643578,
+      35.241089
+     ],
+     [
+      -106.643564,
+      35.241164
+     ],
+     [
+      -106.643551,
+      35.24125
+     ],
+     [
+      -106.643528,
+      35.241462
+     ],
+     [
+      -106.643536,
+      35.241526
+     ],
+     [
+      -106.64356,
+      35.2416
+     ],
+     [
+      -106.643752,
+      35.241892
+     ],
+     [
+      -106.643933,
+      35.241997
+     ],
+     [
+      -106.643752,
+      35.241892
+     ],
+     [
+      -106.64356,
+      35.2416
+     ],
+     [
+      -106.643536,
+      35.241526
+     ],
+     [
+      -106.643528,
+      35.241462
+     ],
+     [
+      -106.643551,
+      35.24125
+     ],
+     [
+      -106.643564,
+      35.241164
+     ],
+     [
+      -106.643481,
+      35.241157
+     ],
+     [
+      -106.64347,
+      35.241157
+     ],
+     [
+      -106.643389,
+      35.241155
+     ],
+     [
+      -106.643299,
+      35.241158
+     ],
+     [
+      -106.643217,
+      35.241164
+     ],
+     [
+      -106.642925,
+      35.241193
+     ],
+     [
+      -106.64253,
+      35.24125
+     ],
+     [
+      -106.642292,
+      35.241299
+     ],
+     [
+      -106.642204,
+      35.241316
+     ],
+     [
+      -106.641917,
+      35.240882
+     ],
+     [
+      -106.641905,
+      35.240864
+     ],
+     [
+      -106.641871,
+      35.240822
+     ],
+     [
+      -106.641814,
+      35.240772
+     ],
+     [
+      -106.641756,
+      35.24073
+     ],
+     [
+      -106.641687,
+      35.240693
+     ],
+     [
+      -106.641634,
+      35.240676
+     ],
+     [
+      -106.641543,
+      35.240655
+     ],
+     [
+      -106.641634,
+      35.240676
+     ],
+     [
+      -106.641687,
+      35.240693
+     ],
+     [
+      -106.641756,
+      35.24073
+     ],
+     [
+      -106.641814,
+      35.240772
+     ],
+     [
+      -106.641871,
+      35.240822
+     ],
+     [
+      -106.641905,
+      35.240864
+     ],
+     [
+      -106.641917,
+      35.240882
+     ],
+     [
+      -106.642204,
+      35.241316
+     ],
+     [
+      -106.642256,
+      35.241396
+     ],
+     [
+      -106.642437,
+      35.241671
+     ],
+     [
+      -106.642499,
+      35.241764
+     ],
+     [
+      -106.642868,
+      35.242335
+     ],
+     [
+      -106.642996,
+      35.242496
+     ],
+     [
+      -106.642868,
+      35.242335
+     ],
+     [
+      -106.642499,
+      35.241764
+     ],
+     [
+      -106.641509,
+      35.241957
+     ],
+     [
+      -106.641063,
+      35.242042
+     ],
+     [
+      -106.640685,
+      35.242182
+     ],
+     [
+      -106.640213,
+      35.242455
+     ],
+     [
+      -106.639944,
+      35.242735
+     ],
+     [
+      -106.640791,
+      35.243314
+     ],
+     [
+      -106.640848,
+      35.243339
+     ],
+     [
+      -106.641053,
+      35.243371
+     ],
+     [
+      -106.641141,
+      35.243349
+     ],
+     [
+      -106.641199,
+      35.24332
+     ],
+     [
+      -106.641244,
+      35.243284
+     ],
+     [
+      -106.641923,
+      35.242619
+     ],
+     [
+      -106.641244,
+      35.243284
+     ],
+     [
+      -106.641199,
+      35.24332
+     ],
+     [
+      -106.641141,
+      35.243349
+     ],
+     [
+      -106.641053,
+      35.243371
+     ],
+     [
+      -106.641102,
+      35.243588
+     ],
+     [
+      -106.641053,
+      35.243371
+     ],
+     [
+      -106.640848,
+      35.243339
+     ],
+     [
+      -106.640791,
+      35.243314
+     ],
+     [
+      -106.639944,
+      35.242735
+     ],
+     [
+      -106.639317,
+      35.243338
+     ],
+     [
+      -106.64041,
+      35.244097
+     ],
+     [
+      -106.639317,
+      35.243338
+     ],
+     [
+      -106.638693,
+      35.243952
+     ],
+     [
+      -106.639783,
+      35.244704
+     ],
+     [
+      -106.638693,
+      35.243952
+     ],
+     [
+      -106.638085,
+      35.244577
+     ],
+     [
+      -106.638998,
+      35.245201
+     ],
+     [
+      -106.638085,
+      35.244577
+     ],
+     [
+      -106.637973,
+      35.244796
+     ],
+     [
+      -106.637947,
+      35.245063
+     ],
+     [
+      -106.637981,
+      35.245322
+     ],
+     [
+      -106.63817,
+      35.24561
+     ],
+     [
+      -106.638519,
+      35.245915
+     ],
+     [
+      -106.638788,
+      35.24616
+     ],
+     [
+      -106.63896,
+      35.246454
+     ],
+     [
+      -106.638788,
+      35.24616
+     ],
+     [
+      -106.638519,
+      35.245915
+     ],
+     [
+      -106.637863,
+      35.246797
+     ],
+     [
+      -106.637052,
+      35.247878
+     ],
+     [
+      -106.637945,
+      35.248326
+     ],
+     [
+      -106.638788,
+      35.247064
+     ],
+     [
+      -106.638926,
+      35.246861
+     ],
+     [
+      -106.638944,
+      35.24665
+     ],
+     [
+      -106.63896,
+      35.246454
+     ],
+     [
+      -106.639175,
+      35.246412
+     ],
+     [
+      -106.639364,
+      35.2463
+     ],
+     [
+      -106.639552,
+      35.246076
+     ],
+     [
+      -106.639904,
+      35.245704
+     ],
+     [
+      -106.640282,
+      35.24535
+     ],
+     [
+      -106.640779,
+      35.245049
+     ],
+     [
+      -106.641234,
+      35.24474
+     ],
+     [
+      -106.641663,
+      35.244369
+     ],
+     [
+      -106.642041,
+      35.243948
+     ],
+     [
+      -106.642384,
+      35.2435
+     ],
+     [
+      -106.642607,
+      35.243135
+     ],
+     [
+      -106.642996,
+      35.242496
+     ],
+     [
+      -106.643319,
+      35.242774
+     ],
+     [
+      -106.643791,
+      35.243035
+     ],
+     [
+      -106.643974,
+      35.242833
+     ],
+     [
+      -106.644169,
+      35.242649
+     ],
+     [
+      -106.6445,
+      35.242403
+     ],
+     [
+      -106.644877,
+      35.242186
+     ],
+     [
+      -106.645069,
+      35.242446
+     ],
+     [
+      -106.645151,
+      35.242527
+     ],
+     [
+      -106.645249,
+      35.242605
+     ],
+     [
+      -106.64536,
+      35.242671
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645235,
+      35.2418
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 2,
+    "color": "BLUE",
+    "color_hex": "#1f5fd6",
+    "line_dash": [
+     7,
+     2.5
+    ],
+    "mi": 3.9,
+    "homes": 226,
+    "minutes": 255,
+    "steps": 44,
+    "streets": [
+     "Riverview Drive Southeast",
+     "Snow Drop Drive",
+     "Snow Heights Circle Southeast",
+     "Verde Place Southeast",
+     "Dolores Hidalgo Drive Southeast",
+     "Palmas Altas Drive Southeast",
+     "El Granado Court Southeast",
+     "La Pinta Court Southeast",
+     "La Nuez Court Southeast",
+     "El Higo Court Southeast",
+     "La Pera Court Southeast",
+     "El Torero Drive Southeast",
+     "La Casa de Prasa Drive Southeast"
+    ],
+    "length_m": 6319.0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645235,
+      35.2418
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.646499,
+      35.24159
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along Benjamin Drive Southeast toward the corner of Bursum Lane Southeast, 400 feet. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 388,
+    "street": "Benjamin Drive Southeast",
+    "turn": "start",
+    "destination": "the corner of Bursum Lane Southeast",
+    "start": [
+     -106.645235,
+     35.2418
+    ],
+    "end": [
+     -106.646499,
+     35.24159
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.242753
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 2,
+    "text": "Turn right onto Bursum Lane Southeast. Walk 400 feet to the corner of Sabana Grande Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 425,
+    "street": "Bursum Lane Southeast",
+    "turn": "R",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.646499,
+     35.24159
+    ],
+    "end": [
+     -106.646499,
+     35.242753
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64536,
+      35.242671
+     ],
+     [
+      -106.645249,
+      35.242605
+     ],
+     [
+      -106.645151,
+      35.242527
+     ],
+     [
+      -106.645069,
+      35.242446
+     ],
+     [
+      -106.644877,
+      35.242186
+     ],
+     [
+      -106.644805,
+      35.242087
+     ],
+     [
+      -106.64447,
+      35.241628
+     ],
+     [
+      -106.644376,
+      35.241529
+     ],
+     [
+      -106.644239,
+      35.241416
+     ],
+     [
+      -106.644106,
+      35.241338
+     ],
+     [
+      -106.643947,
+      35.241264
+     ],
+     [
+      -106.643734,
+      35.241195
+     ],
+     [
+      -106.643655,
+      35.24118
+     ],
+     [
+      -106.643564,
+      35.241164
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 3,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk 1,150 feet to the corner of Riverview Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 1140,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Riverview Drive Southeast",
+    "start": [
+     -106.646499,
+     35.242753
+    ],
+    "end": [
+     -106.643564,
+     35.241164
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643564,
+      35.241164
+     ],
+     [
+      -106.643578,
+      35.241089
+     ],
+     [
+      -106.643637,
+      35.24078
+     ],
+     [
+      -106.643693,
+      35.240532
+     ],
+     [
+      -106.643724,
+      35.240434
+     ],
+     [
+      -106.643766,
+      35.240324
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 4,
+    "text": "Turn right onto Riverview Drive Southeast. Walk 300 feet to the corner of Snow Drop Drive. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 313,
+    "street": "Riverview Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Snow Drop Drive",
+    "start": [
+     -106.643564,
+     35.241164
+    ],
+    "end": [
+     -106.643766,
+     35.240324
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643766,
+      35.240324
+     ],
+     [
+      -106.643858,
+      35.240348
+     ],
+     [
+      -106.6442,
+      35.240436
+     ],
+     [
+      -106.644313,
+      35.240465
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 5,
+    "text": "Turn right onto Snow Drop Drive. Walk 150 feet to the corner of Snow Heights Circle Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 171,
+    "street": "Snow Drop Drive",
+    "turn": "R",
+    "destination": "the corner of Snow Heights Circle Southeast",
+    "start": [
+     -106.643766,
+     35.240324
+    ],
+    "end": [
+     -106.644313,
+     35.240465
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644313,
+      35.240465
+     ],
+     [
+      -106.644279,
+      35.240568
+     ],
+     [
+      -106.644255,
+      35.240682
+     ],
+     [
+      -106.644264,
+      35.240755
+     ],
+     [
+      -106.644287,
+      35.240805
+     ],
+     [
+      -106.644335,
+      35.240854
+     ],
+     [
+      -106.644415,
+      35.240895
+     ],
+     [
+      -106.644505,
+      35.240904
+     ],
+     [
+      -106.644602,
+      35.240898
+     ],
+     [
+      -106.645654,
+      35.240744
+     ],
+     [
+      -106.645748,
+      35.240718
+     ],
+     [
+      -106.645821,
+      35.24068
+     ],
+     [
+      -106.645893,
+      35.240629
+     ],
+     [
+      -106.645957,
+      35.240557
+     ],
+     [
+      -106.646777,
+      35.238892
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 6,
+    "text": "Turn right onto Snow Heights Circle Southeast. Walk 1,350 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1325,
+    "street": "Snow Heights Circle Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.644313,
+     35.240465
+    ],
+    "end": [
+     -106.646777,
+     35.238892
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646777,
+      35.238892
+     ],
+     [
+      -106.646698,
+      35.238872
+     ],
+     [
+      -106.646536,
+      35.238829
+     ],
+     [
+      -106.646409,
+      35.238824
+     ],
+     [
+      -106.646281,
+      35.238845
+     ],
+     [
+      -106.646005,
+      35.238941
+     ],
+     [
+      -106.645745,
+      35.239049
+     ],
+     [
+      -106.645466,
+      35.239182
+     ],
+     [
+      -106.645269,
+      35.239302
+     ],
+     [
+      -106.645097,
+      35.239434
+     ],
+     [
+      -106.644913,
+      35.239592
+     ],
+     [
+      -106.644735,
+      35.23977
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 7,
+    "text": "Turn left to stay on Snow Heights Circle Southeast. Walk 750 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 733,
+    "street": "Snow Heights Circle Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.646777,
+     35.238892
+    ],
+    "end": [
+     -106.644735,
+     35.23977
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644735,
+      35.23977
+     ],
+     [
+      -106.64452,
+      35.240051
+     ],
+     [
+      -106.644439,
+      35.240188
+     ],
+     [
+      -106.644366,
+      35.240333
+     ],
+     [
+      -106.644313,
+      35.240465
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 8,
+    "text": "Go straight on Snow Heights Circle Southeast. Walk 300 feet to the corner of Snow Drop Drive. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 285,
+    "street": "Snow Heights Circle Southeast",
+    "turn": "straight",
+    "destination": "the corner of Snow Drop Drive",
+    "start": [
+     -106.644735,
+     35.23977
+    ],
+    "end": [
+     -106.644313,
+     35.240465
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644313,
+      35.240465
+     ],
+     [
+      -106.6442,
+      35.240436
+     ],
+     [
+      -106.643858,
+      35.240348
+     ],
+     [
+      -106.643766,
+      35.240324
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 9,
+    "text": "Turn right onto Snow Drop Drive. Walk 150 feet to the corner of Riverview Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 171,
+    "street": "Snow Drop Drive",
+    "turn": "R",
+    "destination": "the corner of Riverview Drive Southeast",
+    "start": [
+     -106.644313,
+     35.240465
+    ],
+    "end": [
+     -106.643766,
+     35.240324
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643766,
+      35.240324
+     ],
+     [
+      -106.643724,
+      35.240434
+     ],
+     [
+      -106.643693,
+      35.240532
+     ],
+     [
+      -106.643637,
+      35.24078
+     ],
+     [
+      -106.643578,
+      35.241089
+     ],
+     [
+      -106.643564,
+      35.241164
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 10,
+    "text": "Turn left onto Riverview Drive Southeast. Walk 300 feet to the corner of Verde Place Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 313,
+    "street": "Riverview Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of Verde Place Southeast",
+    "start": [
+     -106.643766,
+     35.240324
+    ],
+    "end": [
+     -106.643564,
+     35.241164
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643564,
+      35.241164
+     ],
+     [
+      -106.643551,
+      35.24125
+     ],
+     [
+      -106.643528,
+      35.241462
+     ],
+     [
+      -106.643536,
+      35.241526
+     ],
+     [
+      -106.64356,
+      35.2416
+     ],
+     [
+      -106.643752,
+      35.241892
+     ],
+     [
+      -106.643933,
+      35.241997
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 11,
+    "text": "Go straight onto Verde Place Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 348,
+    "street": "Verde Place Southeast",
+    "turn": "straight",
+    "destination": "the dead end",
+    "start": [
+     -106.643564,
+     35.241164
+    ],
+    "end": [
+     -106.643933,
+     35.241997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643933,
+      35.241997
+     ],
+     [
+      -106.643752,
+      35.241892
+     ],
+     [
+      -106.64356,
+      35.2416
+     ],
+     [
+      -106.643536,
+      35.241526
+     ],
+     [
+      -106.643528,
+      35.241462
+     ],
+     [
+      -106.643551,
+      35.24125
+     ],
+     [
+      -106.643564,
+      35.241164
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 12,
+    "text": "Turn around and walk back on Verde Place Southeast. Walk 350 feet to the corner of Sabana Grande Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 348,
+    "street": "Verde Place Southeast",
+    "turn": "around",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.643933,
+     35.241997
+    ],
+    "end": [
+     -106.643564,
+     35.241164
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643564,
+      35.241164
+     ],
+     [
+      -106.643481,
+      35.241157
+     ],
+     [
+      -106.64347,
+      35.241157
+     ],
+     [
+      -106.643389,
+      35.241155
+     ],
+     [
+      -106.643299,
+      35.241158
+     ],
+     [
+      -106.643217,
+      35.241164
+     ],
+     [
+      -106.642925,
+      35.241193
+     ],
+     [
+      -106.64253,
+      35.24125
+     ],
+     [
+      -106.642292,
+      35.241299
+     ],
+     [
+      -106.642204,
+      35.241316
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 13,
+    "text": "Turn left onto Sabana Grande Avenue Southeast. Walk 400 feet to the corner of Dolores Hidalgo Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 411,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of Dolores Hidalgo Drive Southeast",
+    "start": [
+     -106.643564,
+     35.241164
+    ],
+    "end": [
+     -106.642204,
+     35.241316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642204,
+      35.241316
+     ],
+     [
+      -106.641917,
+      35.240882
+     ],
+     [
+      -106.641905,
+      35.240864
+     ],
+     [
+      -106.641871,
+      35.240822
+     ],
+     [
+      -106.641814,
+      35.240772
+     ],
+     [
+      -106.641756,
+      35.24073
+     ],
+     [
+      -106.641687,
+      35.240693
+     ],
+     [
+      -106.641634,
+      35.240676
+     ],
+     [
+      -106.641543,
+      35.240655
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 14,
+    "text": "Turn right onto Dolores Hidalgo Drive Southeast. Walk 300 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 324,
+    "street": "Dolores Hidalgo Drive Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.642204,
+     35.241316
+    ],
+    "end": [
+     -106.641543,
+     35.240655
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641543,
+      35.240655
+     ],
+     [
+      -106.641634,
+      35.240676
+     ],
+     [
+      -106.641687,
+      35.240693
+     ],
+     [
+      -106.641756,
+      35.24073
+     ],
+     [
+      -106.641814,
+      35.240772
+     ],
+     [
+      -106.641871,
+      35.240822
+     ],
+     [
+      -106.641905,
+      35.240864
+     ],
+     [
+      -106.641917,
+      35.240882
+     ],
+     [
+      -106.642204,
+      35.241316
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 15,
+    "text": "Turn around and walk back on Dolores Hidalgo Drive Southeast. Walk 300 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 324,
+    "street": "Dolores Hidalgo Drive Southeast",
+    "turn": "around",
+    "destination": "the next corner",
+    "start": [
+     -106.641543,
+     35.240655
+    ],
+    "end": [
+     -106.642204,
+     35.241316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642204,
+      35.241316
+     ],
+     [
+      -106.642256,
+      35.241396
+     ],
+     [
+      -106.642437,
+      35.241671
+     ],
+     [
+      -106.642499,
+      35.241764
+     ],
+     [
+      -106.642868,
+      35.242335
+     ],
+     [
+      -106.642996,
+      35.242496
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 16,
+    "text": "Go straight on Dolores Hidalgo Drive Southeast. Walk 500 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 492,
+    "street": "Dolores Hidalgo Drive Southeast",
+    "turn": "straight",
+    "destination": "the next corner",
+    "start": [
+     -106.642204,
+     35.241316
+    ],
+    "end": [
+     -106.642996,
+     35.242496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642996,
+      35.242496
+     ],
+     [
+      -106.642868,
+      35.242335
+     ],
+     [
+      -106.642499,
+      35.241764
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 17,
+    "text": "Turn around and walk back on Dolores Hidalgo Drive Southeast. Walk 300 feet to the corner of Palmas Altas Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 306,
+    "street": "Dolores Hidalgo Drive Southeast",
+    "turn": "around",
+    "destination": "the corner of Palmas Altas Drive Southeast",
+    "start": [
+     -106.642996,
+     35.242496
+    ],
+    "end": [
+     -106.642499,
+     35.241764
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642499,
+      35.241764
+     ],
+     [
+      -106.641509,
+      35.241957
+     ],
+     [
+      -106.641063,
+      35.242042
+     ],
+     [
+      -106.640685,
+      35.242182
+     ],
+     [
+      -106.640213,
+      35.242455
+     ],
+     [
+      -106.639944,
+      35.242735
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 18,
+    "text": "Turn left onto Palmas Altas Drive Southeast. Walk 850 feet to the corner of El Granado Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 866,
+    "street": "Palmas Altas Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of El Granado Court Southeast",
+    "start": [
+     -106.642499,
+     35.241764
+    ],
+    "end": [
+     -106.639944,
+     35.242735
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639944,
+      35.242735
+     ],
+     [
+      -106.640791,
+      35.243314
+     ],
+     [
+      -106.640848,
+      35.243339
+     ],
+     [
+      -106.641053,
+      35.243371
+     ],
+     [
+      -106.641141,
+      35.243349
+     ],
+     [
+      -106.641199,
+      35.24332
+     ],
+     [
+      -106.641244,
+      35.243284
+     ],
+     [
+      -106.641923,
+      35.242619
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 19,
+    "text": "Turn left onto El Granado Court Southeast. Walk 800 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 794,
+    "street": "El Granado Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.639944,
+     35.242735
+    ],
+    "end": [
+     -106.641923,
+     35.242619
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641923,
+      35.242619
+     ],
+     [
+      -106.641244,
+      35.243284
+     ],
+     [
+      -106.641199,
+      35.24332
+     ],
+     [
+      -106.641141,
+      35.243349
+     ],
+     [
+      -106.641053,
+      35.243371
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 20,
+    "text": "Turn around and walk back on El Granado Court Southeast. Walk 400 feet to the corner of La Pinta Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 383,
+    "street": "El Granado Court Southeast",
+    "turn": "around",
+    "destination": "the corner of La Pinta Court Southeast",
+    "start": [
+     -106.641923,
+     35.242619
+    ],
+    "end": [
+     -106.641053,
+     35.243371
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641053,
+      35.243371
+     ],
+     [
+      -106.641102,
+      35.243588
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 21,
+    "text": "Bear left onto La Pinta Court Southeast. Walk 100 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 81,
+    "street": "La Pinta Court Southeast",
+    "turn": "Lbear",
+    "destination": "the dead end",
+    "start": [
+     -106.641053,
+     35.243371
+    ],
+    "end": [
+     -106.641102,
+     35.243588
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641102,
+      35.243588
+     ],
+     [
+      -106.641053,
+      35.243371
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 22,
+    "text": "Turn around and walk back on La Pinta Court Southeast. Walk 100 feet to the corner of El Granado Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 81,
+    "street": "La Pinta Court Southeast",
+    "turn": "around",
+    "destination": "the corner of El Granado Court Southeast",
+    "start": [
+     -106.641102,
+     35.243588
+    ],
+    "end": [
+     -106.641053,
+     35.243371
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.641053,
+      35.243371
+     ],
+     [
+      -106.640848,
+      35.243339
+     ],
+     [
+      -106.640791,
+      35.243314
+     ],
+     [
+      -106.639944,
+      35.242735
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 23,
+    "text": "Bear left onto El Granado Court Southeast. Walk 400 feet to the corner of Palmas Altas Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 411,
+    "street": "El Granado Court Southeast",
+    "turn": "Lbear",
+    "destination": "the corner of Palmas Altas Drive Southeast",
+    "start": [
+     -106.641053,
+     35.243371
+    ],
+    "end": [
+     -106.639944,
+     35.242735
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639944,
+      35.242735
+     ],
+     [
+      -106.639317,
+      35.243338
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 24,
+    "text": "Turn left onto Palmas Altas Drive Southeast. Walk 300 feet to the corner of La Nuez Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 289,
+    "street": "Palmas Altas Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of La Nuez Court Southeast",
+    "start": [
+     -106.639944,
+     35.242735
+    ],
+    "end": [
+     -106.639317,
+     35.243338
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639317,
+      35.243338
+     ],
+     [
+      -106.64041,
+      35.244097
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 25,
+    "text": "Turn left onto La Nuez Court Southeast. Walk 450 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 428,
+    "street": "La Nuez Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.639317,
+     35.243338
+    ],
+    "end": [
+     -106.64041,
+     35.244097
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.64041,
+      35.244097
+     ],
+     [
+      -106.639317,
+      35.243338
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 26,
+    "text": "Turn around and walk back on La Nuez Court Southeast. Walk 450 feet to the corner of Palmas Altas Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 428,
+    "street": "La Nuez Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Palmas Altas Drive Southeast",
+    "start": [
+     -106.64041,
+     35.244097
+    ],
+    "end": [
+     -106.639317,
+     35.243338
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639317,
+      35.243338
+     ],
+     [
+      -106.638693,
+      35.243952
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 27,
+    "text": "Turn left onto Palmas Altas Drive Southeast. Walk 300 feet to the corner of El Higo Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 292,
+    "street": "Palmas Altas Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of El Higo Court Southeast",
+    "start": [
+     -106.639317,
+     35.243338
+    ],
+    "end": [
+     -106.638693,
+     35.243952
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.638693,
+      35.243952
+     ],
+     [
+      -106.639783,
+      35.244704
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 28,
+    "text": "Turn left onto El Higo Court Southeast. Walk 450 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 426,
+    "street": "El Higo Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.638693,
+     35.243952
+    ],
+    "end": [
+     -106.639783,
+     35.244704
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.639783,
+      35.244704
+     ],
+     [
+      -106.638693,
+      35.243952
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 29,
+    "text": "Turn around and walk back on El Higo Court Southeast. Walk 450 feet to the corner of Palmas Altas Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 426,
+    "street": "El Higo Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Palmas Altas Drive Southeast",
+    "start": [
+     -106.639783,
+     35.244704
+    ],
+    "end": [
+     -106.638693,
+     35.243952
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.638693,
+      35.243952
+     ],
+     [
+      -106.638085,
+      35.244577
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 30,
+    "text": "Turn left onto Palmas Altas Drive Southeast. Walk 300 feet to the corner of La Pera Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 291,
+    "street": "Palmas Altas Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of La Pera Court Southeast",
+    "start": [
+     -106.638693,
+     35.243952
+    ],
+    "end": [
+     -106.638085,
+     35.244577
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.638085,
+      35.244577
+     ],
+     [
+      -106.638998,
+      35.245201
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 31,
+    "text": "Turn left onto La Pera Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 355,
+    "street": "La Pera Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.638085,
+     35.244577
+    ],
+    "end": [
+     -106.638998,
+     35.245201
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.638998,
+      35.245201
+     ],
+     [
+      -106.638085,
+      35.244577
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 32,
+    "text": "Turn around and walk back on La Pera Court Southeast. Walk 350 feet to the corner of Palmas Altas Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 355,
+    "street": "La Pera Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Palmas Altas Drive Southeast",
+    "start": [
+     -106.638998,
+     35.245201
+    ],
+    "end": [
+     -106.638085,
+     35.244577
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.638085,
+      35.244577
+     ],
+     [
+      -106.637973,
+      35.244796
+     ],
+     [
+      -106.637947,
+      35.245063
+     ],
+     [
+      -106.637981,
+      35.245322
+     ],
+     [
+      -106.63817,
+      35.24561
+     ],
+     [
+      -106.638519,
+      35.245915
+     ],
+     [
+      -106.638788,
+      35.24616
+     ],
+     [
+      -106.63896,
+      35.246454
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 33,
+    "text": "Turn left onto Palmas Altas Drive Southeast. Walk 800 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 791,
+    "street": "Palmas Altas Drive Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.638085,
+     35.244577
+    ],
+    "end": [
+     -106.63896,
+     35.246454
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.63896,
+      35.246454
+     ],
+     [
+      -106.638788,
+      35.24616
+     ],
+     [
+      -106.638519,
+      35.245915
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 34,
+    "text": "Turn around and walk back on Palmas Altas Drive Southeast. Walk 250 feet to the corner of El Torero Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 239,
+    "street": "Palmas Altas Drive Southeast",
+    "turn": "around",
+    "destination": "the corner of El Torero Drive Southeast",
+    "start": [
+     -106.63896,
+     35.246454
+    ],
+    "end": [
+     -106.638519,
+     35.245915
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.638519,
+      35.245915
+     ],
+     [
+      -106.637863,
+      35.246797
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 35,
+    "text": "Turn left onto El Torero Drive Southeast. Walk 400 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 377,
+    "street": "El Torero Drive Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.638519,
+     35.245915
+    ],
+    "end": [
+     -106.637863,
+     35.246797
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.637863,
+      35.246797
+     ],
+     [
+      -106.637052,
+      35.247878
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 36,
+    "text": "Go straight on El Torero Drive Southeast. Walk 450 feet to the corner of Canelo Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 463,
+    "street": "El Torero Drive Southeast",
+    "turn": "straight",
+    "destination": "the corner of Canelo Court Southeast",
+    "start": [
+     -106.637863,
+     35.246797
+    ],
+    "end": [
+     -106.637052,
+     35.247878
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.637052,
+      35.247878
+     ],
+     [
+      -106.637945,
+      35.248326
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 37,
+    "text": "Turn left onto Canelo Court Southeast. Walk 300 feet to the corner of Palmas Altas Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 313,
+    "street": "Canelo Court Southeast",
+    "turn": "L",
+    "destination": "the corner of Palmas Altas Drive Southeast",
+    "start": [
+     -106.637052,
+     35.247878
+    ],
+    "end": [
+     -106.637945,
+     35.248326
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.637945,
+      35.248326
+     ],
+     [
+      -106.638788,
+      35.247064
+     ],
+     [
+      -106.638926,
+      35.246861
+     ],
+     [
+      -106.638944,
+      35.24665
+     ],
+     [
+      -106.63896,
+      35.246454
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 38,
+    "text": "Turn left onto Palmas Altas Drive Southeast. Walk 750 feet to the corner of La Casa de Prasa Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 759,
+    "street": "Palmas Altas Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of La Casa de Prasa Drive Southeast",
+    "start": [
+     -106.637945,
+     35.248326
+    ],
+    "end": [
+     -106.63896,
+     35.246454
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.63896,
+      35.246454
+     ],
+     [
+      -106.639175,
+      35.246412
+     ],
+     [
+      -106.639364,
+      35.2463
+     ],
+     [
+      -106.639552,
+      35.246076
+     ],
+     [
+      -106.639904,
+      35.245704
+     ],
+     [
+      -106.640282,
+      35.24535
+     ],
+     [
+      -106.640779,
+      35.245049
+     ],
+     [
+      -106.641234,
+      35.24474
+     ],
+     [
+      -106.641663,
+      35.244369
+     ],
+     [
+      -106.642041,
+      35.243948
+     ],
+     [
+      -106.642384,
+      35.2435
+     ],
+     [
+      -106.642607,
+      35.243135
+     ],
+     [
+      -106.642996,
+      35.242496
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 39,
+    "text": "Turn right onto La Casa de Prasa Drive Southeast. Walk 1,900 feet to the corner of Dolores Hidalgo Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1919,
+    "street": "La Casa de Prasa Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Dolores Hidalgo Drive Southeast",
+    "start": [
+     -106.63896,
+     35.246454
+    ],
+    "end": [
+     -106.642996,
+     35.242496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.642996,
+      35.242496
+     ],
+     [
+      -106.643319,
+      35.242774
+     ],
+     [
+      -106.643791,
+      35.243035
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 40,
+    "text": "Turn right onto Dolores Hidalgo Drive Southeast. Walk 300 feet to the corner of Villa Verde Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 310,
+    "street": "Dolores Hidalgo Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Villa Verde Drive Southeast",
+    "start": [
+     -106.642996,
+     35.242496
+    ],
+    "end": [
+     -106.643791,
+     35.243035
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.643791,
+      35.243035
+     ],
+     [
+      -106.643974,
+      35.242833
+     ],
+     [
+      -106.644169,
+      35.242649
+     ],
+     [
+      -106.6445,
+      35.242403
+     ],
+     [
+      -106.644877,
+      35.242186
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 41,
+    "text": "Turn left onto Villa Verde Drive Southeast. Walk 450 feet to the corner of Sabana Grande Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 452,
+    "street": "Villa Verde Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.643791,
+     35.243035
+    ],
+    "end": [
+     -106.644877,
+     35.242186
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644877,
+      35.242186
+     ],
+     [
+      -106.645069,
+      35.242446
+     ],
+     [
+      -106.645151,
+      35.242527
+     ],
+     [
+      -106.645249,
+      35.242605
+     ],
+     [
+      -106.64536,
+      35.242671
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.242753
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 42,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk 600 feet to the corner of Bursum Lane Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 575,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Bursum Lane Southeast",
+    "start": [
+     -106.644877,
+     35.242186
+    ],
+    "end": [
+     -106.646499,
+     35.242753
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24159
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 43,
+    "text": "Turn left onto Bursum Lane Southeast. Walk 400 feet to the corner of Benjamin Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 425,
+    "street": "Bursum Lane Southeast",
+    "turn": "L",
+    "destination": "the corner of Benjamin Drive Southeast",
+    "start": [
+     -106.646499,
+     35.242753
+    ],
+    "end": [
+     -106.646499,
+     35.24159
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645235,
+      35.2418
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 44,
+    "text": "Turn left onto Benjamin Drive Southeast. Walk 400 feet to the parking spot P. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 388,
+    "street": "Benjamin Drive Southeast",
+    "turn": "L",
+    "destination": "the parking spot P",
+    "start": [
+     -106.646499,
+     35.24159
+    ],
+    "end": [
+     -106.645235,
+     35.2418
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645235,
+      35.2418
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.645602,
+      35.242652
+     ],
+     [
+      -106.645672,
+      35.242403
+     ],
+     [
+      -106.645679,
+      35.24237
+     ],
+     [
+      -106.645676,
+      35.242339
+     ],
+     [
+      -106.645664,
+      35.242307
+     ],
+     [
+      -106.645645,
+      35.242287
+     ],
+     [
+      -106.645519,
+      35.242185
+     ],
+     [
+      -106.645645,
+      35.242287
+     ],
+     [
+      -106.645664,
+      35.242307
+     ],
+     [
+      -106.645676,
+      35.242339
+     ],
+     [
+      -106.645679,
+      35.24237
+     ],
+     [
+      -106.645672,
+      35.242403
+     ],
+     [
+      -106.645602,
+      35.242652
+     ],
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.645483,
+      35.242981
+     ],
+     [
+      -106.645431,
+      35.24324
+     ],
+     [
+      -106.645408,
+      35.243548
+     ],
+     [
+      -106.646556,
+      35.243554
+     ],
+     [
+      -106.645408,
+      35.243548
+     ],
+     [
+      -106.645457,
+      35.243864
+     ],
+     [
+      -106.645612,
+      35.244215
+     ],
+     [
+      -106.645897,
+      35.244527
+     ],
+     [
+      -106.645973,
+      35.244593
+     ],
+     [
+      -106.646059,
+      35.244658
+     ],
+     [
+      -106.646143,
+      35.244715
+     ],
+     [
+      -106.646243,
+      35.244546
+     ],
+     [
+      -106.646357,
+      35.244343
+     ],
+     [
+      -106.646469,
+      35.244133
+     ],
+     [
+      -106.646357,
+      35.244343
+     ],
+     [
+      -106.646243,
+      35.244546
+     ],
+     [
+      -106.646143,
+      35.244715
+     ],
+     [
+      -106.646217,
+      35.244763
+     ],
+     [
+      -106.6463,
+      35.24481
+     ],
+     [
+      -106.646393,
+      35.244856
+     ],
+     [
+      -106.64649,
+      35.244897
+     ],
+     [
+      -106.646999,
+      35.245106
+     ],
+     [
+      -106.646092,
+      35.246311
+     ],
+     [
+      -106.645732,
+      35.246682
+     ],
+     [
+      -106.645327,
+      35.247081
+     ],
+     [
+      -106.645079,
+      35.247383
+     ],
+     [
+      -106.644882,
+      35.247741
+     ],
+     [
+      -106.644754,
+      35.248003
+     ],
+     [
+      -106.645681,
+      35.248298
+     ],
+     [
+      -106.645998,
+      35.248438
+     ],
+     [
+      -106.646184,
+      35.248579
+     ],
+     [
+      -106.646193,
+      35.248586
+     ],
+     [
+      -106.646238,
+      35.24862
+     ],
+     [
+      -106.646947,
+      35.249186
+     ],
+     [
+      -106.647354,
+      35.248799
+     ],
+     [
+      -106.647817,
+      35.248371
+     ],
+     [
+      -106.648409,
+      35.247773
+     ],
+     [
+      -106.649192,
+      35.248236
+     ],
+     [
+      -106.648409,
+      35.247773
+     ],
+     [
+      -106.647622,
+      35.247304
+     ],
+     [
+      -106.648204,
+      35.246563
+     ],
+     [
+      -106.64872,
+      35.245823
+     ],
+     [
+      -106.648658,
+      35.245798
+     ],
+     [
+      -106.64872,
+      35.245823
+     ],
+     [
+      -106.649251,
+      35.244825
+     ],
+     [
+      -106.649774,
+      35.243577
+     ],
+     [
+      -106.65,
+      35.242774
+     ],
+     [
+      -106.650137,
+      35.24279
+     ],
+     [
+      -106.650274,
+      35.242811
+     ],
+     [
+      -106.650876,
+      35.242924
+     ],
+     [
+      -106.65095,
+      35.242939
+     ],
+     [
+      -106.650409,
+      35.244537
+     ],
+     [
+      -106.649955,
+      35.245511
+     ],
+     [
+      -106.649354,
+      35.246528
+     ],
+     [
+      -106.648899,
+      35.247145
+     ],
+     [
+      -106.648409,
+      35.247773
+     ],
+     [
+      -106.647622,
+      35.247304
+     ],
+     [
+      -106.646238,
+      35.24862
+     ],
+     [
+      -106.646193,
+      35.248586
+     ],
+     [
+      -106.646184,
+      35.248579
+     ],
+     [
+      -106.645998,
+      35.248438
+     ],
+     [
+      -106.645681,
+      35.248298
+     ],
+     [
+      -106.645835,
+      35.247923
+     ],
+     [
+      -106.645955,
+      35.247734
+     ],
+     [
+      -106.646212,
+      35.247467
+     ],
+     [
+      -106.646671,
+      35.247009
+     ],
+     [
+      -106.647863,
+      35.24547
+     ],
+     [
+      -106.648658,
+      35.245798
+     ],
+     [
+      -106.647863,
+      35.24547
+     ],
+     [
+      -106.648204,
+      35.244804
+     ],
+     [
+      -106.648504,
+      35.244194
+     ],
+     [
+      -106.648873,
+      35.243254
+     ],
+     [
+      -106.648977,
+      35.242881
+     ],
+     [
+      -106.648988,
+      35.24284
+     ],
+     [
+      -106.648994,
+      35.242797
+     ],
+     [
+      -106.648995,
+      35.242754
+     ],
+     [
+      -106.649069,
+      35.242755
+     ],
+     [
+      -106.64907,
+      35.242692
+     ],
+     [
+      -106.649074,
+      35.24222
+     ],
+     [
+      -106.64907,
+      35.242692
+     ],
+     [
+      -106.649069,
+      35.242755
+     ],
+     [
+      -106.648995,
+      35.242754
+     ],
+     [
+      -106.648994,
+      35.242797
+     ],
+     [
+      -106.648988,
+      35.24284
+     ],
+     [
+      -106.648977,
+      35.242881
+     ],
+     [
+      -106.648873,
+      35.243254
+     ],
+     [
+      -106.648504,
+      35.244194
+     ],
+     [
+      -106.648204,
+      35.244804
+     ],
+     [
+      -106.647863,
+      35.24547
+     ],
+     [
+      -106.646999,
+      35.245106
+     ],
+     [
+      -106.64738,
+      35.244376
+     ],
+     [
+      -106.647749,
+      35.243486
+     ],
+     [
+      -106.648018,
+      35.242755
+     ],
+     [
+      -106.648041,
+      35.242669
+     ],
+     [
+      -106.648103,
+      35.242439
+     ],
+     [
+      -106.648112,
+      35.242389
+     ],
+     [
+      -106.648108,
+      35.242341
+     ],
+     [
+      -106.648092,
+      35.242289
+     ],
+     [
+      -106.648064,
+      35.242242
+     ],
+     [
+      -106.64803,
+      35.242203
+     ],
+     [
+      -106.647985,
+      35.242168
+     ],
+     [
+      -106.647768,
+      35.242064
+     ],
+     [
+      -106.647691,
+      35.242025
+     ],
+     [
+      -106.647621,
+      35.241979
+     ],
+     [
+      -106.647553,
+      35.241929
+     ],
+     [
+      -106.647506,
+      35.241973
+     ],
+     [
+      -106.647445,
+      35.24203
+     ],
+     [
+      -106.64743,
+      35.242063
+     ],
+     [
+      -106.647423,
+      35.242103
+     ],
+     [
+      -106.647426,
+      35.242144
+     ],
+     [
+      -106.647434,
+      35.242185
+     ],
+     [
+      -106.647457,
+      35.242253
+     ],
+     [
+      -106.647434,
+      35.242185
+     ],
+     [
+      -106.647426,
+      35.242144
+     ],
+     [
+      -106.647423,
+      35.242103
+     ],
+     [
+      -106.64743,
+      35.242063
+     ],
+     [
+      -106.647445,
+      35.24203
+     ],
+     [
+      -106.647506,
+      35.241973
+     ],
+     [
+      -106.647553,
+      35.241929
+     ],
+     [
+      -106.6475,
+      35.241881
+     ],
+     [
+      -106.647457,
+      35.241836
+     ],
+     [
+      -106.647407,
+      35.241787
+     ],
+     [
+      -106.647354,
+      35.241741
+     ],
+     [
+      -106.647287,
+      35.241696
+     ],
+     [
+      -106.647219,
+      35.241659
+     ],
+     [
+      -106.647143,
+      35.241625
+     ],
+     [
+      -106.647067,
+      35.2416
+     ],
+     [
+      -106.646983,
+      35.241579
+     ],
+     [
+      -106.646898,
+      35.241565
+     ],
+     [
+      -106.646815,
+      35.241559
+     ],
+     [
+      -106.646734,
+      35.24156
+     ],
+     [
+      -106.646645,
+      35.241569
+     ],
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645235,
+      35.2418
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 3,
+    "color": "GOLD",
+    "color_hex": "#c77800",
+    "line_dash": [
+     5,
+     1.6,
+     1.2,
+     1.6
+    ],
+    "mi": 3.7,
+    "homes": 300,
+    "minutes": 300,
+    "steps": 44,
+    "streets": [
+     "Benjamin Drive Southeast",
+     "Bursum Lane Southeast",
+     "Los Reyes Court Southeast",
+     "Los Reyes Road Southeast",
+     "Calvillo Court Southeast",
+     "Maria Court Southeast",
+     "Oreja de Oro Drive Southeast",
+     "Pepe Ortiz Road Southeast",
+     "Cerro de Ortega Drive Southeast",
+     "Juan Aldama Road Southeast",
+     "San Juan de Rio Drive Southeast",
+     "General Trevino Drive Southeast",
+     "Montana Vista Court Southeast",
+     "Benjamin Crescent Southeast"
+    ],
+    "length_m": 5938.4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645235,
+      35.2418
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.646499,
+      35.24159
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along Benjamin Drive Southeast toward the corner of Bursum Lane Southeast, 400 feet. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 388,
+    "street": "Benjamin Drive Southeast",
+    "turn": "start",
+    "destination": "the corner of Bursum Lane Southeast",
+    "start": [
+     -106.645235,
+     35.2418
+    ],
+    "end": [
+     -106.646499,
+     35.24159
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646499,
+      35.241653
+     ],
+     [
+      -106.646499,
+      35.24267
+     ],
+     [
+      -106.646499,
+      35.242753
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 2,
+    "text": "Turn right onto Bursum Lane Southeast. Walk 400 feet to the corner of Sabana Grande Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 425,
+    "street": "Bursum Lane Southeast",
+    "turn": "R",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.646499,
+     35.24159
+    ],
+    "end": [
+     -106.646499,
+     35.242753
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.242753
+     ],
+     [
+      -106.645887,
+      35.242753
+     ],
+     [
+      -106.64577,
+      35.242751
+     ],
+     [
+      -106.64567,
+      35.242745
+     ],
+     [
+      -106.645578,
+      35.242736
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 3,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk 300 feet to the corner of Los Reyes Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 275,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Los Reyes Court Southeast",
+    "start": [
+     -106.646499,
+     35.242753
+    ],
+    "end": [
+     -106.645578,
+     35.242736
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.645602,
+      35.242652
+     ],
+     [
+      -106.645672,
+      35.242403
+     ],
+     [
+      -106.645679,
+      35.24237
+     ],
+     [
+      -106.645676,
+      35.242339
+     ],
+     [
+      -106.645664,
+      35.242307
+     ],
+     [
+      -106.645645,
+      35.242287
+     ],
+     [
+      -106.645519,
+      35.242185
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 4,
+    "text": "Turn right onto Los Reyes Court Southeast. Walk 200 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 223,
+    "street": "Los Reyes Court Southeast",
+    "turn": "R",
+    "destination": "the dead end",
+    "start": [
+     -106.645578,
+     35.242736
+    ],
+    "end": [
+     -106.645519,
+     35.242185
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645519,
+      35.242185
+     ],
+     [
+      -106.645645,
+      35.242287
+     ],
+     [
+      -106.645664,
+      35.242307
+     ],
+     [
+      -106.645676,
+      35.242339
+     ],
+     [
+      -106.645679,
+      35.24237
+     ],
+     [
+      -106.645672,
+      35.242403
+     ],
+     [
+      -106.645602,
+      35.242652
+     ],
+     [
+      -106.645578,
+      35.242736
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 5,
+    "text": "Turn around and walk back on Los Reyes Court Southeast. Walk 200 feet to the corner of Los Reyes Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 223,
+    "street": "Los Reyes Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Los Reyes Road Southeast",
+    "start": [
+     -106.645519,
+     35.242185
+    ],
+    "end": [
+     -106.645578,
+     35.242736
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645578,
+      35.242736
+     ],
+     [
+      -106.645483,
+      35.242981
+     ],
+     [
+      -106.645431,
+      35.24324
+     ],
+     [
+      -106.645408,
+      35.243548
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 6,
+    "text": "Go straight onto Los Reyes Road Southeast. Walk 300 feet to the corner of Calvillo Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 302,
+    "street": "Los Reyes Road Southeast",
+    "turn": "straight",
+    "destination": "the corner of Calvillo Court Southeast",
+    "start": [
+     -106.645578,
+     35.242736
+    ],
+    "end": [
+     -106.645408,
+     35.243548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645408,
+      35.243548
+     ],
+     [
+      -106.646556,
+      35.243554
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 7,
+    "text": "Turn left onto Calvillo Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 342,
+    "street": "Calvillo Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.645408,
+     35.243548
+    ],
+    "end": [
+     -106.646556,
+     35.243554
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646556,
+      35.243554
+     ],
+     [
+      -106.645408,
+      35.243548
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 8,
+    "text": "Turn around and walk back on Calvillo Court Southeast. Walk 350 feet to the corner of Los Reyes Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 342,
+    "street": "Calvillo Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Los Reyes Road Southeast",
+    "start": [
+     -106.646556,
+     35.243554
+    ],
+    "end": [
+     -106.645408,
+     35.243548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645408,
+      35.243548
+     ],
+     [
+      -106.645457,
+      35.243864
+     ],
+     [
+      -106.645612,
+      35.244215
+     ],
+     [
+      -106.645897,
+      35.244527
+     ],
+     [
+      -106.645973,
+      35.244593
+     ],
+     [
+      -106.646059,
+      35.244658
+     ],
+     [
+      -106.646143,
+      35.244715
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 9,
+    "text": "Turn left onto Los Reyes Road Southeast. Walk 500 feet to the corner of Maria Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 495,
+    "street": "Los Reyes Road Southeast",
+    "turn": "L",
+    "destination": "the corner of Maria Court Southeast",
+    "start": [
+     -106.645408,
+     35.243548
+    ],
+    "end": [
+     -106.646143,
+     35.244715
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646143,
+      35.244715
+     ],
+     [
+      -106.646243,
+      35.244546
+     ],
+     [
+      -106.646357,
+      35.244343
+     ],
+     [
+      -106.646469,
+      35.244133
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 10,
+    "text": "Turn left onto Maria Court Southeast. Walk 250 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 234,
+    "street": "Maria Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.646143,
+     35.244715
+    ],
+    "end": [
+     -106.646469,
+     35.244133
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646469,
+      35.244133
+     ],
+     [
+      -106.646357,
+      35.244343
+     ],
+     [
+      -106.646243,
+      35.244546
+     ],
+     [
+      -106.646143,
+      35.244715
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 11,
+    "text": "Turn around and walk back on Maria Court Southeast. Walk 250 feet to the corner of Los Reyes Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 234,
+    "street": "Maria Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Los Reyes Road Southeast",
+    "start": [
+     -106.646469,
+     35.244133
+    ],
+    "end": [
+     -106.646143,
+     35.244715
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646143,
+      35.244715
+     ],
+     [
+      -106.646217,
+      35.244763
+     ],
+     [
+      -106.6463,
+      35.24481
+     ],
+     [
+      -106.646393,
+      35.244856
+     ],
+     [
+      -106.64649,
+      35.244897
+     ],
+     [
+      -106.646999,
+      35.245106
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 12,
+    "text": "Turn left onto Los Reyes Road Southeast. Walk 300 feet to the corner of Oreja de Oro Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 293,
+    "street": "Los Reyes Road Southeast",
+    "turn": "L",
+    "destination": "the corner of Oreja de Oro Drive Southeast",
+    "start": [
+     -106.646143,
+     35.244715
+    ],
+    "end": [
+     -106.646999,
+     35.245106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646999,
+      35.245106
+     ],
+     [
+      -106.646092,
+      35.246311
+     ],
+     [
+      -106.645732,
+      35.246682
+     ],
+     [
+      -106.645327,
+      35.247081
+     ],
+     [
+      -106.645079,
+      35.247383
+     ],
+     [
+      -106.644882,
+      35.247741
+     ],
+     [
+      -106.644754,
+      35.248003
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 13,
+    "text": "Turn right onto Oreja de Oro Drive Southeast. Walk 1,250 feet to the corner of Pepe Ortiz Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1258,
+    "street": "Oreja de Oro Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Pepe Ortiz Road Southeast",
+    "start": [
+     -106.646999,
+     35.245106
+    ],
+    "end": [
+     -106.644754,
+     35.248003
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.644754,
+      35.248003
+     ],
+     [
+      -106.645681,
+      35.248298
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 14,
+    "text": "Turn left onto Pepe Ortiz Road Southeast. Walk 300 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 297,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.644754,
+     35.248003
+    ],
+    "end": [
+     -106.645681,
+     35.248298
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645681,
+      35.248298
+     ],
+     [
+      -106.645998,
+      35.248438
+     ],
+     [
+      -106.646184,
+      35.248579
+     ],
+     [
+      -106.646193,
+      35.248586
+     ],
+     [
+      -106.646238,
+      35.24862
+     ],
+     [
+      -106.646947,
+      35.249186
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 15,
+    "text": "Go straight on Pepe Ortiz Road Southeast. Walk 500 feet to the corner of Cerro de Ortega Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 501,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "straight",
+    "destination": "the corner of Cerro de Ortega Drive Southeast",
+    "start": [
+     -106.645681,
+     35.248298
+    ],
+    "end": [
+     -106.646947,
+     35.249186
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646947,
+      35.249186
+     ],
+     [
+      -106.647354,
+      35.248799
+     ],
+     [
+      -106.647817,
+      35.248371
+     ],
+     [
+      -106.648409,
+      35.247773
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 16,
+    "text": "Turn left onto Cerro de Ortega Drive Southeast. Walk 700 feet to the corner of Juan Aldama Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 676,
+    "street": "Cerro de Ortega Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of Juan Aldama Road Southeast",
+    "start": [
+     -106.646947,
+     35.249186
+    ],
+    "end": [
+     -106.648409,
+     35.247773
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648409,
+      35.247773
+     ],
+     [
+      -106.649192,
+      35.248236
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 17,
+    "text": "Turn right onto Juan Aldama Road Southeast. Walk 300 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 289,
+    "street": "Juan Aldama Road Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.648409,
+     35.247773
+    ],
+    "end": [
+     -106.649192,
+     35.248236
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.649192,
+      35.248236
+     ],
+     [
+      -106.648409,
+      35.247773
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 18,
+    "text": "Turn around and walk back on Juan Aldama Road Southeast. Walk 300 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 289,
+    "street": "Juan Aldama Road Southeast",
+    "turn": "around",
+    "destination": "the next corner",
+    "start": [
+     -106.649192,
+     35.248236
+    ],
+    "end": [
+     -106.648409,
+     35.247773
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648409,
+      35.247773
+     ],
+     [
+      -106.647622,
+      35.247304
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 19,
+    "text": "Go straight on Juan Aldama Road Southeast. Walk 300 feet to the corner of San Juan de Rio Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 291,
+    "street": "Juan Aldama Road Southeast",
+    "turn": "straight",
+    "destination": "the corner of San Juan de Rio Drive Southeast",
+    "start": [
+     -106.648409,
+     35.247773
+    ],
+    "end": [
+     -106.647622,
+     35.247304
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647622,
+      35.247304
+     ],
+     [
+      -106.648204,
+      35.246563
+     ],
+     [
+      -106.64872,
+      35.245823
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 20,
+    "text": "Turn right onto San Juan de Rio Drive Southeast. Walk 650 feet to the corner of Los Reyes Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 632,
+    "street": "San Juan de Rio Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Los Reyes Road Southeast",
+    "start": [
+     -106.647622,
+     35.247304
+    ],
+    "end": [
+     -106.64872,
+     35.245823
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.64872,
+      35.245823
+     ],
+     [
+      -106.648658,
+      35.245798
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 21,
+    "text": "Turn left onto Los Reyes Road Southeast. Walk under 50 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 21,
+    "street": "Los Reyes Road Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.64872,
+     35.245823
+    ],
+    "end": [
+     -106.648658,
+     35.245798
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648658,
+      35.245798
+     ],
+     [
+      -106.64872,
+      35.245823
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 22,
+    "text": "Turn around and walk back on Los Reyes Road Southeast. Walk under 50 feet to the corner of San Juan de Rio Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 21,
+    "street": "Los Reyes Road Southeast",
+    "turn": "around",
+    "destination": "the corner of San Juan de Rio Drive Southeast",
+    "start": [
+     -106.648658,
+     35.245798
+    ],
+    "end": [
+     -106.64872,
+     35.245823
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.64872,
+      35.245823
+     ],
+     [
+      -106.649251,
+      35.244825
+     ],
+     [
+      -106.649774,
+      35.243577
+     ],
+     [
+      -106.65,
+      35.242774
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 23,
+    "text": "Turn left onto San Juan de Rio Drive Southeast. Walk 1,200 feet to the corner of Sabana Grande Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1180,
+    "street": "San Juan de Rio Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.64872,
+     35.245823
+    ],
+    "end": [
+     -106.65,
+     35.242774
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.65,
+      35.242774
+     ],
+     [
+      -106.650137,
+      35.24279
+     ],
+     [
+      -106.650274,
+      35.242811
+     ],
+     [
+      -106.650876,
+      35.242924
+     ],
+     [
+      -106.65095,
+      35.242939
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 24,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk 300 feet to the corner of Cerro de Ortega Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 290,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Cerro de Ortega Drive Southeast",
+    "start": [
+     -106.65,
+     35.242774
+    ],
+    "end": [
+     -106.65095,
+     35.242939
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.65095,
+      35.242939
+     ],
+     [
+      -106.650409,
+      35.244537
+     ],
+     [
+      -106.649955,
+      35.245511
+     ],
+     [
+      -106.649354,
+      35.246528
+     ],
+     [
+      -106.648899,
+      35.247145
+     ],
+     [
+      -106.648409,
+      35.247773
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 25,
+    "text": "Turn right onto Cerro de Ortega Drive Southeast. Walk 1,950 feet to the corner of Juan Aldama Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1934,
+    "street": "Cerro de Ortega Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Juan Aldama Road Southeast",
+    "start": [
+     -106.65095,
+     35.242939
+    ],
+    "end": [
+     -106.648409,
+     35.247773
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648409,
+      35.247773
+     ],
+     [
+      -106.647622,
+      35.247304
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 26,
+    "text": "Turn right onto Juan Aldama Road Southeast. Walk 300 feet to the corner of San Juan de Rio Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 291,
+    "street": "Juan Aldama Road Southeast",
+    "turn": "R",
+    "destination": "the corner of San Juan de Rio Drive Southeast",
+    "start": [
+     -106.648409,
+     35.247773
+    ],
+    "end": [
+     -106.647622,
+     35.247304
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647622,
+      35.247304
+     ],
+     [
+      -106.646238,
+      35.24862
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 27,
+    "text": "Turn left onto San Juan de Rio Drive Southeast. Walk 650 feet to the corner of Pepe Ortiz Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 634,
+    "street": "San Juan de Rio Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of Pepe Ortiz Road Southeast",
+    "start": [
+     -106.647622,
+     35.247304
+    ],
+    "end": [
+     -106.646238,
+     35.24862
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646238,
+      35.24862
+     ],
+     [
+      -106.646193,
+      35.248586
+     ],
+     [
+      -106.646184,
+      35.248579
+     ],
+     [
+      -106.645998,
+      35.248438
+     ],
+     [
+      -106.645681,
+      35.248298
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 28,
+    "text": "Turn right onto Pepe Ortiz Road Southeast. Walk 200 feet to the corner of General Trevino Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 205,
+    "street": "Pepe Ortiz Road Southeast",
+    "turn": "R",
+    "destination": "the corner of General Trevino Drive Southeast",
+    "start": [
+     -106.646238,
+     35.24862
+    ],
+    "end": [
+     -106.645681,
+     35.248298
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.645681,
+      35.248298
+     ],
+     [
+      -106.645835,
+      35.247923
+     ],
+     [
+      -106.645955,
+      35.247734
+     ],
+     [
+      -106.646212,
+      35.247467
+     ],
+     [
+      -106.646671,
+      35.247009
+     ],
+     [
+      -106.647863,
+      35.24547
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 29,
+    "text": "Turn right onto General Trevino Drive Southeast. Walk 1,250 feet to the corner of Los Reyes Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1227,
+    "street": "General Trevino Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Los Reyes Road Southeast",
+    "start": [
+     -106.645681,
+     35.248298
+    ],
+    "end": [
+     -106.647863,
+     35.24547
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647863,
+      35.24547
+     ],
+     [
+      -106.648658,
+      35.245798
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 30,
+    "text": "Turn right onto Los Reyes Road Southeast. Walk 250 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 265,
+    "street": "Los Reyes Road Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.647863,
+     35.24547
+    ],
+    "end": [
+     -106.648658,
+     35.245798
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648658,
+      35.245798
+     ],
+     [
+      -106.647863,
+      35.24547
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 31,
+    "text": "Turn around and walk back on Los Reyes Road Southeast. Walk 250 feet to the corner of General Trevino Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 265,
+    "street": "Los Reyes Road Southeast",
+    "turn": "around",
+    "destination": "the corner of General Trevino Drive Southeast",
+    "start": [
+     -106.648658,
+     35.245798
+    ],
+    "end": [
+     -106.647863,
+     35.24547
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647863,
+      35.24547
+     ],
+     [
+      -106.648204,
+      35.244804
+     ],
+     [
+      -106.648504,
+      35.244194
+     ],
+     [
+      -106.648873,
+      35.243254
+     ],
+     [
+      -106.648977,
+      35.242881
+     ],
+     [
+      -106.648988,
+      35.24284
+     ],
+     [
+      -106.648994,
+      35.242797
+     ],
+     [
+      -106.648995,
+      35.242754
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 32,
+    "text": "Turn right onto General Trevino Drive Southeast. Walk 1,050 feet to the corner of Sabana Grande Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1051,
+    "street": "General Trevino Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.647863,
+     35.24547
+    ],
+    "end": [
+     -106.648995,
+     35.242754
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648995,
+      35.242754
+     ],
+     [
+      -106.649069,
+      35.242755
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 33,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk under 50 feet to the corner of Montana Vista Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 22,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Montana Vista Court Southeast",
+    "start": [
+     -106.648995,
+     35.242754
+    ],
+    "end": [
+     -106.649069,
+     35.242755
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.649069,
+      35.242755
+     ],
+     [
+      -106.64907,
+      35.242692
+     ],
+     [
+      -106.649074,
+      35.24222
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 34,
+    "text": "Turn left onto Montana Vista Court Southeast. Walk 200 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 195,
+    "street": "Montana Vista Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.649069,
+     35.242755
+    ],
+    "end": [
+     -106.649074,
+     35.24222
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.649074,
+      35.24222
+     ],
+     [
+      -106.64907,
+      35.242692
+     ],
+     [
+      -106.649069,
+      35.242755
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 35,
+    "text": "Turn around and walk back on Montana Vista Court Southeast. Walk 200 feet to the corner of Sabana Grande Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 195,
+    "street": "Montana Vista Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Sabana Grande Avenue Southeast",
+    "start": [
+     -106.649074,
+     35.24222
+    ],
+    "end": [
+     -106.649069,
+     35.242755
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.649069,
+      35.242755
+     ],
+     [
+      -106.648995,
+      35.242754
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 36,
+    "text": "Turn right onto Sabana Grande Avenue Southeast. Walk under 50 feet to the corner of General Trevino Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 22,
+    "street": "Sabana Grande Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of General Trevino Drive Southeast",
+    "start": [
+     -106.649069,
+     35.242755
+    ],
+    "end": [
+     -106.648995,
+     35.242754
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648995,
+      35.242754
+     ],
+     [
+      -106.648994,
+      35.242797
+     ],
+     [
+      -106.648988,
+      35.24284
+     ],
+     [
+      -106.648977,
+      35.242881
+     ],
+     [
+      -106.648873,
+      35.243254
+     ],
+     [
+      -106.648504,
+      35.244194
+     ],
+     [
+      -106.648204,
+      35.244804
+     ],
+     [
+      -106.647863,
+      35.24547
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 37,
+    "text": "Turn left onto General Trevino Drive Southeast. Walk 1,050 feet to the corner of Los Reyes Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 1051,
+    "street": "General Trevino Drive Southeast",
+    "turn": "L",
+    "destination": "the corner of Los Reyes Road Southeast",
+    "start": [
+     -106.648995,
+     35.242754
+    ],
+    "end": [
+     -106.647863,
+     35.24547
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647863,
+      35.24547
+     ],
+     [
+      -106.646999,
+      35.245106
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 38,
+    "text": "Turn right onto Los Reyes Road Southeast. Walk 300 feet to the corner of Oreja de Oro Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 290,
+    "street": "Los Reyes Road Southeast",
+    "turn": "R",
+    "destination": "the corner of Oreja de Oro Drive Southeast",
+    "start": [
+     -106.647863,
+     35.24547
+    ],
+    "end": [
+     -106.646999,
+     35.245106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646999,
+      35.245106
+     ],
+     [
+      -106.64738,
+      35.244376
+     ],
+     [
+      -106.647749,
+      35.243486
+     ],
+     [
+      -106.648018,
+      35.242755
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 39,
+    "text": "Turn right onto Oreja de Oro Drive Southeast. Walk 900 feet to the corner of Benjamin Drive Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 912,
+    "street": "Oreja de Oro Drive Southeast",
+    "turn": "R",
+    "destination": "the corner of Benjamin Drive Southeast",
+    "start": [
+     -106.646999,
+     35.245106
+    ],
+    "end": [
+     -106.648018,
+     35.242755
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.648018,
+      35.242755
+     ],
+     [
+      -106.648041,
+      35.242669
+     ],
+     [
+      -106.648103,
+      35.242439
+     ],
+     [
+      -106.648112,
+      35.242389
+     ],
+     [
+      -106.648108,
+      35.242341
+     ],
+     [
+      -106.648092,
+      35.242289
+     ],
+     [
+      -106.648064,
+      35.242242
+     ],
+     [
+      -106.64803,
+      35.242203
+     ],
+     [
+      -106.647985,
+      35.242168
+     ],
+     [
+      -106.647768,
+      35.242064
+     ],
+     [
+      -106.647691,
+      35.242025
+     ],
+     [
+      -106.647621,
+      35.241979
+     ],
+     [
+      -106.647553,
+      35.241929
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 40,
+    "text": "Go straight onto Benjamin Drive Southeast. Walk 400 feet to the corner of Benjamin Crescent Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 385,
+    "street": "Benjamin Drive Southeast",
+    "turn": "straight",
+    "destination": "the corner of Benjamin Crescent Southeast",
+    "start": [
+     -106.648018,
+     35.242755
+    ],
+    "end": [
+     -106.647553,
+     35.241929
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647553,
+      35.241929
+     ],
+     [
+      -106.647506,
+      35.241973
+     ],
+     [
+      -106.647445,
+      35.24203
+     ],
+     [
+      -106.64743,
+      35.242063
+     ],
+     [
+      -106.647423,
+      35.242103
+     ],
+     [
+      -106.647426,
+      35.242144
+     ],
+     [
+      -106.647434,
+      35.242185
+     ],
+     [
+      -106.647457,
+      35.242253
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 41,
+    "text": "Turn left onto Benjamin Crescent Southeast. Walk 150 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 132,
+    "street": "Benjamin Crescent Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.647553,
+     35.241929
+    ],
+    "end": [
+     -106.647457,
+     35.242253
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647457,
+      35.242253
+     ],
+     [
+      -106.647434,
+      35.242185
+     ],
+     [
+      -106.647426,
+      35.242144
+     ],
+     [
+      -106.647423,
+      35.242103
+     ],
+     [
+      -106.64743,
+      35.242063
+     ],
+     [
+      -106.647445,
+      35.24203
+     ],
+     [
+      -106.647506,
+      35.241973
+     ],
+     [
+      -106.647553,
+      35.241929
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 42,
+    "text": "Turn around and walk back on Benjamin Crescent Southeast. Walk 150 feet to the corner of Benjamin Drive Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 132,
+    "street": "Benjamin Crescent Southeast",
+    "turn": "around",
+    "destination": "the corner of Benjamin Drive Southeast",
+    "start": [
+     -106.647457,
+     35.242253
+    ],
+    "end": [
+     -106.647553,
+     35.241929
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.647553,
+      35.241929
+     ],
+     [
+      -106.6475,
+      35.241881
+     ],
+     [
+      -106.647457,
+      35.241836
+     ],
+     [
+      -106.647407,
+      35.241787
+     ],
+     [
+      -106.647354,
+      35.241741
+     ],
+     [
+      -106.647287,
+      35.241696
+     ],
+     [
+      -106.647219,
+      35.241659
+     ],
+     [
+      -106.647143,
+      35.241625
+     ],
+     [
+      -106.647067,
+      35.2416
+     ],
+     [
+      -106.646983,
+      35.241579
+     ],
+     [
+      -106.646898,
+      35.241565
+     ],
+     [
+      -106.646815,
+      35.241559
+     ],
+     [
+      -106.646734,
+      35.24156
+     ],
+     [
+      -106.646645,
+      35.241569
+     ],
+     [
+      -106.646499,
+      35.24159
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 43,
+    "text": "Turn left onto Benjamin Drive Southeast. Walk 350 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 363,
+    "street": "Benjamin Drive Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.647553,
+     35.241929
+    ],
+    "end": [
+     -106.646499,
+     35.24159
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.646499,
+      35.24159
+     ],
+     [
+      -106.646047,
+      35.241657
+     ],
+     [
+      -106.645984,
+      35.241668
+     ],
+     [
+      -106.645918,
+      35.241685
+     ],
+     [
+      -106.645646,
+      35.241774
+     ],
+     [
+      -106.645594,
+      35.241788
+     ],
+     [
+      -106.645535,
+      35.241798
+     ],
+     [
+      -106.645478,
+      35.241802
+     ],
+     [
+      -106.645414,
+      35.241803
+     ],
+     [
+      -106.645235,
+      35.2418
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 44,
+    "text": "Go straight on Benjamin Drive Southeast. Walk 400 feet to the parking spot P. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 388,
+    "street": "Benjamin Drive Southeast",
+    "turn": "straight",
+    "destination": "the parking spot P",
+    "start": [
+     -106.646499,
+     35.24159
+    ],
+    "end": [
+     -106.645235,
+     35.2418
+    ]
+   }
+  }
+ ]
+}

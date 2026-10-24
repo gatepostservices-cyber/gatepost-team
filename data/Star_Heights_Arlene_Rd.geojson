@@ -4,12 +4,12 @@
  "name": "Star Heights / Arlene Rd",
  "slug": "Star_Heights_Arlene_Rd",
  "round": 1,
- "total_mi": 10.6,
+ "total_mi": 10.1,
  "total_homes": 611,
  "verification": [
   {
    "session": 1,
-   "steps": 53,
+   "steps": 57,
    "fixes": 0,
    "problems_after": 0
   },
@@ -21,7 +21,7 @@
   },
   {
    "session": 3,
-   "steps": 44,
+   "steps": 42,
    "fixes": 0,
    "problems_after": 0
   }
@@ -32,16 +32,56 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -106.703,
-     35.2473
+     -106.706096,
+     35.24985
     ]
    },
    "properties": {
     "kind": "parking",
-    "name": "Star Heights Park (Polaris Blvd SE)",
-    "address": "Polaris Boulevard Southeast, Rio Rancho",
-    "url": "https://www.google.com/maps/dir/?api=1&destination=35.2473,-106.703",
-    "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.3 mi); Speedway, 2101 Southern Boulevard Southeast (0.7 mi)."
+    "session": 1,
+    "label": "P1",
+    "name": "Street parking on Fornax Road Southeast at the corner of Borealis Avenue Southeast",
+    "address": "Fornax Road Southeast and Borealis Avenue Southeast (near 1607 Borealis Avenue Southeast), Rio Rancho, New Mexico 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.249850,-106.706096",
+    "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.5 mi); Speedway, 2101 Southern Boulevard Southeast (1.0 mi)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.702887,
+     35.250542
+    ]
+   },
+   "properties": {
+    "kind": "parking",
+    "session": 2,
+    "label": "P2",
+    "name": "Street parking on Alpha Road Southeast at the corner of Polaris Boulevard Southeast",
+    "address": "Alpha Road Southeast and Polaris Boulevard Southeast (near 1699 Alpha Road Southeast), Rio Rancho, New Mexico 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.250542,-106.702887",
+    "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.5 mi); Speedway, 2101 Southern Boulevard Southeast (1.0 mi)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.7012,
+     35.249296
+    ]
+   },
+   "properties": {
+    "kind": "parking",
+    "session": 3,
+    "label": "P3",
+    "name": "Street parking on Arcturus Avenue Southeast at the corner of Celina Court Southeast",
+    "address": "Arcturus Avenue Southeast and Celina Court Southeast (near 1799 Celina Road Southeast), Rio Rancho, New Mexico 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.249296,-106.701200",
+    "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.5 mi); Speedway, 2101 Southern Boulevard Southeast (1.0 mi)."
    }
   },
   {
@@ -49,6 +89,206 @@
    "geometry": {
     "type": "LineString",
     "coordinates": [
+     [
+      -106.706096,
+      35.24985
+     ],
+     [
+      -106.705281,
+      35.250187
+     ],
+     [
+      -106.705113,
+      35.250251
+     ],
+     [
+      -106.704925,
+      35.250397
+     ],
+     [
+      -106.704835,
+      35.250535
+     ],
+     [
+      -106.704654,
+      35.250974
+     ],
+     [
+      -106.705395,
+      35.251156
+     ],
+     [
+      -106.704654,
+      35.250974
+     ],
+     [
+      -106.704835,
+      35.250535
+     ],
+     [
+      -106.704925,
+      35.250397
+     ],
+     [
+      -106.705113,
+      35.250251
+     ],
+     [
+      -106.705281,
+      35.250187
+     ],
+     [
+      -106.70545,
+      35.250459
+     ],
+     [
+      -106.705595,
+      35.250577
+     ],
+     [
+      -106.70545,
+      35.250459
+     ],
+     [
+      -106.705281,
+      35.250187
+     ],
+     [
+      -106.706096,
+      35.24985
+     ],
+     [
+      -106.705637,
+      35.249082
+     ],
+     [
+      -106.705458,
+      35.24889
+     ],
+     [
+      -106.705173,
+      35.24874
+     ],
+     [
+      -106.703753,
+      35.248359
+     ],
+     [
+      -106.703461,
+      35.249072
+     ],
+     [
+      -106.704373,
+      35.249319
+     ],
+     [
+      -106.704801,
+      35.249432
+     ],
+     [
+      -106.704933,
+      35.249616
+     ],
+     [
+      -106.704801,
+      35.249432
+     ],
+     [
+      -106.704373,
+      35.249319
+     ],
+     [
+      -106.703461,
+      35.249072
+     ],
+     [
+      -106.703753,
+      35.248359
+     ],
+     [
+      -106.704014,
+      35.247659
+     ],
+     [
+      -106.704048,
+      35.247498
+     ],
+     [
+      -106.704022,
+      35.247358
+     ],
+     [
+      -106.704048,
+      35.247498
+     ],
+     [
+      -106.704014,
+      35.247659
+     ],
+     [
+      -106.70593,
+      35.248128
+     ],
+     [
+      -106.705952,
+      35.248359
+     ],
+     [
+      -106.705985,
+      35.248443
+     ],
+     [
+      -106.705952,
+      35.248359
+     ],
+     [
+      -106.70593,
+      35.248128
+     ],
+     [
+      -106.705936,
+      35.247526
+     ],
+     [
+      -106.705893,
+      35.247337
+     ],
+     [
+      -106.705747,
+      35.247162
+     ],
+     [
+      -106.70508,
+      35.246575
+     ],
+     [
+      -106.704222,
+      35.24725
+     ],
+     [
+      -106.704022,
+      35.247358
+     ],
+     [
+      -106.703799,
+      35.247064
+     ],
+     [
+      -106.703421,
+      35.246755
+     ],
+     [
+      -106.702811,
+      35.246224
+     ],
+     [
+      -106.701919,
+      35.246944
+     ],
+     [
+      -106.702811,
+      35.246224
+     ],
      [
       -106.703421,
       35.246755
@@ -496,6 +736,58 @@
      [
       -106.706096,
       35.24985
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 1,
+    "color": "RED",
+    "color_hex": "#d62020",
+    "line_dash": [],
+    "mi": 4.6,
+    "homes": 227,
+    "minutes": 255,
+    "steps": 57,
+    "streets": [
+     "Fornax Road Southeast",
+     "Mirage Court Southeast",
+     "Borealis Avenue Southeast",
+     "Pegasus Avenue Southeast",
+     "Polaris Boulevard Southeast",
+     "Domain Loop Southeast",
+     "Procyon Court Southeast",
+     "Hydra Road Southeast",
+     "Fiat Court Southeast",
+     "Mira Court Southeast",
+     "Nova Court Southeast",
+     "Epic Court Southeast",
+     "Sandia Vista Court Southeast",
+     "Mesa Vista Court Southeast",
+     "Eaton Road Southeast",
+     "Valley Vista Court Southeast"
+    ],
+    "parking": {
+     "label": "P1",
+     "name": "Street parking on Fornax Road Southeast at the corner of Borealis Avenue Southeast",
+     "address": "Fornax Road Southeast and Borealis Avenue Southeast (near 1607 Borealis Avenue Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.249850,-106.706096",
+     "coordinates": [
+      -106.706096,
+      35.24985
+     ]
+    },
+    "length_m": 7414.6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.706096,
+      35.24985
      ],
      [
       -106.705281,
@@ -520,6 +812,40 @@
      [
       -106.705395,
       35.251156
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along Fornax Road Southeast toward the dead end, 850 feet. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 862,
+    "street": "Fornax Road Southeast",
+    "turn": "start",
+    "destination": "the dead end",
+    "start": [
+     -106.706096,
+     35.24985
+    ],
+    "end": [
+     -106.705395,
+     35.251156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.705395,
+      35.251156
      ],
      [
       -106.704654,
@@ -540,11 +866,79 @@
      [
       -106.705281,
       35.250187
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 2,
+    "text": "Turn around and walk back on Fornax Road Southeast. Walk 600 feet to the corner of Mirage Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 590,
+    "street": "Fornax Road Southeast",
+    "turn": "around",
+    "destination": "the corner of Mirage Court Southeast",
+    "start": [
+     -106.705395,
+     35.251156
+    ],
+    "end": [
+     -106.705281,
+     35.250187
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.705281,
+      35.250187
      ],
      [
       -106.70545,
       35.250459
      ],
+     [
+      -106.705595,
+      35.250577
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 3,
+    "text": "Turn right onto Mirage Court Southeast. Walk 150 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 172,
+    "street": "Mirage Court Southeast",
+    "turn": "R",
+    "destination": "the dead end",
+    "start": [
+     -106.705281,
+     35.250187
+    ],
+    "end": [
+     -106.705595,
+     35.250577
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.705595,
       35.250577
@@ -556,7 +950,75 @@
      [
       -106.705281,
       35.250187
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 4,
+    "text": "Turn around and walk back on Mirage Court Southeast. Walk 150 feet to the corner of Fornax Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 172,
+    "street": "Mirage Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Fornax Road Southeast",
+    "start": [
+     -106.705595,
+     35.250577
+    ],
+    "end": [
+     -106.705281,
+     35.250187
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.705281,
+      35.250187
      ],
+     [
+      -106.706096,
+      35.24985
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 5,
+    "text": "Turn right onto Fornax Road Southeast. Walk 250 feet to the corner of Borealis Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 272,
+    "street": "Fornax Road Southeast",
+    "turn": "R",
+    "destination": "the corner of Borealis Avenue Southeast",
+    "start": [
+     -106.705281,
+     35.250187
+    ],
+    "end": [
+     -106.706096,
+     35.24985
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.706096,
       35.24985
@@ -576,11 +1038,113 @@
      [
       -106.703753,
       35.248359
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 6,
+    "text": "Turn left onto Borealis Avenue Southeast. Walk 950 feet to the corner of Polaris Boulevard Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 947,
+    "street": "Borealis Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of Polaris Boulevard Southeast",
+    "start": [
+     -106.706096,
+     35.24985
+    ],
+    "end": [
+     -106.703753,
+     35.248359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.703753,
+      35.248359
      ],
      [
       -106.703461,
       35.249072
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 7,
+    "text": "Turn left onto Polaris Boulevard Southeast. Walk 250 feet to the corner of Pegasus Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 274,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "L",
+    "destination": "the corner of Pegasus Avenue Southeast",
+    "start": [
+     -106.703753,
+     35.248359
+    ],
+    "end": [
+     -106.703461,
+     35.249072
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.703461,
+      35.249072
      ],
+     [
+      -106.704373,
+      35.249319
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 8,
+    "text": "Turn left onto Pegasus Avenue Southeast. Walk 300 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 287,
+    "street": "Pegasus Avenue Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.703461,
+     35.249072
+    ],
+    "end": [
+     -106.704373,
+     35.249319
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.704373,
       35.249319
@@ -589,6 +1153,40 @@
       -106.704801,
       35.249432
      ],
+     [
+      -106.704933,
+      35.249616
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 9,
+    "text": "Go straight on Pegasus Avenue Southeast. Walk 200 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 212,
+    "street": "Pegasus Avenue Southeast",
+    "turn": "straight",
+    "destination": "the dead end",
+    "start": [
+     -106.704373,
+     35.249319
+    ],
+    "end": [
+     -106.704933,
+     35.249616
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.704933,
       35.249616
@@ -604,7 +1202,75 @@
      [
       -106.703461,
       35.249072
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 10,
+    "text": "Turn around and walk back on Pegasus Avenue Southeast. Walk 500 feet to the corner of Polaris Boulevard Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 498,
+    "street": "Pegasus Avenue Southeast",
+    "turn": "around",
+    "destination": "the corner of Polaris Boulevard Southeast",
+    "start": [
+     -106.704933,
+     35.249616
+    ],
+    "end": [
+     -106.703461,
+     35.249072
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.703461,
+      35.249072
      ],
+     [
+      -106.703753,
+      35.248359
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 11,
+    "text": "Turn right onto Polaris Boulevard Southeast. Walk 250 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 274,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.703461,
+     35.249072
+    ],
+    "end": [
+     -106.703753,
+     35.248359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.703753,
       35.248359
@@ -620,11 +1286,79 @@
      [
       -106.704022,
       35.247358
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 12,
+    "text": "Go straight on Polaris Boulevard Southeast. Walk 400 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 379,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "straight",
+    "destination": "the next corner",
+    "start": [
+     -106.703753,
+     35.248359
+    ],
+    "end": [
+     -106.704022,
+     35.247358
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.704022,
+      35.247358
      ],
      [
       -106.704048,
       35.247498
      ],
+     [
+      -106.704014,
+      35.247659
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 13,
+    "text": "Turn around and walk back on Polaris Boulevard Southeast. Walk 100 feet to the corner of Domain Loop Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 112,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "around",
+    "destination": "the corner of Domain Loop Southeast",
+    "start": [
+     -106.704022,
+     35.247358
+    ],
+    "end": [
+     -106.704014,
+     35.247659
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.704014,
       35.247659
@@ -640,11 +1374,79 @@
      [
       -106.705985,
       35.248443
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 14,
+    "text": "Turn left onto Domain Loop Southeast. Walk 700 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 714,
+    "street": "Domain Loop Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.704014,
+     35.247659
+    ],
+    "end": [
+     -106.705985,
+     35.248443
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.705985,
+      35.248443
      ],
      [
       -106.705952,
       35.248359
      ],
+     [
+      -106.70593,
+      35.248128
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 15,
+    "text": "Turn around and walk back on Domain Loop Southeast. Walk 100 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 117,
+    "street": "Domain Loop Southeast",
+    "turn": "around",
+    "destination": "the next corner",
+    "start": [
+     -106.705985,
+     35.248443
+    ],
+    "end": [
+     -106.70593,
+     35.248128
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.70593,
       35.248128
@@ -672,6 +1474,40 @@
      [
       -106.704022,
       35.247358
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 16,
+    "text": "Go straight on Domain Loop Southeast. Walk 1,100 feet to the corner of Polaris Boulevard Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 1087,
+    "street": "Domain Loop Southeast",
+    "turn": "straight",
+    "destination": "the corner of Polaris Boulevard Southeast",
+    "start": [
+     -106.70593,
+     35.248128
+    ],
+    "end": [
+     -106.704022,
+     35.247358
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.704022,
+      35.247358
      ],
      [
       -106.703799,
@@ -680,37 +1516,148 @@
      [
       -106.703421,
       35.246755
+     ],
+     [
+      -106.702811,
+      35.246224
      ]
     ]
    },
    "properties": {
-    "kind": "session_path",
+    "kind": "step",
     "session": 1,
-    "color": "RED",
-    "color_hex": "#d62020",
-    "line_dash": [],
-    "mi": 4.4,
-    "homes": 218,
-    "minutes": 255,
-    "steps": 53,
-    "streets": [
-     "Hydra Road Southeast",
-     "Fiat Court Southeast",
-     "Mira Court Southeast",
-     "Nova Court Southeast",
-     "Epic Court Southeast",
-     "Sandia Vista Court Southeast",
-     "Mesa Vista Court Southeast",
-     "Eaton Road Southeast",
-     "Valley Vista Court Southeast",
-     "Borealis Avenue Southeast",
-     "Fornax Road Southeast",
-     "Mirage Court Southeast",
-     "Pegasus Avenue Southeast",
-     "Polaris Boulevard Southeast",
-     "Domain Loop Southeast"
+    "step": 17,
+    "text": "Turn right onto Polaris Boulevard Southeast. Walk 550 feet to the corner of Procyon Court Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 552,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "R",
+    "destination": "the corner of Procyon Court Southeast",
+    "start": [
+     -106.704022,
+     35.247358
     ],
-    "length_m": 7024.2
+    "end": [
+     -106.702811,
+     35.246224
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.702811,
+      35.246224
+     ],
+     [
+      -106.701919,
+      35.246944
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 18,
+    "text": "Turn left onto Procyon Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 374,
+    "street": "Procyon Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.702811,
+     35.246224
+    ],
+    "end": [
+     -106.701919,
+     35.246944
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.701919,
+      35.246944
+     ],
+     [
+      -106.702811,
+      35.246224
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 19,
+    "text": "Turn around and walk back on Procyon Court Southeast. Walk 350 feet to the corner of Polaris Boulevard Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 374,
+    "street": "Procyon Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Polaris Boulevard Southeast",
+    "start": [
+     -106.701919,
+     35.246944
+    ],
+    "end": [
+     -106.702811,
+     35.246224
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.702811,
+      35.246224
+     ],
+     [
+      -106.703421,
+      35.246755
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 1,
+    "step": 20,
+    "text": "Turn right onto Polaris Boulevard Southeast. Walk 250 feet to the corner of Estrellita Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 266,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "R",
+    "destination": "the corner of Estrellita Road Southeast",
+    "start": [
+     -106.702811,
+     35.246224
+    ],
+    "end": [
+     -106.703421,
+     35.246755
+    ]
    }
   },
   {
@@ -731,15 +1678,15 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 1,
-    "text": "Start at the parking spot P. Walk along Estrellita Road Southeast toward the corner of Tarpon Avenue Southeast, 950 feet. Do not knock here, just walk.",
+    "step": 21,
+    "text": "Turn left onto Estrellita Road Southeast. Walk 950 feet to the corner of Tarpon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "walk through, no knocking",
     "distance_ft": 961,
     "street": "Estrellita Road Southeast",
-    "turn": "start",
+    "turn": "L",
     "destination": "the corner of Tarpon Avenue Southeast",
     "start": [
      -106.703421,
@@ -777,7 +1724,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 2,
+    "step": 22,
     "text": "Turn right onto Tarpon Avenue Southeast. Walk 850 feet to the corner of Hydra Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -815,7 +1762,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 3,
+    "step": 23,
     "text": "Turn right onto Hydra Road Southeast. Walk 200 feet to the next corner. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -889,7 +1836,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 4,
+    "step": 24,
     "text": "Go straight on Hydra Road Southeast. Walk 1,150 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -935,7 +1882,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 5,
+    "step": 25,
     "text": "Turn around and walk back on Hydra Road Southeast. Walk 200 feet to the corner of Fiat Court Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -973,7 +1920,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 6,
+    "step": 26,
     "text": "Turn right onto Fiat Court Southeast. Walk 200 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1011,7 +1958,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 7,
+    "step": 27,
     "text": "Turn around and walk back on Fiat Court Southeast. Walk 200 feet to the corner of Hydra Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1053,7 +2000,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 8,
+    "step": 28,
     "text": "Turn right onto Hydra Road Southeast. Walk 250 feet to the corner of Mira Court Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1091,7 +2038,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 9,
+    "step": 29,
     "text": "Turn right onto Mira Court Southeast. Walk 200 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1129,7 +2076,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 10,
+    "step": 30,
     "text": "Turn around and walk back on Mira Court Southeast. Walk 200 feet to the corner of Hydra Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1167,7 +2114,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 11,
+    "step": 31,
     "text": "Turn right onto Hydra Road Southeast. Walk 300 feet to the corner of Nova Court Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1205,7 +2152,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 12,
+    "step": 32,
     "text": "Turn right onto Nova Court Southeast. Walk 250 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1243,7 +2190,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 13,
+    "step": 33,
     "text": "Turn around and walk back on Nova Court Southeast. Walk 250 feet to the corner of Hydra Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1297,7 +2244,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 14,
+    "step": 34,
     "text": "Turn right onto Hydra Road Southeast. Walk 550 feet to the corner of Tarpon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1363,7 +2310,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 15,
+    "step": 35,
     "text": "Turn right onto Tarpon Avenue Southeast. Walk 1,100 feet to the corner of Epic Court Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1405,7 +2352,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 16,
+    "step": 36,
     "text": "Turn left onto Epic Court Southeast. Walk 550 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1447,7 +2394,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 17,
+    "step": 37,
     "text": "Turn around and walk back on Epic Court Southeast. Walk 550 feet to the corner of Tarpon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1497,7 +2444,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 18,
+    "step": 38,
     "text": "Turn left onto Tarpon Avenue Southeast. Walk 300 feet to the corner of Sandia Vista Court Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1543,7 +2490,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 19,
+    "step": 39,
     "text": "Turn left onto Sandia Vista Court Southeast. Walk 300 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1581,7 +2528,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 20,
+    "step": 40,
     "text": "Turn around and walk back on Sandia Vista Court Southeast. Walk 50 feet to the next corner. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1619,7 +2566,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 21,
+    "step": 41,
     "text": "Bear right to stay on Sandia Vista Court Southeast. Walk 100 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1665,7 +2612,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 22,
+    "step": 42,
     "text": "Turn around and walk back on Sandia Vista Court Southeast. Walk 350 feet to the corner of Tarpon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1703,7 +2650,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 23,
+    "step": 43,
     "text": "Turn left onto Tarpon Avenue Southeast. Walk 200 feet to the corner of Mesa Vista Court Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1753,7 +2700,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 24,
+    "step": 44,
     "text": "Turn left onto Mesa Vista Court Southeast. Walk 300 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1791,7 +2738,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 25,
+    "step": 45,
     "text": "Turn around and walk back on Mesa Vista Court Southeast. Walk 50 feet to the next corner. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1829,7 +2776,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 26,
+    "step": 46,
     "text": "Turn right to stay on Mesa Vista Court Southeast. Walk under 50 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -1879,7 +2826,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 27,
+    "step": 47,
     "text": "Turn around and walk back on Mesa Vista Court Southeast. Walk 300 feet to the corner of Tarpon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -1965,7 +2912,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 28,
+    "step": 48,
     "text": "Turn left onto Tarpon Avenue Southeast. Walk 1,200 feet to the corner of Lisbon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -2003,7 +2950,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 29,
+    "step": 49,
     "text": "Turn right onto Lisbon Avenue Southeast. Walk 750 feet to the corner of Eaton Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -2061,7 +3008,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 30,
+    "step": 50,
     "text": "Turn left onto Eaton Road Southeast. Walk 700 feet to the next corner. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -2119,7 +3066,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 31,
+    "step": 51,
     "text": "Turn around and walk back on Eaton Road Southeast. Walk 700 feet to the corner of Lisbon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -2157,7 +3104,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 32,
+    "step": 52,
     "text": "Turn right onto Lisbon Avenue Southeast. Walk 750 feet to the corner of Tarpon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -2219,7 +3166,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 33,
+    "step": 53,
     "text": "Turn left onto Tarpon Avenue Southeast. Walk 600 feet to the corner of Valley Vista Court Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -2261,7 +3208,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 34,
+    "step": 54,
     "text": "Turn right onto Valley Vista Court Southeast. Walk 150 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -2303,7 +3250,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 35,
+    "step": 55,
     "text": "Turn around and walk back on Valley Vista Court Southeast. Walk 150 feet to the corner of Tarpon Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -2357,7 +3304,7 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 36,
+    "step": 56,
     "text": "Turn right onto Tarpon Avenue Southeast. Walk 450 feet to the corner of Borealis Avenue Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -2395,8 +3342,8 @@
    "properties": {
     "kind": "step",
     "session": 1,
-    "step": 37,
-    "text": "Turn left onto Borealis Avenue Southeast. Walk 300 feet to the corner of Fornax Road Southeast. Knock both sides.",
+    "step": 57,
+    "text": "Turn left onto Borealis Avenue Southeast. Walk 300 feet to the parking spot P. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
@@ -2404,7 +3351,7 @@
     "distance_ft": 277,
     "street": "Borealis Avenue Southeast",
     "turn": "L",
-    "destination": "the corner of Fornax Road Southeast",
+    "destination": "the parking spot P",
     "start": [
      -106.706487,
      35.250537
@@ -2420,770 +3367,6 @@
    "geometry": {
     "type": "LineString",
     "coordinates": [
-     [
-      -106.706096,
-      35.24985
-     ],
-     [
-      -106.705281,
-      35.250187
-     ],
-     [
-      -106.705113,
-      35.250251
-     ],
-     [
-      -106.704925,
-      35.250397
-     ],
-     [
-      -106.704835,
-      35.250535
-     ],
-     [
-      -106.704654,
-      35.250974
-     ],
-     [
-      -106.705395,
-      35.251156
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 38,
-    "text": "Turn left onto Fornax Road Southeast. Walk 850 feet to the dead end. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 862,
-    "street": "Fornax Road Southeast",
-    "turn": "L",
-    "destination": "the dead end",
-    "start": [
-     -106.706096,
-     35.24985
-    ],
-    "end": [
-     -106.705395,
-     35.251156
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.705395,
-      35.251156
-     ],
-     [
-      -106.704654,
-      35.250974
-     ],
-     [
-      -106.704835,
-      35.250535
-     ],
-     [
-      -106.704925,
-      35.250397
-     ],
-     [
-      -106.705113,
-      35.250251
-     ],
-     [
-      -106.705281,
-      35.250187
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 39,
-    "text": "Turn around and walk back on Fornax Road Southeast. Walk 600 feet to the corner of Mirage Court Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 590,
-    "street": "Fornax Road Southeast",
-    "turn": "around",
-    "destination": "the corner of Mirage Court Southeast",
-    "start": [
-     -106.705395,
-     35.251156
-    ],
-    "end": [
-     -106.705281,
-     35.250187
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.705281,
-      35.250187
-     ],
-     [
-      -106.70545,
-      35.250459
-     ],
-     [
-      -106.705595,
-      35.250577
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 40,
-    "text": "Turn right onto Mirage Court Southeast. Walk 150 feet to the dead end. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 172,
-    "street": "Mirage Court Southeast",
-    "turn": "R",
-    "destination": "the dead end",
-    "start": [
-     -106.705281,
-     35.250187
-    ],
-    "end": [
-     -106.705595,
-     35.250577
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.705595,
-      35.250577
-     ],
-     [
-      -106.70545,
-      35.250459
-     ],
-     [
-      -106.705281,
-      35.250187
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 41,
-    "text": "Turn around and walk back on Mirage Court Southeast. Walk 150 feet to the corner of Fornax Road Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 172,
-    "street": "Mirage Court Southeast",
-    "turn": "around",
-    "destination": "the corner of Fornax Road Southeast",
-    "start": [
-     -106.705595,
-     35.250577
-    ],
-    "end": [
-     -106.705281,
-     35.250187
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.705281,
-      35.250187
-     ],
-     [
-      -106.706096,
-      35.24985
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 42,
-    "text": "Turn right onto Fornax Road Southeast. Walk 250 feet to the corner of Borealis Avenue Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 272,
-    "street": "Fornax Road Southeast",
-    "turn": "R",
-    "destination": "the corner of Borealis Avenue Southeast",
-    "start": [
-     -106.705281,
-     35.250187
-    ],
-    "end": [
-     -106.706096,
-     35.24985
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.706096,
-      35.24985
-     ],
-     [
-      -106.705637,
-      35.249082
-     ],
-     [
-      -106.705458,
-      35.24889
-     ],
-     [
-      -106.705173,
-      35.24874
-     ],
-     [
-      -106.703753,
-      35.248359
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 43,
-    "text": "Turn left onto Borealis Avenue Southeast. Walk 950 feet to the corner of Polaris Boulevard Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 947,
-    "street": "Borealis Avenue Southeast",
-    "turn": "L",
-    "destination": "the corner of Polaris Boulevard Southeast",
-    "start": [
-     -106.706096,
-     35.24985
-    ],
-    "end": [
-     -106.703753,
-     35.248359
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.703461,
-      35.249072
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 44,
-    "text": "Turn left onto Polaris Boulevard Southeast. Walk 250 feet to the corner of Pegasus Avenue Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 274,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "L",
-    "destination": "the corner of Pegasus Avenue Southeast",
-    "start": [
-     -106.703753,
-     35.248359
-    ],
-    "end": [
-     -106.703461,
-     35.249072
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703461,
-      35.249072
-     ],
-     [
-      -106.704373,
-      35.249319
-     ],
-     [
-      -106.704801,
-      35.249432
-     ],
-     [
-      -106.704933,
-      35.249616
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 45,
-    "text": "Turn left onto Pegasus Avenue Southeast. Walk 500 feet to the dead end. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 498,
-    "street": "Pegasus Avenue Southeast",
-    "turn": "L",
-    "destination": "the dead end",
-    "start": [
-     -106.703461,
-     35.249072
-    ],
-    "end": [
-     -106.704933,
-     35.249616
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.704933,
-      35.249616
-     ],
-     [
-      -106.704801,
-      35.249432
-     ],
-     [
-      -106.704373,
-      35.249319
-     ],
-     [
-      -106.703461,
-      35.249072
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 46,
-    "text": "Turn around and walk back on Pegasus Avenue Southeast. Walk 500 feet to the corner of Polaris Boulevard Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 498,
-    "street": "Pegasus Avenue Southeast",
-    "turn": "around",
-    "destination": "the corner of Polaris Boulevard Southeast",
-    "start": [
-     -106.704933,
-     35.249616
-    ],
-    "end": [
-     -106.703461,
-     35.249072
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703461,
-      35.249072
-     ],
-     [
-      -106.703753,
-      35.248359
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 47,
-    "text": "Turn right onto Polaris Boulevard Southeast. Walk 250 feet to the next corner. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 274,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "R",
-    "destination": "the next corner",
-    "start": [
-     -106.703461,
-     35.249072
-    ],
-    "end": [
-     -106.703753,
-     35.248359
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704022,
-      35.247358
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 48,
-    "text": "Go straight on Polaris Boulevard Southeast. Walk 400 feet to the next corner. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 379,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "straight",
-    "destination": "the next corner",
-    "start": [
-     -106.703753,
-     35.248359
-    ],
-    "end": [
-     -106.704022,
-     35.247358
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704014,
-      35.247659
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 49,
-    "text": "Turn around and walk back on Polaris Boulevard Southeast. Walk 100 feet to the corner of Domain Loop Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 112,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "around",
-    "destination": "the corner of Domain Loop Southeast",
-    "start": [
-     -106.704022,
-     35.247358
-    ],
-    "end": [
-     -106.704014,
-     35.247659
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.70593,
-      35.248128
-     ],
-     [
-      -106.705952,
-      35.248359
-     ],
-     [
-      -106.705985,
-      35.248443
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 50,
-    "text": "Turn left onto Domain Loop Southeast. Walk 700 feet to the dead end. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 714,
-    "street": "Domain Loop Southeast",
-    "turn": "L",
-    "destination": "the dead end",
-    "start": [
-     -106.704014,
-     35.247659
-    ],
-    "end": [
-     -106.705985,
-     35.248443
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.705985,
-      35.248443
-     ],
-     [
-      -106.705952,
-      35.248359
-     ],
-     [
-      -106.70593,
-      35.248128
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 51,
-    "text": "Turn around and walk back on Domain Loop Southeast. Walk 100 feet to the next corner. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 117,
-    "street": "Domain Loop Southeast",
-    "turn": "around",
-    "destination": "the next corner",
-    "start": [
-     -106.705985,
-     35.248443
-    ],
-    "end": [
-     -106.70593,
-     35.248128
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.70593,
-      35.248128
-     ],
-     [
-      -106.705936,
-      35.247526
-     ],
-     [
-      -106.705893,
-      35.247337
-     ],
-     [
-      -106.705747,
-      35.247162
-     ],
-     [
-      -106.70508,
-      35.246575
-     ],
-     [
-      -106.704222,
-      35.24725
-     ],
-     [
-      -106.704022,
-      35.247358
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 52,
-    "text": "Go straight on Domain Loop Southeast. Walk 1,100 feet to the corner of Polaris Boulevard Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 1087,
-    "street": "Domain Loop Southeast",
-    "turn": "straight",
-    "destination": "the corner of Polaris Boulevard Southeast",
-    "start": [
-     -106.70593,
-     35.248128
-    ],
-    "end": [
-     -106.704022,
-     35.247358
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.703421,
-      35.246755
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 1,
-    "step": 53,
-    "text": "Turn right onto Polaris Boulevard Southeast. Walk 300 feet to the parking spot P. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 286,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "R",
-    "destination": "the parking spot P",
-    "start": [
-     -106.704022,
-     35.247358
-    ],
-    "end": [
-     -106.703421,
-     35.246755
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703421,
-      35.246755
-     ],
-     [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.703461,
-      35.249072
-     ],
-     [
-      -106.704373,
-      35.249319
-     ],
-     [
-      -106.703782,
-      35.250784
-     ],
      [
       -106.702887,
       35.250542
@@ -3493,24 +3676,20 @@
       35.248359
      ],
      [
-      -106.704014,
-      35.247659
+      -106.703461,
+      35.249072
      ],
      [
-      -106.704048,
-      35.247498
+      -106.704373,
+      35.249319
      ],
      [
-      -106.704022,
-      35.247358
+      -106.703782,
+      35.250784
      ],
      [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.703421,
-      35.246755
+      -106.702887,
+      35.250542
      ]
     ]
    },
@@ -3523,12 +3702,11 @@
      7,
      2.5
     ],
-    "mi": 3.1,
-    "homes": 221,
+    "mi": 2.8,
+    "homes": 223,
     "minutes": 225,
     "steps": 34,
     "streets": [
-     "Polaris Boulevard Southeast",
      "Alpha Road Southeast",
      "Geraldine Road Southeast",
      "Charlene Road Southeast",
@@ -3539,63 +3717,21 @@
      "Brenda Road Southeast",
      "Arlene Road Southeast",
      "Arlene Court Southeast",
-     "Geraldine Place Southeast"
+     "Geraldine Place Southeast",
+     "Polaris Boulevard Southeast",
+     "Pegasus Avenue Southeast"
     ],
-    "length_m": 4914.8
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703421,
-      35.246755
-     ],
-     [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.703753,
-      35.248359
+    "parking": {
+     "label": "P2",
+     "name": "Street parking on Alpha Road Southeast at the corner of Polaris Boulevard Southeast",
+     "address": "Alpha Road Southeast and Polaris Boulevard Southeast (near 1699 Alpha Road Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.250542,-106.702887",
+     "coordinates": [
+      -106.702887,
+      35.250542
      ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 2,
-    "step": 1,
-    "text": "Start at the parking spot P. Walk along Polaris Boulevard Southeast toward the next corner, 650 feet. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 664,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "start",
-    "destination": "the next corner",
-    "start": [
-     -106.703421,
-     35.246755
-    ],
-    "end": [
-     -106.703753,
-     35.248359
-    ]
+    },
+    "length_m": 4509.7
    }
   },
   {
@@ -3603,90 +3739,6 @@
    "geometry": {
     "type": "LineString",
     "coordinates": [
-     [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.703461,
-      35.249072
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 2,
-    "step": 2,
-    "text": "Go straight on Polaris Boulevard Southeast. Walk 250 feet to the corner of Pegasus Avenue Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 274,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "straight",
-    "destination": "the corner of Pegasus Avenue Southeast",
-    "start": [
-     -106.703753,
-     35.248359
-    ],
-    "end": [
-     -106.703461,
-     35.249072
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703461,
-      35.249072
-     ],
-     [
-      -106.704373,
-      35.249319
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 2,
-    "step": 3,
-    "text": "Turn left onto Pegasus Avenue Southeast. Walk 300 feet to the corner of Alpha Road Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 287,
-    "street": "Pegasus Avenue Southeast",
-    "turn": "L",
-    "destination": "the corner of Alpha Road Southeast",
-    "start": [
-     -106.703461,
-     35.249072
-    ],
-    "end": [
-     -106.704373,
-     35.249319
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.704373,
-      35.249319
-     ],
-     [
-      -106.703782,
-      35.250784
-     ],
      [
       -106.702887,
       35.250542
@@ -3700,19 +3752,19 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 4,
-    "text": "Turn right onto Alpha Road Southeast. Walk 1,450 feet to the corner of Pegasus Avenue Southeast. Knock both sides.",
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along Alpha Road Southeast toward the corner of Pegasus Avenue Southeast, 600 feet. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 1459,
+    "distance_ft": 614,
     "street": "Alpha Road Southeast",
-    "turn": "R",
+    "turn": "start",
     "destination": "the corner of Pegasus Avenue Southeast",
     "start": [
-     -106.704373,
-     35.249319
+     -106.702887,
+     35.250542
     ],
     "end": [
      -106.700934,
@@ -3738,7 +3790,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 5,
+    "step": 2,
     "text": "Turn left onto Pegasus Avenue Southeast. Walk 150 feet to the corner of 5th Street Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -3780,7 +3832,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 6,
+    "step": 3,
     "text": "Turn left onto 5th Street Southeast. Walk 450 feet to the corner of Geraldine Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -3838,7 +3890,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 7,
+    "step": 4,
     "text": "Turn right onto Geraldine Road Southeast. Walk 600 feet to the corner of Charlene Road Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -3876,7 +3928,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 8,
+    "step": 5,
     "text": "Turn left onto Charlene Road Southeast. Walk 300 feet to the corner of Fran Place Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -3926,7 +3978,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 9,
+    "step": 6,
     "text": "Turn left onto Fran Place Southeast. Walk 350 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -3976,7 +4028,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 10,
+    "step": 7,
     "text": "Turn around and walk back on Fran Place Southeast. Walk 350 feet to the corner of Fran Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4022,7 +4074,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 11,
+    "step": 8,
     "text": "Go straight onto Fran Road Southeast. Walk 350 feet to the corner of 17th Street Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4054,6 +4106,40 @@
      [
       -106.700435,
       35.25373
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 9,
+    "text": "Turn left onto 17th Street Southeast. Walk 300 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 298,
+    "street": "17th Street Southeast",
+    "turn": "L",
+    "destination": "the next corner",
+    "start": [
+     -106.700447,
+     35.252914
+    ],
+    "end": [
+     -106.700435,
+     35.25373
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.700435,
+      35.25373
      ],
      [
       -106.700427,
@@ -4064,19 +4150,19 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 12,
-    "text": "Turn left onto 17th Street Southeast. Walk 600 feet to the next corner. Knock both sides.",
+    "step": 10,
+    "text": "Go straight on 17th Street Southeast. Walk 300 feet to the next corner. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 599,
+    "distance_ft": 301,
     "street": "17th Street Southeast",
-    "turn": "L",
+    "turn": "straight",
     "destination": "the next corner",
     "start": [
-     -106.700447,
-     35.252914
+     -106.700435,
+     35.25373
     ],
     "end": [
      -106.700427,
@@ -4102,7 +4188,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 13,
+    "step": 11,
     "text": "Turn around and walk back on 17th Street Southeast. Walk 300 feet to the corner of Erlinda Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4148,7 +4234,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 14,
+    "step": 12,
     "text": "Turn right onto Erlinda Road Southeast. Walk 500 feet to the corner of Charlene Road Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4186,7 +4272,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 15,
+    "step": 13,
     "text": "Turn right onto Charlene Road Southeast. Walk 300 feet to the corner of Brenda Road Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4236,7 +4322,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 16,
+    "step": 14,
     "text": "Turn right onto Brenda Road Southeast. Walk 650 feet to the corner of 17th Street Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4274,7 +4360,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 17,
+    "step": 15,
     "text": "Turn left onto 17th Street Southeast. Walk 300 feet to the corner of Arlene Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4316,7 +4402,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 18,
+    "step": 16,
     "text": "Turn left onto Arlene Road Southeast. Walk 400 feet to the next corner. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4362,7 +4448,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 19,
+    "step": 17,
     "text": "Go straight on Arlene Road Southeast. Walk 550 feet to the corner of Arlene Court Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4400,7 +4486,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 20,
+    "step": 18,
     "text": "Turn right onto Arlene Court Southeast. Walk 150 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4438,7 +4524,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 21,
+    "step": 19,
     "text": "Turn around and walk back on Arlene Court Southeast. Walk 150 feet to the corner of Arlene Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4500,7 +4586,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 22,
+    "step": 20,
     "text": "Turn right onto Arlene Road Southeast. Walk 1,350 feet to the corner of 5th Street Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4542,7 +4628,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 23,
+    "step": 21,
     "text": "Turn left onto 5th Street Southeast. Walk 300 feet to the corner of Brenda Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4604,7 +4690,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 24,
+    "step": 22,
     "text": "Turn left onto Brenda Road Southeast. Walk 1,200 feet to the corner of Charlene Road Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4642,7 +4728,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 25,
+    "step": 23,
     "text": "Turn right onto Charlene Road Southeast. Walk 300 feet to the next corner. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4680,7 +4766,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 26,
+    "step": 24,
     "text": "Go straight on Charlene Road Southeast. Walk 300 feet to the next corner. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4718,7 +4804,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 27,
+    "step": 25,
     "text": "Go straight on Charlene Road Southeast. Walk 300 feet to the corner of Geraldine Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4764,7 +4850,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 28,
+    "step": 26,
     "text": "Turn right onto Geraldine Road Southeast. Walk 300 feet to the corner of Geraldine Place Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4810,7 +4896,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 29,
+    "step": 27,
     "text": "Turn right onto Geraldine Place Southeast. Walk 400 feet to the dead end. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -4856,7 +4942,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 30,
+    "step": 28,
     "text": "Turn around and walk back on Geraldine Place Southeast. Walk 400 feet to the corner of Geraldine Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4902,7 +4988,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 31,
+    "step": 29,
     "text": "Turn right onto Geraldine Road Southeast. Walk 300 feet to the corner of 5th Street Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4940,7 +5026,7 @@
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 32,
+    "step": 30,
     "text": "Turn right onto 5th Street Southeast. Walk 150 feet to the corner of Polaris Boulevard Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -4976,25 +5062,67 @@
      [
       -106.703461,
       35.249072
+     ],
+     [
+      -106.703753,
+      35.248359
      ]
     ]
    },
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 33,
-    "text": "Turn left onto Polaris Boulevard Southeast. Walk 750 feet to the next corner. Knock both sides.",
+    "step": 31,
+    "text": "Turn left onto Polaris Boulevard Southeast. Walk 1,000 feet to the next corner. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 730,
+    "distance_ft": 1005,
     "street": "Polaris Boulevard Southeast",
     "turn": "L",
     "destination": "the next corner",
     "start": [
      -106.70271,
      35.250975
+    ],
+    "end": [
+     -106.703753,
+     35.248359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.703753,
+      35.248359
+     ],
+     [
+      -106.703461,
+      35.249072
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 32,
+    "text": "Turn around and walk back on Polaris Boulevard Southeast. Walk 250 feet to the corner of Pegasus Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 274,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "around",
+    "destination": "the corner of Pegasus Avenue Southeast",
+    "start": [
+     -106.703753,
+     35.248359
     ],
     "end": [
      -106.703461,
@@ -5012,51 +5140,31 @@
       35.249072
      ],
      [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.703421,
-      35.246755
+      -106.704373,
+      35.249319
      ]
     ]
    },
    "properties": {
     "kind": "step",
     "session": 2,
-    "step": 34,
-    "text": "Go straight on Polaris Boulevard Southeast. Walk 950 feet to the parking spot P. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
+    "step": 33,
+    "text": "Turn left onto Pegasus Avenue Southeast. Walk 300 feet to the corner of Alpha Road Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 939,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "straight",
-    "destination": "the parking spot P",
+    "mode_label": "knock both sides",
+    "distance_ft": 287,
+    "street": "Pegasus Avenue Southeast",
+    "turn": "L",
+    "destination": "the corner of Alpha Road Southeast",
     "start": [
      -106.703461,
      35.249072
     ],
     "end": [
-     -106.703421,
-     35.246755
+     -106.704373,
+     35.249319
     ]
    }
   },
@@ -5066,60 +5174,86 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.703421,
-      35.246755
+      -106.704373,
+      35.249319
      ],
      [
-      -106.703799,
-      35.247064
+      -106.703782,
+      35.250784
      ],
      [
-      -106.704022,
-      35.247358
+      -106.702887,
+      35.250542
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 2,
+    "step": 34,
+    "text": "Turn right onto Alpha Road Southeast. Walk 850 feet to the parking spot P. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 845,
+    "street": "Alpha Road Southeast",
+    "turn": "R",
+    "destination": "the parking spot P",
+    "start": [
+     -106.704373,
+     35.249319
+    ],
+    "end": [
+     -106.702887,
+     35.250542
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.7012,
+      35.249296
      ],
      [
-      -106.704048,
-      35.247498
+      -106.701312,
+      35.249128
      ],
      [
-      -106.704014,
-      35.247659
+      -106.701397,
+      35.248897
      ],
      [
-      -106.703753,
-      35.248359
+      -106.701432,
+      35.248644
      ],
      [
-      -106.702161,
-      35.247957
+      -106.701346,
+      35.248518
      ],
      [
-      -106.701861,
-      35.247824
-     ],
-     [
-      -106.701569,
-      35.247614
-     ],
-     [
-      -106.700719,
-      35.246857
-     ],
-     [
-      -106.700608,
-      35.246801
-     ],
-     [
-      -106.700496,
-      35.24685
+      -106.700891,
+      35.248104
      ],
      [
       -106.699955,
       35.247284
      ],
      [
-      -106.700891,
-      35.248104
+      -106.700496,
+      35.24685
+     ],
+     [
+      -106.700608,
+      35.246801
+     ],
+     [
+      -106.700719,
+      35.246857
      ],
      [
       -106.701569,
@@ -5130,8 +5264,32 @@
       35.248104
      ],
      [
-      -106.701346,
-      35.248518
+      -106.701569,
+      35.247614
+     ],
+     [
+      -106.701861,
+      35.247824
+     ],
+     [
+      -106.702161,
+      35.247957
+     ],
+     [
+      -106.703753,
+      35.248359
+     ],
+     [
+      -106.703461,
+      35.249072
+     ],
+     [
+      -106.701826,
+      35.24863
+     ],
+     [
+      -106.701612,
+      35.248623
      ],
      [
       -106.701432,
@@ -5150,124 +5308,60 @@
       35.249296
      ],
      [
-      -106.700942,
-      35.249219
+      -106.702384,
+      35.249598
      ],
      [
-      -106.700796,
-      35.249107
-     ],
-     [
-      -106.700591,
-      35.248946
-     ],
-     [
-      -106.700196,
-      35.249247
-     ],
-     [
-      -106.700591,
-      35.248946
-     ],
-     [
-      -106.699887,
-      35.248357
-     ],
-     [
-      -106.69938,
-      35.248749
-     ],
-     [
-      -106.699887,
-      35.248357
-     ],
-     [
-      -106.699289,
-      35.247813
-     ],
-     [
-      -106.698913,
-      35.247487
-     ],
-     [
-      -106.698793,
-      35.247383
-     ],
-     [
-      -106.697942,
-      35.248069
-     ],
-     [
-      -106.697845,
-      35.248126
-     ],
-     [
-      -106.69793,
-      35.248238
-     ],
-     [
-      -106.698264,
-      35.248672
-     ],
-     [
-      -106.698488,
-      35.248889
-     ],
-     [
-      -106.69878,
-      35.249065
-     ],
-     [
-      -106.699097,
-      35.249163
-     ],
-     [
-      -106.6995,
+      -106.7012,
       35.249296
      ],
      [
-      -106.699629,
-      35.24938
+      -106.700934,
+      35.250011
      ],
      [
-      -106.699655,
-      35.249485
+      -106.700316,
+      35.249927
      ],
      [
-      -106.699449,
-      35.249857
+      -106.699758,
+      35.249927
      ],
      [
-      -106.699432,
-      35.250033
+      -106.700316,
+      35.249927
      ],
      [
-      -106.699422,
-      35.250416
+      -106.700934,
+      35.250011
      ],
      [
-      -106.698255,
-      35.250402
+      -106.700762,
+      35.250453
      ],
      [
-      -106.698255,
-      35.250782
+      -106.701088,
+      35.250558
      ],
      [
-      -106.698768,
-      35.250784
+      -106.701003,
+      35.250908
      ],
      [
-      -106.698255,
-      35.250782
+      -106.700882,
+      35.251041
      ],
      [
-      -106.698255,
-      35.250402
+      -106.700719,
+      35.251118
      ],
      [
-      -106.699422,
-      35.250416
+      -106.700462,
+      35.251146
+     ],
+     [
+      -106.699758,
+      35.251048
      ],
      [
       -106.699448,
@@ -5280,6 +5374,14 @@
      [
       -106.699427,
       35.252907
+     ],
+     [
+      -106.700447,
+      35.252914
+     ],
+     [
+      -106.700435,
+      35.25373
      ],
      [
       -106.700447,
@@ -5314,61 +5416,182 @@
       35.251026
      ],
      [
-      -106.699758,
-      35.251048
+      -106.699422,
+      35.250416
      ],
      [
-      -106.700462,
-      35.251146
+      -106.698255,
+      35.250402
      ],
      [
-      -106.700719,
-      35.251118
+      -106.698255,
+      35.250782
      ],
      [
-      -106.700882,
-      35.251041
+      -106.698768,
+      35.250784
      ],
      [
-      -106.701003,
-      35.250908
+      -106.698255,
+      35.250782
      ],
      [
-      -106.701088,
-      35.250558
+      -106.698255,
+      35.250402
      ],
      [
-      -106.700762,
-      35.250453
+      -106.699422,
+      35.250416
      ],
      [
-      -106.700934,
-      35.250011
+      -106.699432,
+      35.250033
      ],
      [
-      -106.700316,
-      35.249927
+      -106.699449,
+      35.249857
      ],
      [
-      -106.699758,
-      35.249927
+      -106.699655,
+      35.249485
      ],
      [
-      -106.700316,
-      35.249927
+      -106.699629,
+      35.24938
      ],
      [
-      -106.700934,
-      35.250011
+      -106.6995,
+      35.249296
+     ],
+     [
+      -106.699097,
+      35.249163
+     ],
+     [
+      -106.69878,
+      35.249065
+     ],
+     [
+      -106.698488,
+      35.248889
+     ],
+     [
+      -106.698264,
+      35.248672
+     ],
+     [
+      -106.69793,
+      35.248238
+     ],
+     [
+      -106.697845,
+      35.248126
+     ],
+     [
+      -106.697942,
+      35.248069
+     ],
+     [
+      -106.698793,
+      35.247383
+     ],
+     [
+      -106.698913,
+      35.247487
+     ],
+     [
+      -106.699289,
+      35.247813
+     ],
+     [
+      -106.699887,
+      35.248357
+     ],
+     [
+      -106.69938,
+      35.248749
+     ],
+     [
+      -106.699887,
+      35.248357
+     ],
+     [
+      -106.700591,
+      35.248946
+     ],
+     [
+      -106.700196,
+      35.249247
+     ],
+     [
+      -106.700591,
+      35.248946
+     ],
+     [
+      -106.700796,
+      35.249107
+     ],
+     [
+      -106.700942,
+      35.249219
      ],
      [
       -106.7012,
       35.249296
-     ],
-     [
-      -106.702384,
-      35.249598
-     ],
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "session_path",
+    "session": 3,
+    "color": "GOLD",
+    "color_hex": "#c77800",
+    "line_dash": [
+     5,
+     1.6,
+     1.2,
+     1.6
+    ],
+    "mi": 2.7,
+    "homes": 161,
+    "minutes": 180,
+    "steps": 42,
+    "streets": [
+     "Arcturus Avenue Southeast",
+     "Borealis Avenue Southeast",
+     "Minor Lane Southeast",
+     "Pegasus Avenue Southeast",
+     "Celina Court Southeast",
+     "Alpha Court Southeast",
+     "Geraldine Loop Southeast",
+     "18th Street Southeast",
+     "Fran Road Southeast",
+     "17th Street Southeast",
+     "Geraldine Road Southeast",
+     "19th Street Southeast",
+     "Sunrise Lane Southeast",
+     "Celina Road Southeast",
+     "Abbey Court Southeast",
+     "Lyra Court Southeast"
+    ],
+    "parking": {
+     "label": "P3",
+     "name": "Street parking on Arcturus Avenue Southeast at the corner of Celina Court Southeast",
+     "address": "Arcturus Avenue Southeast and Celina Court Southeast (near 1799 Celina Road Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.249296,-106.701200",
+     "coordinates": [
+      -106.7012,
+      35.249296
+     ]
+    },
+    "length_m": 4420.6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.7012,
       35.249296
@@ -5386,182 +5609,12 @@
       35.248644
      ],
      [
-      -106.701612,
-      35.248623
+      -106.701346,
+      35.248518
      ],
      [
-      -106.701826,
-      35.24863
-     ],
-     [
-      -106.703461,
-      35.249072
-     ],
-     [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.703421,
-      35.246755
-     ],
-     [
-      -106.702811,
-      35.246224
-     ],
-     [
-      -106.701919,
-      35.246944
-     ],
-     [
-      -106.702811,
-      35.246224
-     ],
-     [
-      -106.703421,
-      35.246755
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "session_path",
-    "session": 3,
-    "color": "GOLD",
-    "color_hex": "#c77800",
-    "line_dash": [
-     5,
-     1.6,
-     1.2,
-     1.6
-    ],
-    "mi": 3.1,
-    "homes": 172,
-    "minutes": 195,
-    "steps": 44,
-    "streets": [
-     "Borealis Avenue Southeast",
-     "Arcturus Avenue Southeast",
-     "Minor Lane Southeast",
-     "Celina Road Southeast",
-     "Lyra Court Southeast",
-     "Abbey Court Southeast",
-     "18th Street Southeast",
-     "19th Street Southeast",
-     "Sunrise Lane Southeast",
-     "Fran Road Southeast",
-     "Geraldine Road Southeast",
-     "Geraldine Loop Southeast",
-     "Pegasus Avenue Southeast",
-     "Alpha Court Southeast",
-     "Celina Court Southeast",
-     "Polaris Boulevard Southeast",
-     "Procyon Court Southeast"
-    ],
-    "length_m": 5034.3
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703421,
-      35.246755
-     ],
-     [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.703753,
-      35.248359
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 1,
-    "text": "Start at the parking spot P. Walk along Polaris Boulevard Southeast toward the corner of Borealis Avenue Southeast, 650 feet. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 664,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "start",
-    "destination": "the corner of Borealis Avenue Southeast",
-    "start": [
-     -106.703421,
-     35.246755
-    ],
-    "end": [
-     -106.703753,
-     35.248359
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.702161,
-      35.247957
-     ],
-     [
-      -106.701861,
-      35.247824
-     ],
-     [
-      -106.701569,
-      35.247614
-     ],
-     [
-      -106.700719,
-      35.246857
-     ],
-     [
-      -106.700608,
-      35.246801
-     ],
-     [
-      -106.700496,
-      35.24685
+      -106.700891,
+      35.248104
      ],
      [
       -106.699955,
@@ -5572,19 +5625,19 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 2,
-    "text": "Turn right onto Borealis Avenue Southeast. Walk 1,400 feet to the corner of Arcturus Avenue Southeast. Knock both sides.",
+    "step": 1,
+    "text": "Start at the parking spot P. Walk along Arcturus Avenue Southeast toward the corner of Borealis Avenue Southeast, 900 feet. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 1393,
-    "street": "Borealis Avenue Southeast",
-    "turn": "R",
-    "destination": "the corner of Arcturus Avenue Southeast",
+    "distance_ft": 916,
+    "street": "Arcturus Avenue Southeast",
+    "turn": "start",
+    "destination": "the corner of Borealis Avenue Southeast",
     "start": [
-     -106.703753,
-     35.248359
+     -106.7012,
+     35.249296
     ],
     "end": [
      -106.699955,
@@ -5600,6 +5653,56 @@
      [
       -106.699955,
       35.247284
+     ],
+     [
+      -106.700496,
+      35.24685
+     ],
+     [
+      -106.700608,
+      35.246801
+     ],
+     [
+      -106.700719,
+      35.246857
+     ],
+     [
+      -106.701569,
+      35.247614
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 2,
+    "text": "Turn right onto Borealis Avenue Southeast. Walk 700 feet to the corner of Minor Lane Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 678,
+    "street": "Borealis Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Minor Lane Southeast",
+    "start": [
+     -106.699955,
+     35.247284
+    ],
+    "end": [
+     -106.701569,
+     35.247614
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.701569,
+      35.247614
      ],
      [
       -106.700891,
@@ -5611,18 +5714,18 @@
     "kind": "step",
     "session": 3,
     "step": 3,
-    "text": "Turn left onto Arcturus Avenue Southeast. Walk 400 feet to the corner of Minor Lane Southeast. Knock both sides.",
+    "text": "Turn right onto Minor Lane Southeast. Walk 250 feet to the next corner. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 410,
-    "street": "Arcturus Avenue Southeast",
-    "turn": "L",
-    "destination": "the corner of Minor Lane Southeast",
+    "distance_ft": 270,
+    "street": "Minor Lane Southeast",
+    "turn": "R",
+    "destination": "the next corner",
     "start": [
-     -106.699955,
-     35.247284
+     -106.701569,
+     35.247614
     ],
     "end": [
      -106.700891,
@@ -5649,15 +5752,15 @@
     "kind": "step",
     "session": 3,
     "step": 4,
-    "text": "Turn left onto Minor Lane Southeast. Walk 250 feet to the next corner. Knock both sides.",
-    "mode": "knock_both_sides",
+    "text": "Turn around and walk back on Minor Lane Southeast. Walk 250 feet to the corner of Borealis Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
+    "mode_label": "walk through, no knocking",
     "distance_ft": 270,
     "street": "Minor Lane Southeast",
-    "turn": "L",
-    "destination": "the next corner",
+    "turn": "around",
+    "destination": "the corner of Borealis Avenue Southeast",
     "start": [
      -106.700891,
      35.248104
@@ -5678,8 +5781,16 @@
       35.247614
      ],
      [
-      -106.700891,
-      35.248104
+      -106.701861,
+      35.247824
+     ],
+     [
+      -106.702161,
+      35.247957
+     ],
+     [
+      -106.703753,
+      35.248359
      ]
     ]
    },
@@ -5687,22 +5798,22 @@
     "kind": "step",
     "session": 3,
     "step": 5,
-    "text": "Turn around and walk back on Minor Lane Southeast. Walk 250 feet to the corner of Arcturus Avenue Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
+    "text": "Turn right onto Borealis Avenue Southeast. Walk 700 feet to the corner of Polaris Boulevard Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 270,
-    "street": "Minor Lane Southeast",
-    "turn": "around",
-    "destination": "the corner of Arcturus Avenue Southeast",
+    "mode_label": "knock both sides",
+    "distance_ft": 715,
+    "street": "Borealis Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Polaris Boulevard Southeast",
     "start": [
      -106.701569,
      35.247614
     ],
     "end": [
-     -106.700891,
-     35.248104
+     -106.703753,
+     35.248359
     ]
    }
   },
@@ -5712,13 +5823,89 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.700891,
-      35.248104
+      -106.703753,
+      35.248359
      ],
      [
-      -106.701346,
-      35.248518
+      -106.703461,
+      35.249072
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 6,
+    "text": "Turn right onto Polaris Boulevard Southeast. Walk 250 feet to the corner of Pegasus Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 274,
+    "street": "Polaris Boulevard Southeast",
+    "turn": "R",
+    "destination": "the corner of Pegasus Avenue Southeast",
+    "start": [
+     -106.703753,
+     35.248359
+    ],
+    "end": [
+     -106.703461,
+     35.249072
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.703461,
+      35.249072
      ],
+     [
+      -106.701826,
+      35.24863
+     ],
+     [
+      -106.701612,
+      35.248623
+     ],
+     [
+      -106.701432,
+      35.248644
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 7,
+    "text": "Turn right onto Pegasus Avenue Southeast. Walk 650 feet to the corner of Arcturus Avenue Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 632,
+    "street": "Pegasus Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of Arcturus Avenue Southeast",
+    "start": [
+     -106.703461,
+     35.249072
+    ],
+    "end": [
+     -106.701432,
+     35.248644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
      [
       -106.701432,
       35.248644
@@ -5740,19 +5927,19 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 6,
-    "text": "Turn left onto Arcturus Avenue Southeast. Walk 500 feet to the corner of Celina Road Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
+    "step": 8,
+    "text": "Turn left onto Arcturus Avenue Southeast. Walk 250 feet to the corner of Celina Court Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 507,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 251,
     "street": "Arcturus Avenue Southeast",
     "turn": "L",
-    "destination": "the corner of Celina Road Southeast",
+    "destination": "the corner of Celina Court Southeast",
     "start": [
-     -106.700891,
-     35.248104
+     -106.701432,
+     35.248644
     ],
     "end": [
      -106.7012,
@@ -5770,92 +5957,8 @@
       35.249296
      ],
      [
-      -106.700942,
-      35.249219
-     ],
-     [
-      -106.700796,
-      35.249107
-     ],
-     [
-      -106.700591,
-      35.248946
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 7,
-    "text": "Turn right onto Celina Road Southeast. Walk 250 feet to the corner of Lyra Court Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 227,
-    "street": "Celina Road Southeast",
-    "turn": "R",
-    "destination": "the corner of Lyra Court Southeast",
-    "start": [
-     -106.7012,
-     35.249296
-    ],
-    "end": [
-     -106.700591,
-     35.248946
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.700591,
-      35.248946
-     ],
-     [
-      -106.700196,
-      35.249247
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 8,
-    "text": "Turn left onto Lyra Court Southeast. Walk 150 feet to the dead end. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 161,
-    "street": "Lyra Court Southeast",
-    "turn": "L",
-    "destination": "the dead end",
-    "start": [
-     -106.700591,
-     35.248946
-    ],
-    "end": [
-     -106.700196,
-     35.249247
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.700196,
-      35.249247
-     ],
-     [
-      -106.700591,
-      35.248946
+      -106.702384,
+      35.249598
      ]
     ]
    },
@@ -5863,22 +5966,22 @@
     "kind": "step",
     "session": 3,
     "step": 9,
-    "text": "Turn around and walk back on Lyra Court Southeast. Walk 150 feet to the corner of Celina Road Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
+    "text": "Turn left onto Celina Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 161,
-    "street": "Lyra Court Southeast",
-    "turn": "around",
-    "destination": "the corner of Celina Road Southeast",
+    "mode_label": "knock both sides",
+    "distance_ft": 370,
+    "street": "Celina Court Southeast",
+    "turn": "L",
+    "destination": "the dead end",
     "start": [
-     -106.700196,
-     35.249247
+     -106.7012,
+     35.249296
     ],
     "end": [
-     -106.700591,
-     35.248946
+     -106.702384,
+     35.249598
     ]
    }
   },
@@ -5888,12 +5991,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.700591,
-      35.248946
+      -106.702384,
+      35.249598
      ],
      [
-      -106.699887,
-      35.248357
+      -106.7012,
+      35.249296
      ]
     ]
    },
@@ -5901,22 +6004,22 @@
     "kind": "step",
     "session": 3,
     "step": 10,
-    "text": "Turn left onto Celina Road Southeast. Walk 300 feet to the corner of Abbey Court Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
+    "text": "Turn around and walk back on Celina Court Southeast. Walk 350 feet to the corner of Arcturus Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 301,
-    "street": "Celina Road Southeast",
-    "turn": "L",
-    "destination": "the corner of Abbey Court Southeast",
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 370,
+    "street": "Celina Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Arcturus Avenue Southeast",
     "start": [
-     -106.700591,
-     35.248946
+     -106.702384,
+     35.249598
     ],
     "end": [
-     -106.699887,
-     35.248357
+     -106.7012,
+     35.249296
     ]
    }
   },
@@ -5926,12 +6029,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.699887,
-      35.248357
+      -106.7012,
+      35.249296
      ],
      [
-      -106.69938,
-      35.248749
+      -106.700934,
+      35.250011
      ]
     ]
    },
@@ -5939,22 +6042,22 @@
     "kind": "step",
     "session": 3,
     "step": 11,
-    "text": "Turn left onto Abbey Court Southeast. Walk 200 feet to the dead end. Knock both sides.",
+    "text": "Turn left onto Arcturus Avenue Southeast. Walk 250 feet to the corner of Alpha Court Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 208,
-    "street": "Abbey Court Southeast",
+    "distance_ft": 273,
+    "street": "Arcturus Avenue Southeast",
     "turn": "L",
-    "destination": "the dead end",
+    "destination": "the corner of Alpha Court Southeast",
     "start": [
-     -106.699887,
-     35.248357
+     -106.7012,
+     35.249296
     ],
     "end": [
-     -106.69938,
-     35.248749
+     -106.700934,
+     35.250011
     ]
    }
   },
@@ -5964,12 +6067,16 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.69938,
-      35.248749
+      -106.700934,
+      35.250011
      ],
      [
-      -106.699887,
-      35.248357
+      -106.700316,
+      35.249927
+     ],
+     [
+      -106.699758,
+      35.249927
      ]
     ]
    },
@@ -5977,22 +6084,22 @@
     "kind": "step",
     "session": 3,
     "step": 12,
-    "text": "Turn around and walk back on Abbey Court Southeast. Walk 200 feet to the corner of Celina Road Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
+    "text": "Turn right onto Alpha Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 208,
-    "street": "Abbey Court Southeast",
-    "turn": "around",
-    "destination": "the corner of Celina Road Southeast",
+    "mode_label": "knock both sides",
+    "distance_ft": 353,
+    "street": "Alpha Court Southeast",
+    "turn": "R",
+    "destination": "the dead end",
     "start": [
-     -106.69938,
-     35.248749
+     -106.700934,
+     35.250011
     ],
     "end": [
-     -106.699887,
-     35.248357
+     -106.699758,
+     35.249927
     ]
    }
   },
@@ -6002,12 +6109,16 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.699887,
-      35.248357
+      -106.699758,
+      35.249927
      ],
      [
-      -106.699289,
-      35.247813
+      -106.700316,
+      35.249927
+     ],
+     [
+      -106.700934,
+      35.250011
      ]
     ]
    },
@@ -6015,22 +6126,22 @@
     "kind": "step",
     "session": 3,
     "step": 13,
-    "text": "Turn left onto Celina Road Southeast. Walk 250 feet to the next corner. Knock both sides.",
-    "mode": "knock_both_sides",
+    "text": "Turn around and walk back on Alpha Court Southeast. Walk 350 feet to the corner of Pegasus Avenue Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 267,
-    "street": "Celina Road Southeast",
-    "turn": "L",
-    "destination": "the next corner",
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 353,
+    "street": "Alpha Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Pegasus Avenue Southeast",
     "start": [
-     -106.699887,
-     35.248357
+     -106.699758,
+     35.249927
     ],
     "end": [
-     -106.699289,
-     35.247813
+     -106.700934,
+     35.250011
     ]
    }
   },
@@ -6040,16 +6151,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.699289,
-      35.247813
+      -106.700934,
+      35.250011
      ],
      [
-      -106.698913,
-      35.247487
-     ],
-     [
-      -106.698793,
-      35.247383
+      -106.700762,
+      35.250453
      ]
     ]
    },
@@ -6057,22 +6164,22 @@
     "kind": "step",
     "session": 3,
     "step": 14,
-    "text": "Go straight on Celina Road Southeast. Walk 200 feet to the corner of Wexford Road Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
+    "text": "Turn right onto Pegasus Avenue Southeast. Walk 150 feet to the corner of 5th Street Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 216,
-    "street": "Celina Road Southeast",
-    "turn": "straight",
-    "destination": "the corner of Wexford Road Southeast",
+    "mode_label": "knock both sides",
+    "distance_ft": 169,
+    "street": "Pegasus Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of 5th Street Southeast",
     "start": [
-     -106.699289,
-     35.247813
+     -106.700934,
+     35.250011
     ],
     "end": [
-     -106.698793,
-     35.247383
+     -106.700762,
+     35.250453
     ]
    }
   },
@@ -6082,16 +6189,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.698793,
-      35.247383
+      -106.700762,
+      35.250453
      ],
      [
-      -106.697942,
-      35.248069
-     ],
-     [
-      -106.697845,
-      35.248126
+      -106.701088,
+      35.250558
      ]
     ]
    },
@@ -6099,22 +6202,22 @@
     "kind": "step",
     "session": 3,
     "step": 15,
-    "text": "Turn left onto Wexford Road Southeast. Walk 400 feet to the corner of 18th Street Southeast. Do not knock here, just walk.",
+    "text": "Turn left onto 5th Street Southeast. Walk 100 feet to the corner of Geraldine Loop Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "walk through, no knocking",
-    "distance_ft": 392,
-    "street": "Wexford Road Southeast",
+    "distance_ft": 105,
+    "street": "5th Street Southeast",
     "turn": "L",
-    "destination": "the corner of 18th Street Southeast",
+    "destination": "the corner of Geraldine Loop Southeast",
     "start": [
-     -106.698793,
-     35.247383
+     -106.700762,
+     35.250453
     ],
     "end": [
-     -106.697845,
-     35.248126
+     -106.701088,
+     35.250558
     ]
    }
   },
@@ -6124,16 +6227,32 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.697845,
-      35.248126
+      -106.701088,
+      35.250558
      ],
      [
-      -106.69793,
-      35.248238
+      -106.701003,
+      35.250908
      ],
      [
-      -106.698264,
-      35.248672
+      -106.700882,
+      35.251041
+     ],
+     [
+      -106.700719,
+      35.251118
+     ],
+     [
+      -106.700462,
+      35.251146
+     ],
+     [
+      -106.699758,
+      35.251048
+     ],
+     [
+      -106.699448,
+      35.251026
      ]
     ]
    },
@@ -6141,320 +6260,22 @@
     "kind": "step",
     "session": 3,
     "step": 16,
-    "text": "Turn left onto 18th Street Southeast. Walk 250 feet to the next corner. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 236,
-    "street": "18th Street Southeast",
-    "turn": "L",
-    "destination": "the next corner",
-    "start": [
-     -106.697845,
-     35.248126
-    ],
-    "end": [
-     -106.698264,
-     35.248672
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.698264,
-      35.248672
-     ],
-     [
-      -106.698488,
-      35.248889
-     ],
-     [
-      -106.69878,
-      35.249065
-     ],
-     [
-      -106.699097,
-      35.249163
-     ],
-     [
-      -106.6995,
-      35.249296
-     ],
-     [
-      -106.699629,
-      35.24938
-     ],
-     [
-      -106.699655,
-      35.249485
-     ],
-     [
-      -106.699449,
-      35.249857
-     ],
-     [
-      -106.699432,
-      35.250033
-     ],
-     [
-      -106.699422,
-      35.250416
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 17,
-    "text": "Go straight on 18th Street Southeast. Walk 900 feet to the corner of 5th Street Southeast. Knock both sides.",
+    "text": "Turn right onto Geraldine Loop Southeast. Walk 650 feet to the corner of 18th Street Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 885,
-    "street": "18th Street Southeast",
-    "turn": "straight",
-    "destination": "the corner of 5th Street Southeast",
-    "start": [
-     -106.698264,
-     35.248672
-    ],
-    "end": [
-     -106.699422,
-     35.250416
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.699422,
-      35.250416
-     ],
-     [
-      -106.698255,
-      35.250402
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 18,
-    "text": "Turn right onto 5th Street Southeast. Walk 350 feet to the corner of 19th Street Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 348,
-    "street": "5th Street Southeast",
-    "turn": "R",
-    "destination": "the corner of 19th Street Southeast",
-    "start": [
-     -106.699422,
-     35.250416
-    ],
-    "end": [
-     -106.698255,
-     35.250402
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.698255,
-      35.250402
-     ],
-     [
-      -106.698255,
-      35.250782
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 19,
-    "text": "Turn left onto 19th Street Southeast. Walk 150 feet to the corner of Sunrise Lane Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 138,
-    "street": "19th Street Southeast",
-    "turn": "L",
-    "destination": "the corner of Sunrise Lane Southeast",
-    "start": [
-     -106.698255,
-     35.250402
-    ],
-    "end": [
-     -106.698255,
-     35.250782
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.698255,
-      35.250782
-     ],
-     [
-      -106.698768,
-      35.250784
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 20,
-    "text": "Turn left onto Sunrise Lane Southeast. Walk 150 feet to the dead end. Knock both sides.",
-    "mode": "knock_both_sides",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 153,
-    "street": "Sunrise Lane Southeast",
-    "turn": "L",
-    "destination": "the dead end",
-    "start": [
-     -106.698255,
-     35.250782
-    ],
-    "end": [
-     -106.698768,
-     35.250784
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.698768,
-      35.250784
-     ],
-     [
-      -106.698255,
-      35.250782
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 21,
-    "text": "Turn around and walk back on Sunrise Lane Southeast. Walk 150 feet to the corner of 19th Street Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 153,
-    "street": "Sunrise Lane Southeast",
-    "turn": "around",
-    "destination": "the corner of 19th Street Southeast",
-    "start": [
-     -106.698768,
-     35.250784
-    ],
-    "end": [
-     -106.698255,
-     35.250782
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.698255,
-      35.250782
-     ],
-     [
-      -106.698255,
-      35.250402
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 22,
-    "text": "Turn right onto 19th Street Southeast. Walk 150 feet to the corner of 5th Street Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 138,
-    "street": "19th Street Southeast",
-    "turn": "R",
-    "destination": "the corner of 5th Street Southeast",
-    "start": [
-     -106.698255,
-     35.250782
-    ],
-    "end": [
-     -106.698255,
-     35.250402
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.698255,
-      35.250402
-     ],
-     [
-      -106.699422,
-      35.250416
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 23,
-    "text": "Turn right onto 5th Street Southeast. Walk 350 feet to the corner of 18th Street Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 348,
-    "street": "5th Street Southeast",
+    "distance_ft": 630,
+    "street": "Geraldine Loop Southeast",
     "turn": "R",
     "destination": "the corner of 18th Street Southeast",
     "start": [
-     -106.698255,
-     35.250402
+     -106.701088,
+     35.250558
     ],
     "end": [
-     -106.699422,
-     35.250416
+     -106.699448,
+     35.251026
     ]
    }
   },
@@ -6463,10 +6284,6 @@
    "geometry": {
     "type": "LineString",
     "coordinates": [
-     [
-      -106.699422,
-      35.250416
-     ],
      [
       -106.699448,
       35.251026
@@ -6484,19 +6301,19 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 24,
-    "text": "Turn right onto 18th Street Southeast. Walk 900 feet to the corner of Fran Road Southeast. Knock both sides.",
+    "step": 17,
+    "text": "Turn left onto 18th Street Southeast. Walk 700 feet to the corner of Fran Road Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 910,
+    "distance_ft": 687,
     "street": "18th Street Southeast",
-    "turn": "R",
+    "turn": "L",
     "destination": "the corner of Fran Road Southeast",
     "start": [
-     -106.699422,
-     35.250416
+     -106.699448,
+     35.251026
     ],
     "end": [
      -106.699427,
@@ -6522,8 +6339,8 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 25,
-    "text": "Turn left onto Fran Road Southeast. Walk 300 feet to the next corner. Knock both sides.",
+    "step": 18,
+    "text": "Turn left onto Fran Road Southeast. Walk 300 feet to the corner of 17th Street Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
@@ -6531,10 +6348,86 @@
     "distance_ft": 304,
     "street": "Fran Road Southeast",
     "turn": "L",
-    "destination": "the next corner",
+    "destination": "the corner of 17th Street Southeast",
     "start": [
      -106.699427,
      35.252907
+    ],
+    "end": [
+     -106.700447,
+     35.252914
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.700447,
+      35.252914
+     ],
+     [
+      -106.700435,
+      35.25373
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 19,
+    "text": "Turn right onto 17th Street Southeast. Walk 300 feet to the next corner. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 298,
+    "street": "17th Street Southeast",
+    "turn": "R",
+    "destination": "the next corner",
+    "start": [
+     -106.700447,
+     35.252914
+    ],
+    "end": [
+     -106.700435,
+     35.25373
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.700435,
+      35.25373
+     ],
+     [
+      -106.700447,
+      35.252914
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 20,
+    "text": "Turn around and walk back on 17th Street Southeast. Walk 300 feet to the corner of Fran Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 298,
+    "street": "17th Street Southeast",
+    "turn": "around",
+    "destination": "the corner of Fran Road Southeast",
+    "start": [
+     -106.700435,
+     35.25373
     ],
     "end": [
      -106.700447,
@@ -6568,15 +6461,15 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 26,
-    "text": "Go straight on Fran Road Southeast. Walk 350 feet to the corner of Charlene Road Southeast. Do not knock here, just walk.",
+    "step": 21,
+    "text": "Turn right onto Fran Road Southeast. Walk 350 feet to the corner of Charlene Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "walk through, no knocking",
     "distance_ft": 357,
     "street": "Fran Road Southeast",
-    "turn": "straight",
+    "turn": "R",
     "destination": "the corner of Charlene Road Southeast",
     "start": [
      -106.700447,
@@ -6606,7 +6499,7 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 27,
+    "step": 22,
     "text": "Turn left onto Charlene Road Southeast. Walk 300 feet to the corner of Geraldine Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
@@ -6648,7 +6541,7 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 28,
+    "step": 23,
     "text": "Turn left onto Geraldine Road Southeast. Walk 500 feet to the corner of 18th Street Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
@@ -6686,8 +6579,8 @@
    "properties": {
     "kind": "step",
     "session": 3,
-    "step": 29,
-    "text": "Turn right onto 18th Street Southeast. Walk 400 feet to the corner of Geraldine Loop Southeast. Do not knock here, just walk.",
+    "step": 24,
+    "text": "Turn right onto 18th Street Southeast. Walk 400 feet to the next corner. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
@@ -6695,7 +6588,7 @@
     "distance_ft": 387,
     "street": "18th Street Southeast",
     "turn": "R",
-    "destination": "the corner of Geraldine Loop Southeast",
+    "destination": "the next corner",
     "start": [
      -106.69944,
      35.252085
@@ -6716,28 +6609,198 @@
       35.251026
      ],
      [
-      -106.699758,
-      35.251048
+      -106.699422,
+      35.250416
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 25,
+    "text": "Go straight on 18th Street Southeast. Walk 200 feet to the corner of 5th Street Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 223,
+    "street": "18th Street Southeast",
+    "turn": "straight",
+    "destination": "the corner of 5th Street Southeast",
+    "start": [
+     -106.699448,
+     35.251026
+    ],
+    "end": [
+     -106.699422,
+     35.250416
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.699422,
+      35.250416
      ],
      [
-      -106.700462,
-      35.251146
+      -106.698255,
+      35.250402
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 26,
+    "text": "Turn left onto 5th Street Southeast. Walk 350 feet to the corner of 19th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 348,
+    "street": "5th Street Southeast",
+    "turn": "L",
+    "destination": "the corner of 19th Street Southeast",
+    "start": [
+     -106.699422,
+     35.250416
+    ],
+    "end": [
+     -106.698255,
+     35.250402
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.698255,
+      35.250402
      ],
      [
-      -106.700719,
-      35.251118
+      -106.698255,
+      35.250782
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 27,
+    "text": "Turn left onto 19th Street Southeast. Walk 150 feet to the corner of Sunrise Lane Southeast. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 138,
+    "street": "19th Street Southeast",
+    "turn": "L",
+    "destination": "the corner of Sunrise Lane Southeast",
+    "start": [
+     -106.698255,
+     35.250402
+    ],
+    "end": [
+     -106.698255,
+     35.250782
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.698255,
+      35.250782
      ],
      [
-      -106.700882,
-      35.251041
+      -106.698768,
+      35.250784
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 28,
+    "text": "Turn left onto Sunrise Lane Southeast. Walk 150 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "knock both sides",
+    "distance_ft": 153,
+    "street": "Sunrise Lane Southeast",
+    "turn": "L",
+    "destination": "the dead end",
+    "start": [
+     -106.698255,
+     35.250782
+    ],
+    "end": [
+     -106.698768,
+     35.250784
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.698768,
+      35.250784
      ],
      [
-      -106.701003,
-      35.250908
+      -106.698255,
+      35.250782
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "step",
+    "session": 3,
+    "step": 29,
+    "text": "Turn around and walk back on Sunrise Lane Southeast. Walk 150 feet to the corner of 19th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
+    "knock_side": null,
+    "pass_no": null,
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 153,
+    "street": "Sunrise Lane Southeast",
+    "turn": "around",
+    "destination": "the corner of 19th Street Southeast",
+    "start": [
+     -106.698768,
+     35.250784
+    ],
+    "end": [
+     -106.698255,
+     35.250782
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.698255,
+      35.250782
      ],
      [
-      -106.701088,
-      35.250558
+      -106.698255,
+      35.250402
      ]
     ]
    },
@@ -6745,22 +6808,22 @@
     "kind": "step",
     "session": 3,
     "step": 30,
-    "text": "Turn right onto Geraldine Loop Southeast. Walk 650 feet to the corner of 5th Street Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
+    "text": "Turn right onto 19th Street Southeast. Walk 150 feet to the corner of 5th Street Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 630,
-    "street": "Geraldine Loop Southeast",
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 138,
+    "street": "19th Street Southeast",
     "turn": "R",
     "destination": "the corner of 5th Street Southeast",
     "start": [
-     -106.699448,
-     35.251026
+     -106.698255,
+     35.250782
     ],
     "end": [
-     -106.701088,
-     35.250558
+     -106.698255,
+     35.250402
     ]
    }
   },
@@ -6770,12 +6833,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.701088,
-      35.250558
+      -106.698255,
+      35.250402
      ],
      [
-      -106.700762,
-      35.250453
+      -106.699422,
+      35.250416
      ]
     ]
    },
@@ -6783,22 +6846,22 @@
     "kind": "step",
     "session": 3,
     "step": 31,
-    "text": "Turn left onto 5th Street Southeast. Walk 100 feet to the corner of Pegasus Avenue Southeast. Do not knock here, just walk.",
+    "text": "Turn right onto 5th Street Southeast. Walk 350 feet to the corner of 18th Street Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "walk through, no knocking",
-    "distance_ft": 105,
+    "distance_ft": 348,
     "street": "5th Street Southeast",
-    "turn": "L",
-    "destination": "the corner of Pegasus Avenue Southeast",
+    "turn": "R",
+    "destination": "the corner of 18th Street Southeast",
     "start": [
-     -106.701088,
-     35.250558
+     -106.698255,
+     35.250402
     ],
     "end": [
-     -106.700762,
-     35.250453
+     -106.699422,
+     35.250416
     ]
    }
   },
@@ -6808,12 +6871,44 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.700762,
-      35.250453
+      -106.699422,
+      35.250416
      ],
      [
-      -106.700934,
-      35.250011
+      -106.699432,
+      35.250033
+     ],
+     [
+      -106.699449,
+      35.249857
+     ],
+     [
+      -106.699655,
+      35.249485
+     ],
+     [
+      -106.699629,
+      35.24938
+     ],
+     [
+      -106.6995,
+      35.249296
+     ],
+     [
+      -106.699097,
+      35.249163
+     ],
+     [
+      -106.69878,
+      35.249065
+     ],
+     [
+      -106.698488,
+      35.248889
+     ],
+     [
+      -106.698264,
+      35.248672
      ]
     ]
    },
@@ -6821,22 +6916,22 @@
     "kind": "step",
     "session": 3,
     "step": 32,
-    "text": "Turn right onto Pegasus Avenue Southeast. Walk 150 feet to the corner of Alpha Court Southeast. Knock both sides.",
+    "text": "Turn left onto 18th Street Southeast. Walk 900 feet to the next corner. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 169,
-    "street": "Pegasus Avenue Southeast",
-    "turn": "R",
-    "destination": "the corner of Alpha Court Southeast",
+    "distance_ft": 885,
+    "street": "18th Street Southeast",
+    "turn": "L",
+    "destination": "the next corner",
     "start": [
-     -106.700762,
-     35.250453
+     -106.699422,
+     35.250416
     ],
     "end": [
-     -106.700934,
-     35.250011
+     -106.698264,
+     35.248672
     ]
    }
   },
@@ -6846,16 +6941,16 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.700934,
-      35.250011
+      -106.698264,
+      35.248672
      ],
      [
-      -106.700316,
-      35.249927
+      -106.69793,
+      35.248238
      ],
      [
-      -106.699758,
-      35.249927
+      -106.697845,
+      35.248126
      ]
     ]
    },
@@ -6863,22 +6958,22 @@
     "kind": "step",
     "session": 3,
     "step": 33,
-    "text": "Turn left onto Alpha Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
-    "mode": "knock_both_sides",
+    "text": "Go straight on 18th Street Southeast. Walk 250 feet to the corner of Wexford Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 353,
-    "street": "Alpha Court Southeast",
-    "turn": "L",
-    "destination": "the dead end",
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 236,
+    "street": "18th Street Southeast",
+    "turn": "straight",
+    "destination": "the corner of Wexford Road Southeast",
     "start": [
-     -106.700934,
-     35.250011
+     -106.698264,
+     35.248672
     ],
     "end": [
-     -106.699758,
-     35.249927
+     -106.697845,
+     35.248126
     ]
    }
   },
@@ -6888,16 +6983,16 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.699758,
-      35.249927
+      -106.697845,
+      35.248126
      ],
      [
-      -106.700316,
-      35.249927
+      -106.697942,
+      35.248069
      ],
      [
-      -106.700934,
-      35.250011
+      -106.698793,
+      35.247383
      ]
     ]
    },
@@ -6905,22 +7000,22 @@
     "kind": "step",
     "session": 3,
     "step": 34,
-    "text": "Turn around and walk back on Alpha Court Southeast. Walk 350 feet to the corner of Arcturus Avenue Southeast. Do not knock here, just walk.",
+    "text": "Turn right onto Wexford Road Southeast. Walk 400 feet to the corner of Celina Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "walk through, no knocking",
-    "distance_ft": 353,
-    "street": "Alpha Court Southeast",
-    "turn": "around",
-    "destination": "the corner of Arcturus Avenue Southeast",
+    "distance_ft": 392,
+    "street": "Wexford Road Southeast",
+    "turn": "R",
+    "destination": "the corner of Celina Road Southeast",
     "start": [
-     -106.699758,
-     35.249927
+     -106.697845,
+     35.248126
     ],
     "end": [
-     -106.700934,
-     35.250011
+     -106.698793,
+     35.247383
     ]
    }
   },
@@ -6930,12 +7025,16 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.700934,
-      35.250011
+      -106.698793,
+      35.247383
      ],
      [
-      -106.7012,
-      35.249296
+      -106.698913,
+      35.247487
+     ],
+     [
+      -106.699289,
+      35.247813
      ]
     ]
    },
@@ -6943,22 +7042,22 @@
     "kind": "step",
     "session": 3,
     "step": 35,
-    "text": "Turn left onto Arcturus Avenue Southeast. Walk 250 feet to the corner of Celina Court Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
+    "text": "Turn right onto Celina Road Southeast. Walk 200 feet to the next corner. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 273,
-    "street": "Arcturus Avenue Southeast",
-    "turn": "L",
-    "destination": "the corner of Celina Court Southeast",
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 216,
+    "street": "Celina Road Southeast",
+    "turn": "R",
+    "destination": "the next corner",
     "start": [
-     -106.700934,
-     35.250011
+     -106.698793,
+     35.247383
     ],
     "end": [
-     -106.7012,
-     35.249296
+     -106.699289,
+     35.247813
     ]
    }
   },
@@ -6968,12 +7067,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.7012,
-      35.249296
+      -106.699289,
+      35.247813
      ],
      [
-      -106.702384,
-      35.249598
+      -106.699887,
+      35.248357
      ]
     ]
    },
@@ -6981,22 +7080,22 @@
     "kind": "step",
     "session": 3,
     "step": 36,
-    "text": "Turn right onto Celina Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "text": "Go straight on Celina Road Southeast. Walk 250 feet to the corner of Abbey Court Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 370,
-    "street": "Celina Court Southeast",
-    "turn": "R",
-    "destination": "the dead end",
+    "distance_ft": 267,
+    "street": "Celina Road Southeast",
+    "turn": "straight",
+    "destination": "the corner of Abbey Court Southeast",
     "start": [
-     -106.7012,
-     35.249296
+     -106.699289,
+     35.247813
     ],
     "end": [
-     -106.702384,
-     35.249598
+     -106.699887,
+     35.248357
     ]
    }
   },
@@ -7006,12 +7105,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.702384,
-      35.249598
+      -106.699887,
+      35.248357
      ],
      [
-      -106.7012,
-      35.249296
+      -106.69938,
+      35.248749
      ]
     ]
    },
@@ -7019,22 +7118,22 @@
     "kind": "step",
     "session": 3,
     "step": 37,
-    "text": "Turn around and walk back on Celina Court Southeast. Walk 350 feet to the corner of Arcturus Avenue Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
+    "text": "Turn right onto Abbey Court Southeast. Walk 200 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 370,
-    "street": "Celina Court Southeast",
-    "turn": "around",
-    "destination": "the corner of Arcturus Avenue Southeast",
+    "mode_label": "knock both sides",
+    "distance_ft": 208,
+    "street": "Abbey Court Southeast",
+    "turn": "R",
+    "destination": "the dead end",
     "start": [
-     -106.702384,
-     35.249598
+     -106.699887,
+     35.248357
     ],
     "end": [
-     -106.7012,
-     35.249296
+     -106.69938,
+     35.248749
     ]
    }
   },
@@ -7044,20 +7143,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.7012,
-      35.249296
+      -106.69938,
+      35.248749
      ],
      [
-      -106.701312,
-      35.249128
-     ],
-     [
-      -106.701397,
-      35.248897
-     ],
-     [
-      -106.701432,
-      35.248644
+      -106.699887,
+      35.248357
      ]
     ]
    },
@@ -7065,22 +7156,22 @@
     "kind": "step",
     "session": 3,
     "step": 38,
-    "text": "Turn right onto Arcturus Avenue Southeast. Walk 250 feet to the corner of Pegasus Avenue Southeast. Do not knock here, just walk.",
+    "text": "Turn around and walk back on Abbey Court Southeast. Walk 200 feet to the corner of Celina Road Southeast. Do not knock here, just walk.",
     "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "walk through, no knocking",
-    "distance_ft": 251,
-    "street": "Arcturus Avenue Southeast",
-    "turn": "R",
-    "destination": "the corner of Pegasus Avenue Southeast",
+    "distance_ft": 208,
+    "street": "Abbey Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Celina Road Southeast",
     "start": [
-     -106.7012,
-     35.249296
+     -106.69938,
+     35.248749
     ],
     "end": [
-     -106.701432,
-     35.248644
+     -106.699887,
+     35.248357
     ]
    }
   },
@@ -7090,20 +7181,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.701432,
-      35.248644
+      -106.699887,
+      35.248357
      ],
      [
-      -106.701612,
-      35.248623
-     ],
-     [
-      -106.701826,
-      35.24863
-     ],
-     [
-      -106.703461,
-      35.249072
+      -106.700591,
+      35.248946
      ]
     ]
    },
@@ -7111,22 +7194,22 @@
     "kind": "step",
     "session": 3,
     "step": 39,
-    "text": "Turn right onto Pegasus Avenue Southeast. Walk 650 feet to the corner of Polaris Boulevard Southeast. Knock both sides.",
+    "text": "Turn right onto Celina Road Southeast. Walk 300 feet to the corner of Lyra Court Southeast. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 632,
-    "street": "Pegasus Avenue Southeast",
+    "distance_ft": 301,
+    "street": "Celina Road Southeast",
     "turn": "R",
-    "destination": "the corner of Polaris Boulevard Southeast",
+    "destination": "the corner of Lyra Court Southeast",
     "start": [
-     -106.701432,
-     35.248644
+     -106.699887,
+     35.248357
     ],
     "end": [
-     -106.703461,
-     35.249072
+     -106.700591,
+     35.248946
     ]
    }
   },
@@ -7136,32 +7219,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.703461,
-      35.249072
+      -106.700591,
+      35.248946
      ],
      [
-      -106.703753,
-      35.248359
-     ],
-     [
-      -106.704014,
-      35.247659
-     ],
-     [
-      -106.704048,
-      35.247498
-     ],
-     [
-      -106.704022,
-      35.247358
-     ],
-     [
-      -106.703799,
-      35.247064
-     ],
-     [
-      -106.703421,
-      35.246755
+      -106.700196,
+      35.249247
      ]
     ]
    },
@@ -7169,22 +7232,22 @@
     "kind": "step",
     "session": 3,
     "step": 40,
-    "text": "Turn left onto Polaris Boulevard Southeast. Walk 950 feet to the next corner. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
+    "text": "Turn right onto Lyra Court Southeast. Walk 150 feet to the dead end. Knock both sides.",
+    "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 939,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "L",
-    "destination": "the next corner",
+    "mode_label": "knock both sides",
+    "distance_ft": 161,
+    "street": "Lyra Court Southeast",
+    "turn": "R",
+    "destination": "the dead end",
     "start": [
-     -106.703461,
-     35.249072
+     -106.700591,
+     35.248946
     ],
     "end": [
-     -106.703421,
-     35.246755
+     -106.700196,
+     35.249247
     ]
    }
   },
@@ -7194,12 +7257,12 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.703421,
-      35.246755
+      -106.700196,
+      35.249247
      ],
      [
-      -106.702811,
-      35.246224
+      -106.700591,
+      35.248946
      ]
     ]
    },
@@ -7207,22 +7270,22 @@
     "kind": "step",
     "session": 3,
     "step": 41,
-    "text": "Go straight on Polaris Boulevard Southeast. Walk 250 feet to the corner of Procyon Court Southeast. Knock both sides.",
-    "mode": "knock_both_sides",
+    "text": "Turn around and walk back on Lyra Court Southeast. Walk 150 feet to the corner of Celina Road Southeast. Do not knock here, just walk.",
+    "mode": "walk_no_knock",
     "knock_side": null,
     "pass_no": null,
-    "mode_label": "knock both sides",
-    "distance_ft": 266,
-    "street": "Polaris Boulevard Southeast",
-    "turn": "straight",
-    "destination": "the corner of Procyon Court Southeast",
+    "mode_label": "walk through, no knocking",
+    "distance_ft": 161,
+    "street": "Lyra Court Southeast",
+    "turn": "around",
+    "destination": "the corner of Celina Road Southeast",
     "start": [
-     -106.703421,
-     35.246755
+     -106.700196,
+     35.249247
     ],
     "end": [
-     -106.702811,
-     35.246224
+     -106.700591,
+     35.248946
     ]
    }
   },
@@ -7232,12 +7295,20 @@
     "type": "LineString",
     "coordinates": [
      [
-      -106.702811,
-      35.246224
+      -106.700591,
+      35.248946
      ],
      [
-      -106.701919,
-      35.246944
+      -106.700796,
+      35.249107
+     ],
+     [
+      -106.700942,
+      35.249219
+     ],
+     [
+      -106.7012,
+      35.249296
      ]
     ]
    },
@@ -7245,98 +7316,22 @@
     "kind": "step",
     "session": 3,
     "step": 42,
-    "text": "Turn left onto Procyon Court Southeast. Walk 350 feet to the dead end. Knock both sides.",
+    "text": "Turn right onto Celina Road Southeast. Walk 250 feet to the parking spot P. Knock both sides.",
     "mode": "knock_both_sides",
     "knock_side": null,
     "pass_no": null,
     "mode_label": "knock both sides",
-    "distance_ft": 374,
-    "street": "Procyon Court Southeast",
-    "turn": "L",
-    "destination": "the dead end",
-    "start": [
-     -106.702811,
-     35.246224
-    ],
-    "end": [
-     -106.701919,
-     35.246944
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.701919,
-      35.246944
-     ],
-     [
-      -106.702811,
-      35.246224
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 43,
-    "text": "Turn around and walk back on Procyon Court Southeast. Walk 350 feet to the corner of Polaris Boulevard Southeast. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 374,
-    "street": "Procyon Court Southeast",
-    "turn": "around",
-    "destination": "the corner of Polaris Boulevard Southeast",
-    "start": [
-     -106.701919,
-     35.246944
-    ],
-    "end": [
-     -106.702811,
-     35.246224
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -106.702811,
-      35.246224
-     ],
-     [
-      -106.703421,
-      35.246755
-     ]
-    ]
-   },
-   "properties": {
-    "kind": "step",
-    "session": 3,
-    "step": 44,
-    "text": "Turn right onto Polaris Boulevard Southeast. Walk 250 feet to the parking spot P. Do not knock here, just walk.",
-    "mode": "walk_no_knock",
-    "knock_side": null,
-    "pass_no": null,
-    "mode_label": "walk through, no knocking",
-    "distance_ft": 266,
-    "street": "Polaris Boulevard Southeast",
+    "distance_ft": 227,
+    "street": "Celina Road Southeast",
     "turn": "R",
     "destination": "the parking spot P",
     "start": [
-     -106.702811,
-     35.246224
+     -106.700591,
+     35.248946
     ],
     "end": [
-     -106.703421,
-     35.246755
+     -106.7012,
+     35.249296
     ]
    }
   }

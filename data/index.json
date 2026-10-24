@@ -17,20 +17,55 @@
     35.250225
    ],
    "parking": {
-    "name": "Sabana Heights Park (on-street parking, Sabana Grande Ave SE)",
-    "address": "Sabana Grande Ave SE at Benjamin Dr SE, Rio Rancho, NM 87124",
-    "url": "https://www.google.com/maps/dir/?api=1&destination=35.2418,-106.6453",
+    "name": "Street parking on Pepe Ortiz Road Southeast at the corner of Las Marias Drive Southeast",
+    "address": "Pepe Ortiz Road Southeast and Las Marias Drive Southeast (near 4699 Pepe Ortiz Road Southeast), Rio Rancho, New Mexico 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.247695,-106.643861",
     "coordinates": [
-     -106.6453,
-     35.2418
+     -106.643861,
+     35.247695
     ]
    },
-   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Smith's Fuel Center, 1000 Pat D'Arco Highway (0.6 mi); Murphy Express, 4150 Southern Boulevard Southeast (0.7 mi).",
+   "parking_by_session": [
+    {
+     "session": 1,
+     "label": "P1",
+     "name": "Street parking on Pepe Ortiz Road Southeast at the corner of Las Marias Drive Southeast",
+     "address": "Pepe Ortiz Road Southeast and Las Marias Drive Southeast (near 4699 Pepe Ortiz Road Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.247695,-106.643861",
+     "coordinates": [
+      -106.643861,
+      35.247695
+     ]
+    },
+    {
+     "session": 2,
+     "label": "P2",
+     "name": "Street parking on Palmas Altas Drive Southeast at the corner of La Casa de Prasa Drive Southeast",
+     "address": "Palmas Altas Drive Southeast and La Casa de Prasa Drive Southeast (near 600 La Casa de Prasa Drive Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.246454,-106.638960",
+     "coordinates": [
+      -106.63896,
+      35.246454
+     ]
+    },
+    {
+     "session": 3,
+     "label": "P3",
+     "name": "Street parking on Maria Court Southeast at the corner of Las Marias Drive Southeast",
+     "address": "Maria Court Southeast and Las Marias Drive Southeast (near 4603 Los Reyes Road Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.244715,-106.646143",
+     "coordinates": [
+      -106.646143,
+      35.244715
+     ]
+    }
+   ],
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 4400 Ridgecrest Drive Southeast (0.5 mi); Circle K, 229 Rio Rancho Drive Southeast (0.5 mi).",
    "sessions": 3,
-   "total_mi": 11.6,
+   "total_mi": 10.6,
    "total_homes": 714,
-   "total_steps": 126,
-   "total_minutes": 780
+   "total_steps": 114,
+   "total_minutes": 750
   },
   {
    "name": "South Rio Rancho Numbered Streets",
@@ -48,19 +83,54 @@
     35.237081
    ],
    "parking": {
-    "name": "Haynes Park lot (off Grande Blvd SE)",
-    "address": "Grande Boulevard Southeast, Rio Rancho",
-    "url": "https://www.google.com/maps/dir/?api=1&destination=35.223,-106.6623",
+    "name": "Street parking on Yucca Street Southeast at the corner of 20th Avenue Southeast",
+    "address": "Yucca Street Southeast and 20th Avenue Southeast (near 1999 Yucca Street Southeast), Rio Rancho, New Mexico 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.223526,-106.667030",
     "coordinates": [
-     -106.6623,
-     35.223
+     -106.66703,
+     35.223526
     ]
    },
-   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Latitudes New World Convenience, 2401 NM 528 (0.3 mi); Valero, 2401 Pat D'Arco Highway (0.3 mi).",
+   "parking_by_session": [
+    {
+     "session": 1,
+     "label": "P1",
+     "name": "Street parking on Yucca Street Southeast at the corner of 20th Avenue Southeast",
+     "address": "Yucca Street Southeast and 20th Avenue Southeast (near 1999 Yucca Street Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.223526,-106.667030",
+     "coordinates": [
+      -106.66703,
+      35.223526
+     ]
+    },
+    {
+     "session": 2,
+     "label": "P2",
+     "name": "Street parking on 16th Avenue Southeast at the corner of 35th Street Southeast",
+     "address": "16th Avenue Southeast and 35th Street Southeast (near 3507 16th Avenue Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.229917,-106.667087",
+     "coordinates": [
+      -106.667087,
+      35.229917
+     ]
+    },
+    {
+     "session": 3,
+     "label": "P3",
+     "name": "Street parking on Grande Boulevard Southeast at the corner of 16th Avenue Southeast",
+     "address": "Grande Boulevard Southeast and 16th Avenue Southeast (near 3799 16th Avenue Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.229910,-106.661395",
+     "coordinates": [
+      -106.661395,
+      35.22991
+     ]
+    }
+   ],
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Latitudes New World Convenience, 2401 NM 528 (0.4 mi); Valero, 2401 Pat D'Arco Highway (0.4 mi).",
    "sessions": 3,
-   "total_mi": 12.1,
+   "total_mi": 12.0,
    "total_homes": 707,
-   "total_steps": 89,
+   "total_steps": 90,
    "total_minutes": 765
   },
   {
@@ -79,20 +149,55 @@
     35.256198
    ],
    "parking": {
-    "name": "Star Heights Park (Polaris Blvd SE)",
-    "address": "Polaris Boulevard Southeast, Rio Rancho",
-    "url": "https://www.google.com/maps/dir/?api=1&destination=35.2473,-106.703",
+    "name": "Street parking on Fornax Road Southeast at the corner of Borealis Avenue Southeast",
+    "address": "Fornax Road Southeast and Borealis Avenue Southeast (near 1607 Borealis Avenue Southeast), Rio Rancho, New Mexico 87124",
+    "url": "https://www.google.com/maps/dir/?api=1&destination=35.249850,-106.706096",
     "coordinates": [
-     -106.703,
-     35.2473
+     -106.706096,
+     35.24985
     ]
    },
-   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.3 mi); Speedway, 2101 Southern Boulevard Southeast (0.7 mi).",
+   "parking_by_session": [
+    {
+     "session": 1,
+     "label": "P1",
+     "name": "Street parking on Fornax Road Southeast at the corner of Borealis Avenue Southeast",
+     "address": "Fornax Road Southeast and Borealis Avenue Southeast (near 1607 Borealis Avenue Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.249850,-106.706096",
+     "coordinates": [
+      -106.706096,
+      35.24985
+     ]
+    },
+    {
+     "session": 2,
+     "label": "P2",
+     "name": "Street parking on Alpha Road Southeast at the corner of Polaris Boulevard Southeast",
+     "address": "Alpha Road Southeast and Polaris Boulevard Southeast (near 1699 Alpha Road Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.250542,-106.702887",
+     "coordinates": [
+      -106.702887,
+      35.250542
+     ]
+    },
+    {
+     "session": 3,
+     "label": "P3",
+     "name": "Street parking on Arcturus Avenue Southeast at the corner of Celina Court Southeast",
+     "address": "Arcturus Avenue Southeast and Celina Court Southeast (near 1799 Celina Road Southeast), Rio Rancho, New Mexico 87124",
+     "url": "https://www.google.com/maps/dir/?api=1&destination=35.249296,-106.701200",
+     "coordinates": [
+      -106.7012,
+      35.249296
+     ]
+    }
+   ],
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.5 mi); Speedway, 2101 Southern Boulevard Southeast (1.0 mi).",
    "sessions": 3,
-   "total_mi": 10.6,
+   "total_mi": 10.1,
    "total_homes": 611,
-   "total_steps": 131,
-   "total_minutes": 675
+   "total_steps": 133,
+   "total_minutes": 660
   }
  ],
  "rules": {
