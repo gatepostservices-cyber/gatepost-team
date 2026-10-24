@@ -5,7 +5,7 @@
 <link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><link rel="icon" href="img/icon-192.png">
 <title>Gatepost Team</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="app.css?v=5">
+<link rel="stylesheet" href="app.css?v=6">
 </head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
  <symbol id="i-straight" viewBox="0 0 48 48"><path d="M24 42V10M12 21 24 9l12 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -43,19 +43,24 @@
   <button id="recenter" class="glass fab" aria-label="Follow my location"><svg><use href="#i-target"/></svg></button>
   <a id="parkbtn" class="glass fab" target="_blank" rel="noopener" aria-label="Directions to parking"><svg><use href="#i-car"/></svg></a>
  </div>
- <section id="nav" class="glass nav">
+ <section id="nav" class="glass nav bs">
+  <div class="bs-head"><button type="button" class="bs-grab" aria-label="Expand or collapse panel"><i></i></button>
   <div class="nav-main">
    <div class="arrow" id="arrow"><svg><use href="#i-straight"/></svg></div>
    <div class="nav-txt"><div class="action" id="action">Loading…</div><div class="sub" id="sub"></div></div>
-  </div>
+  </div></div>
+  <div class="bs-body">
   <div class="meter"><i id="meter"></i></div>
   <div class="then" id="then"></div>
+  </div>
+  <div class="bs-foot">
   <div class="nav-btns">
    <button id="back" class="btn ghost sq" aria-label="Undo last step"><svg><use href="#i-undo"/></svg></button>
    <button id="done" class="btn primary"><svg><use href="#i-check"/></svg><span>Step done</span></button>
    <button id="open" class="btn ghost sq" aria-label="Checklist and rules"><svg><use href="#i-list"/></svg></button>
   </div>
   <div class="gps" id="gps"></div>
+  </div>
  </section>
  <div class="toast" id="toast"><svg><use href="#i-check"/></svg><span id="toasttxt"></span></div>
 </div>
@@ -115,12 +120,17 @@
 
 <!-- Start screen -->
 <section id="start" class="start">
- <div class="start-card glass">
-  <div class="brand"><button id="tohome" class="btn ghost sq" aria-label="Home"><svg><use href="#i-home"/></svg></button><div><b>Route tracker</b><span>Door-to-door routes</span></div></div>
+ <div class="start-card glass bs">
+  <div class="bs-head"><button type="button" class="bs-grab" aria-label="Expand or collapse panel"><i></i></button>
+  <div class="brand"><button id="tohome" class="btn ghost sq" aria-label="Home"><svg><use href="#i-home"/></svg></button><div><b>Route tracker</b><span>Door-to-door routes</span></div></div></div>
+  <div class="bs-body">
   <h2 class="lbl">1 · Neighborhood</h2><div id="nbs" class="nbs"></div>
   <h2 class="lbl">2 · Session</h2><div id="sess" class="sess"></div>
-  <button id="go" class="btn primary big"><span id="golabel">Start route</span></button>
   <p class="foot">Questions? Call (505) 750-3019</p>
+  </div>
+  <div class="bs-foot">
+  <button id="go" class="btn primary big"><span id="golabel">Start route</span></button>
+  </div>
  </div>
 </section>
 
@@ -135,5 +145,5 @@
 </section>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="config.js?v=2"></script>
-<script src="app.js?v=7"></script>
+<script src="app.js?v=8"></script>
 </body></html>

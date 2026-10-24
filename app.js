@@ -63,13 +63,13 @@ function renderStart(){if(MYROUTES&&!MYROUTES.includes((NBS[pickN]||{}).slug)){c
   $('go').style.background=`linear-gradient(180deg,${s.color_hex},color-mix(in srgb,${s.color_hex} 70%,#000))`;$('go').style.color='#fff';$('go').style.boxShadow=`0 8px 22px color-mix(in srgb,${s.color_hex} 45%,transparent)`;
   if(!started){nb=n;ss=s;st=g;drawRoute();fitRouteStart()}}
 function fitRouteStart(){const top=$('start').querySelector('.start-card').getBoundingClientRect().top;map.fitBounds(L.latLngBounds(ss.path),{paddingTopLeft:[24,24],paddingBottomRight:[24,map.getSize().y-top+16]})}
-function showStart(){if(!MYROUTES||!MYROUTES.some(s=>NBS.some(n=>n.slug===s)))return goHome();SH.routeStop();started=false;$('home').hidden=true;$('hud').hidden=true;$('start').classList.remove('out');$('start').hidden=false;closeSheet();renderStart()}
+function showStart(){if(!MYROUTES||!MYROUTES.some(s=>NBS.some(n=>n.slug===s)))return goHome();SH.routeStop();started=false;$('home').hidden=true;$('hud').hidden=true;$('start').classList.remove('out');$('start').hidden=false;closeSheet();renderStart();requestAnimationFrame(()=>START_SHEET&&START_SHEET.snap('expanded',false))}
 function begin(){if(!(MYROUTES||[]).includes(NBS[pickN].slug))return goHome();nb=NBS[pickN];ss=nb.sessions[pickS];st=getSt(nb,ss);prog=0;started=true;save();SH.routeStart();
   document.documentElement.style.setProperty('--sc',ss.color_hex);
   $('sdot').style.background=ss.color_hex;$('sname').textContent=cap(ss.color);
   const p=ss.park||nb.park,u=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;$('parkbtn').href=u;$('finpark').href=u;
   $('park').innerHTML=`<b>${esc((p.label?p.label+' · ':'')+p.name)}</b><p>${esc(p.address)}</p>${p.restroom?`<p>${esc(p.restroom)}</p>`:''}<a class="btn primary big" href="${u}" target="_blank" rel="noopener">${ico('car')}<span>Open in Google Maps</span></a>`;
-  $('start').classList.add('out');setTimeout(()=>{if(started)$('start').hidden=true},350);$('hud').hidden=false;
+  $('start').classList.add('out');setTimeout(()=>{if(started)$('start').hidden=true},350);$('hud').hidden=false;NAV_SHEET&&NAV_SHEET.snap('expanded',false);
   drawRoute();renderAll();requestAnimationFrame(()=>{measure();if(last&&follow)followTo(last,false);else fitRoute()});
   if(cur()<0)finish(false)}
 // ---- HUD ----
@@ -275,6 +275,53 @@ function init(){initMap();
     if(l){const i=NBS.findIndex(n=>n.slug===l[0]&&(n.round||1)===(l[1]||1));if(i>=0){pickN=i;pickS=Math.max(0,NBS[i].sessions.findIndex(s=>s.n===l[2]))}}
     MYROUTES=MYROUTES||[];renderStart();startGps();boot()})
   .catch(()=>{$('nbs').innerHTML='<p>Could not load routes. Check your connection and reload.</p>'})}
+// ---- draggable bottom sheets (route tracker start card + in-route nav card) ----
+function bottomSheet(el,opt){const head=el.querySelector('.bs-head'),body=el.querySelector('.bs-body'),grab=el.querySelector('.bs-grab');
+  let state='expanded',h=0,snaps={},drag=null,moved=false;
+  const css=(e,p)=>parseFloat(getComputedStyle(e)[p])||0;
+  function calc(){const pad=css(el,'paddingTop')+css(el,'paddingBottom')+css(el,'borderTopWidth')+css(el,'borderBottomWidth');
+    const max=css(el,'maxHeight')||innerHeight,hh=head.offsetHeight,fh=el.querySelector('.bs-foot').offsetHeight;
+    const col=Math.round(pad+hh+fh),exp=Math.round(Math.min(max,pad+hh+fh+body.scrollHeight));
+    const half=Math.round(Math.max(col,Math.min(exp,innerHeight*.5)));
+    snaps={collapsed:col,expanded:Math.max(col,exp)};if(half-col>60&&snaps.expanded-half>60)snaps.half=half;return snaps}
+  function set(px,anim){el.classList.toggle('anim',!!anim);h=px;el.style.height=px+'px';opt.onMove&&opt.onMove(api,px)}
+  function snap(name,anim=true){calc();if(!(name in snaps))name=name==='half'?'expanded':'collapsed';state=name;
+    ['collapsed','half','expanded'].forEach(s=>el.classList.toggle('s-'+s,s===name));if(name!=='expanded')body.scrollTop=0;
+    set(snaps[name],anim);clearTimeout(snap.t);snap.t=setTimeout(()=>{el.classList.remove('anim');opt.onSnap&&opt.onSnap(api)},anim?440:0)}
+  function refresh(){if(!el.offsetParent||drag)return;snap(state,false)}
+  const order=()=>Object.entries(snaps).sort((a,b)=>a[1]-b[1]);
+  function start(y,t){const inHead=head.contains(t);if(!inHead&&!body.contains(t)&&!el.querySelector('.bs-foot').contains(t))return;
+    calc();drag={y0:y,h0:h||el.offsetHeight,inHead,pending:true,s:[[performance.now(),y]]};moved=false}
+  function move(y,e){if(!drag)return;const dy=y-drag.y0;
+    if(drag.pending){if(Math.abs(dy)<6)return;
+      const scrollable=state==='expanded'&&body.scrollHeight>body.clientHeight+1;
+      if(!drag.inHead&&scrollable&&(body.scrollTop>0||dy<0)){drag=null;return}   // let the content scroll
+      drag.pending=false;moved=true;el.classList.remove('anim')}
+    if(e.cancelable)e.preventDefault();const o=order(),lo=o[0][1],hi=o[o.length-1][1];let nh=drag.h0-dy;
+    if(nh<lo)nh=lo-(lo-nh)*.25;if(nh>hi)nh=hi+(nh-hi)*.25;set(Math.round(nh),false);
+    drag.s.push([performance.now(),y]);if(drag.s.length>6)drag.s.shift()}
+  function end(){if(!drag)return;const d=drag;drag=null;if(d.pending)return;
+    const a=d.s[0],b=d.s[d.s.length-1],v=(b[1]-a[1])/Math.max(1,b[0]-a[0]); // px/ms, + = down
+    const o=order();let pick;
+    if(Math.abs(v)>.45)pick=v>0?o.filter(x=>x[1]<h-4).pop()||o[0]:o.find(x=>x[1]>h+4)||o[o.length-1];   // fling: next snap in that direction
+    else{const proj=h-v*180;pick=o.reduce((m,x)=>Math.abs(x[1]-proj)<Math.abs(m[1]-proj)?x:m)}
+    snap(pick[0])}
+  el.addEventListener('touchstart',e=>{if(e.touches.length===1)start(e.touches[0].clientY,e.target)},{passive:true});
+  el.addEventListener('touchmove',e=>{if(drag&&e.touches.length===1)move(e.touches[0].clientY,e)},{passive:false});
+  el.addEventListener('touchend',end);el.addEventListener('touchcancel',end);
+  el.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||e.button!==0)return;start(e.clientY,e.target);
+    const mv=ev=>move(ev.clientY,ev),up=()=>{removeEventListener('pointermove',mv);removeEventListener('pointerup',up);end()};
+    addEventListener('pointermove',mv);addEventListener('pointerup',up)});
+  el.addEventListener('click',e=>{if(moved){e.stopPropagation();e.preventDefault();moved=false}},true);   // a drag isn't a tap
+  grab.addEventListener('click',()=>snap(state==='collapsed'?'expanded':'collapsed'));
+  new MutationObserver(()=>requestAnimationFrame(refresh)).observe(el,{childList:true,subtree:true,characterData:true});
+  addEventListener('resize',()=>requestAnimationFrame(refresh));
+  const api={el,snap,refresh,get state(){return state},get snaps(){return calc()}};return api}
+var START_SHEET=bottomSheet(document.querySelector('#start .start-card'),{
+  onMove:(s,px)=>{const n=s.snaps,f=(px-n.collapsed)/Math.max(1,n.expanded-n.collapsed);document.documentElement.style.setProperty('--shade',Math.max(0,Math.min(1,f)).toFixed(3))},
+  onSnap:()=>{try{if(!started&&ss&&map)fitRouteStart()}catch(e){}}});
+var NAV_SHEET=bottomSheet($('nav'),{onMove:(s,px)=>document.documentElement.style.setProperty('--navh',px+'px')});
+window.GP_SHEETS={start:START_SHEET,nav:NAV_SHEET,get map(){return map}};   // handle for tests
 document.addEventListener('DOMContentLoaded',init);
 if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 })();
