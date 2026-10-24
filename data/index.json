@@ -25,12 +25,12 @@
      35.2418
     ]
    },
-   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Smith's Fuel Center, 1000 Pat D'Arco Highway (0.6 mi); Murphy Express, 4150 Southern Blvd SE (0.7 mi).",
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Smith's Fuel Center, 1000 Pat D'Arco Highway (0.6 mi); Murphy Express, 4150 Southern Boulevard Southeast (0.7 mi).",
    "sessions": 3,
-   "total_mi": 13.0,
+   "total_mi": 11.6,
    "total_homes": 714,
-   "total_steps": 136,
-   "total_minutes": 795
+   "total_steps": 126,
+   "total_minutes": 780
   },
   {
    "name": "South Rio Rancho Numbered Streets",
@@ -58,10 +58,10 @@
    },
    "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Latitudes New World Convenience, 2401 NM 528 (0.3 mi); Valero, 2401 Pat D'Arco Highway (0.3 mi).",
    "sessions": 3,
-   "total_mi": 13.4,
+   "total_mi": 12.1,
    "total_homes": 707,
-   "total_steps": 109,
-   "total_minutes": 795
+   "total_steps": 89,
+   "total_minutes": 765
   },
   {
    "name": "Star Heights / Arlene Rd",
@@ -70,11 +70,11 @@
    "file": "Star_Heights_Arlene_Rd.geojson",
    "center": [
     -106.703414,
-    35.251211
+    35.250573
    ],
    "bbox": [
     -106.708983,
-    35.246224,
+    35.244947,
     -106.697845,
     35.256198
    ],
@@ -87,11 +87,11 @@
      35.2473
     ]
    },
-   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Blvd SE (0.3 mi); Speedway, 2101 Southern Blvd SE (0.7 mi).",
+   "restroom": "No public restroom is mapped at the park. Nearest restroom / water stop: Valero, 580 Unser Boulevard Southeast (0.3 mi); Speedway, 2101 Southern Boulevard Southeast (0.7 mi).",
    "sessions": 3,
-   "total_mi": 11.1,
+   "total_mi": 10.6,
    "total_homes": 611,
-   "total_steps": 147,
+   "total_steps": 131,
    "total_minutes": 675
   }
  ],

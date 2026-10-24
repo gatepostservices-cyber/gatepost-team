@@ -5,7 +5,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const ico=n=>`<svg><use href="#i-${n}"/></svg>`;
 let NBS=[],RULES={},nb=null,ss=null,st=null,map,stepLayer,hiLayer,flowLayer,me=null,acc=null,last=null,prevFix=null,follow=true,prog=0,pickN=0,pickS=0,started=false;
-const key=(n,s)=>`gpteam_progress_v1:${n.slug}:r${n.round||1}:s${s.n}`;
+const key=(n,s)=>`gpteam_progress_v3:${n.slug}:r${n.round||1}:s${s.n}`;
 function hav(a,b){const r=Math.PI/180,dl=(b[0]-a[0])*r,dn=(b[1]-a[1])*r,x=Math.sin(dl/2)**2+Math.cos(a[0]*r)*Math.cos(b[0]*r)*Math.sin(dn/2)**2;return 12742000*Math.asin(Math.sqrt(x))}
 function brg(a,b){const r=Math.PI/180,y=Math.sin((b[1]-a[1])*r)*Math.cos(b[0]*r),x=Math.cos(a[0]*r)*Math.sin(b[0]*r)-Math.sin(a[0]*r)*Math.cos(b[0]*r)*Math.cos((b[1]-a[1])*r);return(Math.atan2(y,x)/r+360)%360}
 const fmt=m=>{const f=m*3.281;return f<1000?Math.max(0,Math.round(f/10)*10)+' ft':(m/1609).toFixed(2)+' mi'};
@@ -25,7 +25,7 @@ const isDone=i=>st.done.includes(i);
 const cur=()=>{for(let i=0;i<ss.steps.length;i++)if(!isDone(i))return i;return -1};
 // ---- step semantics ----
 function verb(t){if(/^Start/.test(t))return['straight','Head'];if(/^Turn around/.test(t))return['uturn','Turn around'];if(/^Continue/.test(t))return['straight','Continue'];
-  if(/^Turn RIGHT/.test(t))return['right','Turn RIGHT'];if(/^Turn LEFT/.test(t))return['left','Turn LEFT'];if(/^Bear right/i.test(t))return['bright','Bear right'];if(/^Bear left/i.test(t))return['bleft','Bear left'];return['straight','Go']}
+  if(/^Turn right/i.test(t))return['right','Turn right'];if(/^Turn left/i.test(t))return['left','Turn left'];if(/^Go straight/.test(t))return['straight','Go straight'];if(/^Bear right/i.test(t))return['bright','Bear right'];if(/^Bear left/i.test(t))return['bleft','Bear left'];return['straight','Go']}
 function knock(s){if(s.mode==='knock_both_sides')return['t-both','Knock both sides'];if(s.mode==='knock_one_side')return['t-one',s.pass_no===2?'Knock right side · way back':'Knock right side'];return['t-walk','Walk, no knocking']}
 const toWhat=t=>{const m=/ to (.+)\.$/.exec(t);return m?m[1]:''};
 function streetState(){return(ss.streets||[]).map(nm=>{const idx=ss.steps.map((x,i)=>x.street===nm&&x.mode!=='walk_no_knock'?i:-1).filter(i=>i>=0);return[nm,idx.length>0&&idx.every(isDone)]})}
