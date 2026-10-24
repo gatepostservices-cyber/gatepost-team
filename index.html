@@ -5,7 +5,7 @@
 <link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><link rel="icon" href="img/icon-192.png">
 <title>Gatepost Team</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="app.css?v=6">
+<link rel="stylesheet" href="app.css?v=7">
 </head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
  <symbol id="i-straight" viewBox="0 0 48 48"><path d="M24 42V10M12 21 24 9l12 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -28,16 +28,21 @@
  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2zM9 4v14M15 6v14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/></symbol>
+ <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+ <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .6-8A6 6 0 0 0 6 9.5 4.3 4.3 0 0 0 7 18zM3 3l18 18" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
  <symbol id="i-gps" viewBox="0 0 24 24"><path d="M12 2 4 21l8-4 8 4z" fill="currentColor"/></symbol>
 </defs></svg>
 
+<div id="netbar" class="netbar" role="status" aria-live="polite" hidden><svg><use href="#i-cloud"/></svg><span id="nettxt"></span><button id="netbtn" class="netbtn" type="button" hidden></button></div>
 <div id="map" aria-label="Route map"></div>
+<div id="splash" class="fin splash"><div class="fin-card glass"><img src="img/arch-mark.png" alt="" width="56" height="56"><p class="fin-sub" id="splashtxt">Loading…</p><span class="spin" aria-hidden="true"></span></div></div>
 
 <!-- HUD -->
 <div id="hud" class="hud" hidden>
  <div class="hud-top">
   <button id="menu" class="glass chip-btn" aria-label="Change session"><span class="sdot" id="sdot"></span><span id="sname">Red</span><svg><use href="#i-pause"/></svg></button>
-  <div class="glass xp" id="xp"><span class="xp-stats"><span><svg><use href="#i-list"/></svg><b id="xsteps">0/0</b>&nbsp;steps</span><span><svg><use href="#i-road"/></svg><b id="xstreets">0/0</b>&nbsp;streets</span></span><span class="shift-dot" id="shiftdot" hidden></span></div>
+  <div class="glass xp" id="xp"><span class="pend-chip" id="hudpend" hidden title="Waiting to send">!</span><span class="xp-stats"><span><svg><use href="#i-list"/></svg><b id="xsteps">0/0</b>&nbsp;steps</span><span><svg><use href="#i-road"/></svg><b id="xstreets">0/0</b>&nbsp;streets</span></span><span class="shift-dot" id="shiftdot" hidden></span></div>
  </div>
  <div class="fabs" id="fabs">
   <button id="recenter" class="glass fab" aria-label="Follow my location"><svg><use href="#i-target"/></svg></button>
@@ -72,8 +77,8 @@
  <div class="tabs" role="tablist"><button data-t="steps" class="on">Steps</button><button data-t="streets">Streets</button><button data-t="info">Parking &amp; rules</button><button class="sq close" id="sheetclose" aria-label="Close"><svg><use href="#i-close"/></svg></button></div>
  <div class="tab on" id="t-steps"><ol id="steps"></ol></div>
  <div class="tab" id="t-streets"><ul id="streets"></ul></div>
- <div class="tab" id="t-info"><div id="park"></div><h3>Rules</h3><ul id="rules"></ul><button id="reset" class="link">Reset this session's progress</button></div>
- <p class="foot">Gatepost Property Services · (505) 750-3019</p>
+ <div class="tab" id="t-info"><div id="park"></div><h3>Rules</h3><ul id="rules"></ul><button id="reset" class="link">Reset this session's progress</button><button id="suntog2" class="btn ghost big sun-tog"><svg><use href="#i-sun"/></svg><span>Bright sun mode</span></button></div>
+ <p class="foot">Questions? Call <a href="tel:+15057503019">(505) 750-3019</a></p>
 </section>
 
 <!-- Account -->
@@ -83,11 +88,11 @@
   <div class="tabs2" id="obtabs"><button type="button" data-m="in" class="on">Sign in</button><button type="button" data-m="up">Create account</button></div>
   <div id="obnamewrap" hidden><h2 class="lbl">Your name</h2><input id="obname" class="field" maxlength="60" placeholder="First and last name" autocomplete="name"></div>
   <div id="obemailwrap"><h2 class="lbl">Email</h2><input id="obemail" class="field" type="email" placeholder="you@example.com" autocomplete="email"></div>
-  <div id="obpwwrap"><h2 class="lbl">Password</h2><input id="obpw" class="field" type="password" minlength="8" placeholder="At least 8 characters" autocomplete="current-password"></div>
+  <div id="obpwwrap"><h2 class="lbl">Password</h2><div class="pwrow"><input id="obpw" class="field" type="password" minlength="8" placeholder="At least 8 characters" autocomplete="current-password"><button type="button" id="pwshow" class="pwshow" aria-label="Show password" aria-pressed="false"><svg><use href="#i-eye"/></svg><span>Show</span></button></div></div>
   <p class="fin-sub" id="obmsg" role="status"></p>
   <button class="btn primary big" type="submit" id="obsubmit"><span id="obsubmitlbl">Sign in</span></button>
   <button class="link" type="button" id="forgot">Forgot password?</button>
-  <p class="foot">Questions? Call (505) 750-3019</p>
+  <p class="foot">Questions? Call <a href="tel:+15057503019">(505) 750-3019</a></p>
  </form>
 </section>
 <section id="pending" class="start" hidden>
@@ -96,14 +101,14 @@
   <p class="fin-sub">Your account is created. An owner needs to approve it before you can see your hours and routes. Check back after you hear from us.</p>
   <button class="btn primary big" id="pendcheck"><span>Check again</span></button>
   <button class="btn ghost big" id="pendout"><span>Sign out</span></button>
-  <p class="foot">Questions? Call (505) 750-3019</p>
+  <p class="foot">Questions? Call <a href="tel:+15057503019">(505) 750-3019</a></p>
  </div>
 </section>
 <div id="locnote" class="fin" hidden><div class="fin-card glass"><h1 style="font-size:22px">Before your first shift</h1><p class="fin-sub">Your location is recorded while you're clocked in. It stops when you clock out.</p><button class="btn primary big" id="locok"><span>OK, clock me in</span></button><button class="btn ghost big" id="loccancel"><span>Not now</span></button></div></div>
 
 <!-- Home -->
 <section id="home" class="home" hidden>
- <div class="home-top"><div class="brand"><img src="img/arch-mark.png" alt="" width="40" height="40"><div><b id="hello">Hi</b><span>Gatepost Team</span></div></div></div>
+ <div class="home-top"><div class="brand"><img src="img/arch-mark.png" alt="" width="40" height="40"><div><b id="hello">Hi</b><span>Gatepost Team</span></div></div><button id="suntog" class="btn ghost sq" aria-label="Bright sun mode" aria-pressed="false"><svg><use href="#i-sun"/></svg></button></div>
  <div class="clock-wrap">
   <button id="clockbtn" class="clockbtn" aria-live="polite"><span class="cb-ring"></span><svg><use href="#i-clock"/></svg><b id="cblabel">Clock In</b><span id="cbtimer" class="cb-timer"></span></button>
   <p class="cb-since" id="cbsince"></p>
@@ -111,22 +116,24 @@
  <div class="glass hours">
   <div><b id="hweek">0.0</b><span>hours this week</span></div><div><b id="htotal">0.0</b><span>hours total</span></div>
  </div>
- <div class="glass myroutes"><h2 class="lbl">Your routes</h2><ul id="myroutes"></ul>
+ <div class="glass myroutes"><h2 class="lbl">Your routes</h2><ul id="myroutes"><li class="none">Loading your routes…</li></ul>
  </div>
  <p class="sync" id="sync"></p>
+ <button id="resume" class="btn primary big" hidden><svg><use href="#i-map"/></svg><span id="resumelbl">Resume route</span></button>
  <button id="toroute" class="btn primary big"><svg><use href="#i-map"/></svg><span>Open route tracker</span></button>
- <p class="foot"><button id="signout" class="link">Sign out</button><br>Gatepost Property Services · (505) 750-3019</p>
+ <p class="foot help">Questions? Call <a href="tel:+15057503019">(505) 750-3019</a></p>
+ <p class="foot"><button id="signout" class="link">Sign out</button><br>Gatepost Property Services</p>
 </section>
 
 <!-- Start screen -->
-<section id="start" class="start">
+<section id="start" class="start" hidden>
  <div class="start-card glass bs">
   <div class="bs-head"><button type="button" class="bs-grab" aria-label="Expand or collapse panel"><i></i></button>
   <div class="brand"><button id="tohome" class="btn ghost sq" aria-label="Home"><svg><use href="#i-home"/></svg></button><div><b>Route tracker</b><span>Door-to-door routes</span></div></div></div>
   <div class="bs-body">
   <h2 class="lbl">1 · Neighborhood</h2><div id="nbs" class="nbs"></div>
   <h2 class="lbl">2 · Session</h2><div id="sess" class="sess"></div>
-  <p class="foot">Questions? Call (505) 750-3019</p>
+  <p class="foot">Questions? Call <a href="tel:+15057503019">(505) 750-3019</a></p>
   </div>
   <div class="bs-foot">
   <button id="go" class="btn primary big"><span id="golabel">Start route</span></button>
@@ -143,7 +150,16 @@
   <button id="finclose" class="btn primary big"><span>Done · back to Home</span></button>
  </div>
 </section>
+<!-- Confirm dialog -->
+<div id="ask" class="fin ask" hidden><div class="fin-card glass" role="alertdialog" aria-modal="true" aria-labelledby="asktitle" aria-describedby="askbody"><h1 id="asktitle"></h1><p class="fin-sub" id="askbody"></p><button class="btn primary big" id="askok"><span id="askoklbl">OK</span></button><button class="btn ghost big" id="askno"><span id="asknolbl">Cancel</span></button></div></div>
+<!-- First-run tips -->
+<div id="tour" class="fin tour" hidden><div class="fin-card glass" role="dialog" aria-modal="true" aria-labelledby="tourtitle">
+ <div class="medal tour-ic" id="tourico"><svg><use href="#i-clock"/></svg></div>
+ <p class="tour-n" id="tourn">Tip 1 of 3</p><h1 id="tourtitle"></h1><p class="fin-sub" id="tourtxt"></p>
+ <div class="dots" id="tourdots"><i class="on"></i><i></i><i></i></div>
+ <button class="btn primary big" id="tournext"><span id="tournextlbl">Next</span></button><button class="btn ghost big" id="tourskip"><span>Skip tips</span></button>
+</div></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="config.js?v=2"></script>
-<script src="app.js?v=8"></script>
+<script src="app.js?v=9"></script>
 </body></html>

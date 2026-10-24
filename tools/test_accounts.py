@@ -30,7 +30,7 @@ def run(name,p):
       if S['offline']: return route.abort()
       S['posts'].append(json.loads(r.post_data)|{'_t':u.split('/rest/v1/')[1]});return route.fulfill(status=201,headers=CORS)
     return J({},404)
-  ctx.route(SB+'/**',h);pg=ctx.new_page();errs=[];pg.on('pageerror',lambda e:errs.append(str(e)))
+  ctx.route(SB+'/**',h);pg=ctx.new_page();pg.add_init_script("localStorage.setItem('gpteam_tour_v1','true')");errs=[];pg.on('pageerror',lambda e:errs.append(str(e)))
   pg.goto(URL);pg.wait_for_selector('#onboard:not([hidden])');pg.wait_for_timeout(500);pg.screenshot(path=f'{OUT}/acct_signin_{name}.png')
   pg.click('#obtabs [data-m=up]');pg.fill('#obname','Pat Tester');pg.fill('#obemail','test@example.com');pg.fill('#obpw','correct-horse');pg.screenshot(path=f'{OUT}/acct_signup_{name}.png')
   pg.click('#obsubmit');pg.wait_for_function("document.getElementById('obmsg').textContent.includes('Check your email')");pg.screenshot(path=f'{OUT}/acct_signup_sent_{name}.png')
@@ -48,7 +48,7 @@ def run(name,p):
   for q in pts: ctx.set_geolocation({'latitude':q[0],'longitude':q[1],'accuracy':6});pg.wait_for_timeout(60)
   pg.click('#tohome');pg.wait_for_selector('#home:not([hidden])')
   np=pg.evaluate("JSON.parse(localStorage.getItem('gpteam_path_v1')||'[]').length");print(name,'path points while clocked in:',np);ok&=np>=3
-  pg.click('#clockbtn');pg.wait_for_timeout(1500)
+  pg.click('#clockbtn');pg.wait_for_selector('#ask:not([hidden])');pg.click('#askok');pg.wait_for_timeout(1500)
   q=pg.evaluate("[JSON.parse(localStorage.getItem('gpteam_outbox_v1')).length,JSON.parse(localStorage.getItem('gpteam_path_outbox_v1')).length]");print(name,'offline queue (shift,path):',q);ok&=q==[1,1]
   pg.screenshot(path=f'{OUT}/acct_offline_queue_{name}.png')
   ctx.set_geolocation({'latitude':pts[0][0],'longitude':pts[0][1],'accuracy':6});pg.wait_for_timeout(1200)

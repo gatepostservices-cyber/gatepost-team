@@ -21,7 +21,7 @@ def run(name,p):
     if r.method=='POST': return route.fulfill(status=201,headers=CORS)
     return J({},404)
   ctx.route(SB+'/**',h);ctx.route(lambda u:'supabase' in u and not u.startswith(SB),lambda r:(hits.append(r.request.url),r.abort()))
-  pg=ctx.new_page();errs=[];pg.on('pageerror',lambda e:errs.append(str(e)))
+  pg=ctx.new_page();pg.add_init_script("localStorage.setItem('gpteam_tour_v1','true')");errs=[];pg.on('pageerror',lambda e:errs.append(str(e)))
   pg.goto(URL);pg.wait_for_selector('#onboard:not([hidden])');pg.fill('#obemail','test@example.com');pg.fill('#obpw','correct-horse');pg.click('#obsubmit')
   pg.wait_for_selector('#home:not([hidden])');pg.click('#toroute');pg.wait_for_selector('.nb');pg.wait_for_timeout(1500)
   H=lambda:pg.evaluate("document.querySelector('#start .start-card').getBoundingClientRect().height")

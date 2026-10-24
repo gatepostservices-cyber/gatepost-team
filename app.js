@@ -33,7 +33,8 @@ function knock(s){if(s.mode==='knock_both_sides')return['t-both','Knock both sid
 const toWhat=t=>{const m=/ to (.+)\.$/.exec(t);return m?m[1]:''};
 function streetState(){return(ss.streets||[]).map(nm=>{const idx=ss.steps.map((x,i)=>x.street===nm&&x.mode!=='walk_no_knock'?i:-1).filter(i=>i>=0);return[nm,idx.length>0&&idx.every(isDone)]})}
 // ---- map ----
-function initMap(){map=L.map('map',{zoomControl:false,attributionControl:true,zoomSnap:.5});
+function initMap(){map=L.map('map',{zoomControl:false,attributionControl:true,zoomSnap:.5});map.setView([35.24,-106.66],13);  // a view must exist before any layer is added (Rio Rancho)
+  
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
   stepLayer=L.layerGroup().addTo(map);hiLayer=L.layerGroup().addTo(map);flowLayer=L.layerGroup().addTo(map);
   map.on('dragstart',()=>{follow=false;$('recenter').classList.remove('on')})}
@@ -54,14 +55,14 @@ function styleRoute(){const c=cur(),col=ss.color_hex;
   const rest=[];ss.steps.slice(c+1).forEach(x=>rest.push(...x.path));if(rest.length)L.polyline(rest,{color:'#fff',weight:1.5,opacity:.4,className:'rt-flow',interactive:false}).addTo(flowLayer)}
 // ---- start screen ----
 function nbProgress(n){let d=0,t=0;n.sessions.forEach(s=>{d+=getSt(n,s).done.length;t+=s.steps.length});return t?Math.round(d/t*100):0}
-function renderStart(){if(MYROUTES&&!MYROUTES.includes((NBS[pickN]||{}).slug)){const f=NBS.findIndex(n=>MYROUTES.includes(n.slug));if(f>=0){pickN=f;pickS=0}}
+function renderStart(){if(!NBS.length)return;if(MYROUTES&&!MYROUTES.includes((NBS[pickN]||{}).slug)){const f=NBS.findIndex(n=>MYROUTES.includes(n.slug));if(f>=0){pickN=f;pickS=0}}
   $('nbs').innerHTML=NBS.map((n,i)=>{if(!MYROUTES||!MYROUTES.includes(n.slug))return '';const p=nbProgress(n);return `<button class="nb ${i===pickN?'on':''}" data-i="${i}"><span><b>${esc(n.name)}${(n.round||1)>1?' · R'+n.round:''}</b><small>${n.sessions.length} sessions · ${n.total_mi} mi</small></span><span class="pr">${p?p+'%':''}</span></button>`}).join('');
   const n=NBS[pickN];
   $('sess').innerHTML=n.sessions.map((s,j)=>{const g=getSt(n,s),done=g.done.length>=s.steps.length;return `<button class="ses ${j===pickS?'on':''}" style="--c:${s.color_hex}" data-j="${j}">${done?`<span class="dn">${ico('check')}</span>`:''}<b>${cap(s.color)}</b><small>${s.mi} mi</small><small class="spk">${esc(s.park&&s.park.label||'P')}: ${esc(s.park?s.park.name.replace(/^Street parking /,''):'')}</small><small>${g.done.length?g.done.length+'/'+s.steps.length+' steps':s.steps.length+' steps'}</small></button>`}).join('');
   const s=n.sessions[pickS],g=getSt(n,s);
   $('golabel').textContent=g.done.length>=s.steps.length?`Review ${cap(s.color)}`:g.done.length?`Resume ${cap(s.color)} · step ${g.done.length+1}`:`Start ${cap(s.color)} · ${s.mi} mi`;
   $('go').style.background=`linear-gradient(180deg,${s.color_hex},color-mix(in srgb,${s.color_hex} 70%,#000))`;$('go').style.color='#fff';$('go').style.boxShadow=`0 8px 22px color-mix(in srgb,${s.color_hex} 45%,transparent)`;
-  if(!started){nb=n;ss=s;st=g;drawRoute();fitRouteStart()}}
+  if(!started){nb=n;ss=s;st=g;drawRoute();if(!$('start').hidden)fitRouteStart()}}
 function fitRouteStart(){const top=$('start').querySelector('.start-card').getBoundingClientRect().top;map.fitBounds(L.latLngBounds(ss.path),{paddingTopLeft:[24,24],paddingBottomRight:[24,map.getSize().y-top+16]})}
 function showStart(){if(!MYROUTES||!MYROUTES.some(s=>NBS.some(n=>n.slug===s)))return goHome();SH.routeStop();started=false;$('home').hidden=true;$('hud').hidden=true;$('start').classList.remove('out');$('start').hidden=false;closeSheet();renderStart();requestAnimationFrame(()=>START_SHEET&&START_SHEET.snap('expanded',false))}
 function begin(){if(!(MYROUTES||[]).includes(NBS[pickN].slug))return goHome();nb=NBS[pickN];ss=nb.sessions[pickS];st=getSt(nb,ss);prog=0;started=true;save();SH.routeStart();
@@ -90,7 +91,7 @@ function renderAll(){renderNav();renderSheet();styleRoute();hudCounts()}
 let toastT;function toast(t){$('toasttxt').textContent=t;$('toast').classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>$('toast').classList.remove('show'),1800)}
 function completed(i,manual){const before=streetState();st.done.push(i);SH.step(i,true);if(manual)st.manual=true;prog=0;save();
   const after=streetState(),newSt=after.find((x,k)=>x[1]&&!before[k][1]);
-  if(navigator.vibrate)navigator.vibrate(newSt?[40,60,40]:35);
+  buzz(newSt?[40,60,40]:35);
   toast(newSt?`Street done · ${newSt[0]}`:`Step ${i+1} done`);
   $('arrow').classList.remove('pop');void $('arrow').offsetWidth;$('arrow').classList.add('pop');
   if(cur()<0)setTimeout(()=>finish(true),700)}
@@ -99,7 +100,7 @@ function setDone(i,v,manual){if(v&&!isDone(i))return completed(i,manual),renderA
 function finish(fresh){SH.routeStop();
   $('medal').style.background=`radial-gradient(circle at 35% 30%,#fff6,transparent 60%),${ss.color_hex}`;$('medal').style.boxShadow=`0 0 0 6px rgba(255,255,255,.08),0 0 40px ${ss.color_hex}`;
   $('finsub').textContent=`${nb.name} · ${cap(ss.color)} session · all ${ss.steps.length} steps checked`;
-  $('fin').hidden=false;if(fresh&&navigator.vibrate)navigator.vibrate([60,80,60,80,120])}
+  $('fin').hidden=false;if(fresh)buzz([60,80,60,80,120])}
 // ---- sheet ----
 function openSheet(){$('sheet').classList.add('on');$('scrim').classList.add('on');$('sheet').setAttribute('aria-hidden','false');renderSheet();const el=$('steps').querySelector('.cur');if(el)el.scrollIntoView({block:'center'})}
 function closeSheet(){$('sheet').classList.remove('on');$('scrim').classList.remove('on');$('sheet').setAttribute('aria-hidden','true')}
@@ -111,7 +112,7 @@ function onPos(p){const ll=[p.coords.latitude,p.coords.longitude],a=p.coords.acc
   if(!me){me=L.marker(ll,{icon:meIcon(),interactive:false,keyboard:false,zIndexOffset:1000}).addTo(map);acc=L.circle(ll,{radius:a,color:'#3d8bff',weight:1,opacity:.5,fillOpacity:.1,interactive:false}).addTo(map);$('recenter').classList.toggle('on',follow)}
   else{me.setLatLng(ll);acc.setLatLng(ll).setRadius(a)}
   const el=me.getElement();if(el&&h!=null){el.firstChild.classList.add('h');el.querySelector('.cone').style.transform=`rotate(${h}deg)`}
-  last=ll;const g=$('gps');g.className='gps'+(a>MAX_ACC_M?' warn':'');g.innerHTML=ico('gps')+(a>MAX_ACC_M?`Weak GPS (±${Math.round(a*3.281)} ft) · auto-check paused`:`GPS ±${Math.round(a*3.281)} ft · steps check off as you walk`);
+  last=ll;lastFix=Date.now();const g=$('gps');g.className='gps'+(a>MAX_ACC_M?' warn':'');g.innerHTML=ico('gps')+(a>MAX_ACC_M?`Weak GPS signal · tap Step done as you go`:`GPS ±${Math.round(a*3.281)} ft · steps check off as you walk`);
   TRK.add(ll,a);
   if(!started)return;
   if(follow)followTo(ll);
@@ -123,32 +124,50 @@ function onPos(p){const ll=[p.coords.latitude,p.coords.longitude],a=p.coords.acc
 function project(s,ll){const la=Math.cos(ll[0]*Math.PI/180),X=p=>[(p[1]-ll[1])*111320*la,(p[0]-ll[0])*111320];let best=[1e9,prog];
   for(let i=1;i<s.path.length;i++){if(s.cum[i]<prog-10)continue;const a=X(s.path[i-1]),b=X(s.path[i]),dx=b[0]-a[0],dy=b[1]-a[1],L2=dx*dx+dy*dy||1;
     const t=Math.max(0,Math.min(1,-(a[0]*dx+a[1]*dy)/L2)),d=Math.hypot(a[0]+t*dx,a[1]+t*dy);if(d<best[0])best=[d,s.cum[i-1]+t*(s.cum[i]-s.cum[i-1])]}return best}
-function onErr(e){const g=$('gps');g.className='gps warn';g.innerHTML=ico('gps')+(e.code===1?'Location is blocked. Tap Step done as you go, or allow Location for this site in browser settings and reload.':'Looking for GPS… you can tap Step done as you go.');measure()}
+function onErr(e){if(e.code!==1&&last&&Date.now()-lastFix<30000)return;const g=$('gps');g.className='gps warn';g.innerHTML=ico('gps')+(e.code===1?'Location is off. Tap Step done as you go, or turn on Location for this site in your phone settings and reopen the app.':'Still looking for GPS… tap Step done as you go.');measure()}
+let lastFix=0;
 function startGps(){if(!('geolocation' in navigator))return onErr({code:2});$('gps').innerHTML=ico('gps')+'Finding your location…';
   navigator.geolocation.watchPosition(onPos,onErr,{enableHighAccuracy:true,maximumAge:3000,timeout:20000})}
 
 // ---- accounts (Supabase Auth over REST), shifts, walked path ----
 // Workers only see clock, hours and their assigned routes; houses/hr, pace and miles are recorded silently.
 const CFG=window.GATEPOST_TEAM_CONFIG||{};
+const tfetch=(u,o,ms)=>{const c=typeof AbortController!=='undefined'?new AbortController():null,t=c&&setTimeout(()=>c.abort(),ms||15000);return fetch(u,{...(o||{}),...(c?{signal:c.signal}:{})}).finally(()=>clearTimeout(t))};
+function friendly(e){const m=String(e&&e.message||e||'');
+  if(e&&e.name==='AbortError')return 'The network is slow right now. Try again in a moment.';
+  if(/failed to fetch|load failed|networkerror|network request failed|internet/i.test(m)||navigator.onLine===false)return "Can't reach the internet. Check your signal and try again.";
+  if(/invalid login/i.test(m))return 'Email or password is not right.';
+  if(/not confirmed/i.test(m))return 'Confirm your email first (check your inbox), then sign in.';
+  if(/already registered|already exists/i.test(m))return 'That email already has an account. Try signing in instead.';
+  if(/rate limit|too many|429/i.test(m))return 'Too many tries. Wait a minute and try again.';
+  if(/password/i.test(m)&&/weak|short|least|characters/i.test(m))return 'Pick a longer password (at least 8 characters).';
+  if(/same.*password|different from the old/i.test(m))return 'Pick a password you have not used before.';
+  return 'Something went wrong. Try again, or call (505) 750-3019.'}
+const buzz=p=>{try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}};
 const LS={get:(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
 const uuid=()=>(crypto.randomUUID?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{const r=Math.random()*16|0;return(c==='x'?r:(r&3|8)).toString(16)}));
 const SKEY='gpteam_session_v1';
 const AU={
   s:()=>LS.get(SKEY,null),
   save(j){const s={access_token:j.access_token,refresh_token:j.refresh_token,expires_at:j.expires_at||Math.floor(Date.now()/1000)+(j.expires_in||3600),user:j.user};LS.set(SKEY,s);return s},
-  async call(path,body,method,tok){const r=await fetch(CFG.SUPABASE_URL+'/auth/v1/'+path,{method:method||'POST',headers:{apikey:CFG.SUPABASE_ANON_KEY,'Content-Type':'application/json',...(tok?{Authorization:'Bearer '+tok}:{})},body:body?JSON.stringify(body):undefined});
+  async call(path,body,method,tok){const r=await tfetch(CFG.SUPABASE_URL+'/auth/v1/'+path,{method:method||'POST',headers:{apikey:CFG.SUPABASE_ANON_KEY,'Content-Type':'application/json',...(tok?{Authorization:'Bearer '+tok}:{})},body:body?JSON.stringify(body):undefined});
     let j={};try{j=await r.json()}catch(e){}if(!r.ok)throw new Error(j.msg||j.error_description||j.message||('Error '+r.status));return j},
   redirect:()=>location.origin+location.pathname,
   signUp:(email,password,name)=>AU.call('signup?redirect_to='+encodeURIComponent(AU.redirect()),{email,password,data:{signup_as:'team',full_name:name}}),
   async signIn(email,password){return AU.save(await AU.call('token?grant_type=password',{email,password}))},
   recover:email=>AU.call('recover?redirect_to='+encodeURIComponent(AU.redirect()),{email}),
   async setPassword(password){const s=AU.s();return AU.call('user',{password},'PUT',s&&s.access_token)},
-  async token(){let s=AU.s();if(!s)return null;if(s.expires_at-60>Date.now()/1000)return s.access_token;
-    try{s=AU.save(await AU.call('token?grant_type=refresh_token',{refresh_token:s.refresh_token}));return s.access_token}catch(e){if(navigator.onLine===false)return s.access_token;if(/invalid|not found|revoked/i.test(e.message))localStorage.removeItem(SKEY);return null}},
+  expired:false,
+  async token(force){let s=AU.s();if(!s)return null;if(!force&&s.expires_at-60>Date.now()/1000)return s.access_token;
+    try{const u=s.user;s=AU.save(await AU.call('token?grant_type=refresh_token',{refresh_token:s.refresh_token}));if(!s.user&&u){s.user=u;LS.set(SKEY,s)}return s.access_token}
+    catch(e){if(/invalid|not found|revoked|expired/i.test(e.message)){localStorage.removeItem(SKEY);AU.expired=true;netState()}return null}},
   async signOut(){const s=AU.s();localStorage.removeItem(SKEY);try{if(s)await AU.call('logout',null,'POST',s.access_token)}catch(e){}},
   uid:()=>{const s=AU.s();return s&&s.user&&s.user.id}};
-async function rest(path,opt){const t=await AU.token();if(!t)throw Object.assign(new Error('signed out'),{status:401});
-  return fetch(CFG.SUPABASE_URL+'/rest/v1/'+path,{...(opt||{}),headers:{apikey:CFG.SUPABASE_ANON_KEY,Authorization:'Bearer '+t,'Content-Type':'application/json',...((opt&&opt.headers)||{})}})}
+async function rest(path,opt){
+  const go=t=>tfetch(CFG.SUPABASE_URL+'/rest/v1/'+path,{...(opt||{}),headers:{apikey:CFG.SUPABASE_ANON_KEY,Authorization:'Bearer '+t,'Content-Type':'application/json',...((opt&&opt.headers)||{})}});
+  let t=await AU.token();if(!t)throw Object.assign(new Error('signed out'),{status:401});
+  let r=await go(t);if(r.status===401){t=await AU.token(true);if(!t)throw Object.assign(new Error('signed out'),{status:401});r=await go(t)}
+  return r}
 let ME=null,MYROUTES=null; // team_members row; assigned route slugs
 const worker=()=>ME&&{id:ME.user_id,name:ME.name||ME.email};
 function stepEst(s,x){const homes=x.mode==='walk_no_knock'||!s.knockLen?0:(s.homes||0)*x.len/s.knockLen;return{homes,min:x.len/1609*20+homes*0.75,mi:x.len/1609}}
@@ -178,7 +197,7 @@ const SH={
   busy:false,
   async send(table,k,idk,rows){for(const row of rows){let r;try{r=await rest(table,{method:'POST',headers:{Prefer:'return=minimal'},body:JSON.stringify(row)})}catch(e){return false}
       const drop=()=>LS.set(k,LS.get(k,[]).filter(x=>x[idk]!==row[idk]));
-      if(r.ok||r.status===409)drop();else if(r.status>=400&&r.status<500&&r.status!==401&&r.status!==403&&r.status!==429){console.warn(table+' rejected',r.status);drop();LS.set('gpteam_rejected_v1',LS.get('gpteam_rejected_v1',[]).concat([{table,row}]))}else return false}return true},
+      if(r.ok||r.status===409)drop();else if(r.status===401)return false;else if(r.status>=400&&r.status<500&&r.status!==401&&r.status!==403&&r.status!==429){console.warn(table+' rejected',r.status);drop();LS.set('gpteam_rejected_v1',LS.get('gpteam_rejected_v1',[]).concat([{table,row}]))}else return false}return true},
   async flush(){if(SH.busy||!CFG.SUPABASE_URL||!AU.s())return paintSync();SH.busy=true;
     try{const ob=LS.get('gpteam_outbox_v1',[]);if(ob.length&&await SH.send('team_shifts','gpteam_outbox_v1','id',ob)){
         // paths go after their shift row (both sit in the offline queue until sent)
@@ -186,8 +205,18 @@ const SH={
       else if(!ob.length){const pq=LS.get('gpteam_path_outbox_v1',[]);if(pq.length)await SH.send('team_shift_paths','gpteam_path_outbox_v1','shift_id',pq)}
       if(!LS.get('gpteam_outbox_v1',[]).length)loadHours()}
     catch(e){}finally{SH.busy=false;paintSync()}}};
-addEventListener('online',()=>SH.flush());setInterval(()=>SH.flush(),60000);
-function paintSync(){const n=LS.get('gpteam_outbox_v1',[]).length;$('sync').textContent=n?`${n} shift${n>1?'s':''} waiting to send. It will send when you have signal.`:''}
+addEventListener('online',()=>SH.flush());setInterval(()=>SH.flush(),60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)SH.flush()});
+function pending(){return LS.get('gpteam_outbox_v1',[]).length}
+function paintSync(){const n=pending(),y=$('sync');
+  y.textContent=n?`${n} shift${n>1?'s':''} saved on this phone, waiting to send. ${navigator.onLine===false?'It will send when you have signal.':'Sending…'}`:(LS.get('gpteam_hours_v1',[]).length?'All shifts sent':'');
+  y.classList.toggle('ok',!n);$('hudpend').hidden=!n;netState()}
+// offline / signed-out banner (shifts the HUD down via --top)
+function netState(){const b=$('netbar');if(!b)return;const off=navigator.onLine===false,n=pending();let t='',btn='';
+  if(off)t="You're offline. Your work is saved on this phone"+(n?` (${n} shift${n>1?'s':''} waiting to send).`:'.');
+  else if(AU.expired&&!AU.s()&&ME)(t='Your sign-in expired. Sign in again to send your hours.',btn='Sign in');
+  const was=!b.hidden;b.hidden=!t;b.classList.toggle('signin',!off&&!!t);$('nettxt').textContent=t;$('netbtn').hidden=!btn;$('netbtn').textContent=btn;
+  document.documentElement.classList.toggle('netoff',!!t);if(was!==!!t)requestAnimationFrame(()=>{try{measure()}catch(e){}dispatchEvent(new Event('resize'))})}
+addEventListener('offline',()=>{netState();paintSync()});addEventListener('online',()=>{netState();paintSync()});
 const hm=ms=>{const t=Math.max(0,Math.floor(ms/1000)),h=Math.floor(t/3600),m=Math.floor(t%3600/60),x=t%60;return`${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}`};
 function weekStart(){const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d}
 // hours: server rows (team_my_hours) + any not-yet-sent local rows
@@ -203,12 +232,36 @@ function paintHome(){const w=worker(),c=SH.cur(),hist=hourRows(),ws=weekStart();
   $('clockbtn').classList.toggle('on',!!c);$('cblabel').textContent=c?'Clock Out':'Clock In';$('cbtimer').textContent=c?hm(Date.now()-new Date(c.in)):'';
   $('cbsince').textContent=c?'Clocked in at '+new Date(c.in).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'}):'Tap to start your shift';paintSync()}
 function paintRoutes(){const list=NBS.filter(n=>(MYROUTES||[]).includes(n.slug));
-  $('myroutes').innerHTML=list.length?list.map(n=>`<li><b>${esc(n.name)}${(n.round||1)>1?' · R'+n.round:''}</b><small>${n.sessions.length} sessions</small></li>`).join(''):'<li class="none">No routes assigned yet. An owner will assign your routes.</li>';
-  $('toroute').hidden=!list.length}
-setInterval(()=>{if(!$('home').hidden)paintHome()},1000);
-function goHome(){if(started){SH.routeStop();started=false;$('hud').hidden=true;closeSheet()}$('start').hidden=true;$('fin').hidden=true;$('home').hidden=false;paintRoutes();paintHome()}
+  $('myroutes').innerHTML=list.length?list.map(n=>`<li><b>${esc(n.name)}${(n.round||1)>1?' · R'+n.round:''}</b><small>${n.sessions.length} sessions</small></li>`).join(''):
+    (NBS.length?'<li class="none"><b>No routes yet.</b><br>Your routes will show up here once an owner assigns them. You can still clock in.</li>':'<li class="none"><b>Routes did not load.</b><br>Check your signal, then close and reopen the app.</li>');
+  $('toroute').hidden=!list.length;const r=resumable();$('resume').hidden=!r;$('toroute').classList.toggle('primary',!r);$('toroute').classList.toggle('ghost',!!r);
+  if(r)$('resumelbl').textContent=`Resume ${cap(r.s.color)} · step ${r.k+1} of ${r.s.steps.length}`}
+// last route this phone was on, if it's still assigned and part-done
+function resumable(){const l=LS.get('gpteam_last_v1',null);if(!l||!MYROUTES)return null;const i=NBS.findIndex(n=>n.slug===l[0]&&(n.round||1)===(l[1]||1));if(i<0||!MYROUTES.includes(NBS[i].slug))return null;
+  const j=NBS[i].sessions.findIndex(s=>s.n===l[2]);if(j<0)return null;const s=NBS[i].sessions[j],k=getSt(NBS[i],s).done.length;return k>0&&k<s.steps.length?{i,j,s,k}:null}
+setInterval(()=>{if(!$('home').hidden)paintHome();remind10()},1000);
+// still clocked in after 10 hours? ask once per shift
+function remind10(){const c=SH.cur();if(!c||Date.now()-new Date(c.in)<10*3600000||LS.get('gpteam_remind_v1','')===c.id||!$('ask').hidden)return;LS.set('gpteam_remind_v1',c.id);buzz([200,100,200]);
+  ask({title:'Still working?',body:`You've been clocked in for ${Math.floor((Date.now()-new Date(c.in))/3600000)} hours. If you're done for the day, clock out now.`,ok:'Clock out',no:"I'm still working",danger:true}).then(y=>{if(y)doClockOut()})}
+// confirm dialog
+function ask(o){return new Promise(res=>{$('asktitle').textContent=o.title;$('askbody').textContent=o.body||'';$('askoklbl').textContent=o.ok||'OK';$('asknolbl').textContent=o.no||'Cancel';
+  $('askok').classList.toggle('danger',!!o.danger);$('ask').hidden=false;setTimeout(()=>$('askno').focus(),50);
+  const done=v=>{$('ask').hidden=true;$('askok').onclick=$('askno').onclick=null;res(v)};$('askok').onclick=()=>done(true);$('askno').onclick=()=>done(false)})}
+let clockBusy=false;
+function doClockOut(){if(!SH.cur())return;SH.clockOut();buzz([40,60,40]);toast(navigator.onLine===false?'Clocked out · will send when online':'Clocked out');paintHome()}
+// first-run tips
+const TIPS=[['clock','Clock in when you start','Tap the big green button at the start of your shift. Tap it again when you are done for the day.'],
+  ['map','Pick your route','Open the route tracker, choose your neighborhood and session, then tap Start.'],
+  ['list','Pull the panel','Drag the panel at the bottom up to see more, or down to see the map. Steps check off as you walk, or tap Step done.']];
+function tour(force){if(!force&&LS.get('gpteam_tour_v1',false))return;let i=0;const show=()=>{const t=TIPS[i];$('tourico').innerHTML=ico(t[0]);$('tourtitle').textContent=t[1];$('tourtxt').textContent=t[2];$('tourn').textContent=`Tip ${i+1} of ${TIPS.length}`;
+    $('tourdots').innerHTML=TIPS.map((_,k)=>`<i class="${k===i?'on':''}"></i>`).join('');$('tournextlbl').textContent=i<TIPS.length-1?'Next':'Got it'};
+  const end=()=>{LS.set('gpteam_tour_v1',true);$('tour').hidden=true};
+  $('tournext').onclick=()=>{buzz(15);if(++i>=TIPS.length)return end();show()};$('tourskip').onclick=end;show();$('tour').hidden=false}
+function setSun(v){document.documentElement.classList.toggle('sun',v);LS.set('gpteam_sun_v1',v);['suntog','suntog2'].forEach(i=>$(i)&&$(i).setAttribute('aria-pressed',String(v)));setTimeout(()=>{try{measure()}catch(e){}dispatchEvent(new Event('resize'))},50)}
+setSun(!!LS.get('gpteam_sun_v1',false));
+function goHome(){if(started){SH.routeStop();started=false;$('hud').hidden=true;closeSheet()}$('start').hidden=true;$('fin').hidden=true;$('home').hidden=false;$('splash').hidden=true;paintRoutes();paintHome();if(ME&&ME.approved)tour()}
 function clearMap(){[stepLayer,hiLayer,flowLayer].forEach(l=>l&&l.clearLayers())}
-function hideAll(){['onboard','pending','home','start','hud','fin','locnote'].forEach(i=>$(i).hidden=true)}
+function hideAll(){['splash','onboard','pending','home','start','hud','fin','locnote'].forEach(i=>$(i).hidden=true)}
 let MODE='in';
 function setMode(m){MODE=m;document.querySelectorAll('#obtabs button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));$('obtabs').hidden=m==='reset'||m==='newpw';
   $('obnamewrap').hidden=m!=='up';$('obemailwrap').hidden=m==='newpw';$('obpwwrap').hidden=m==='reset';$('forgot').hidden=m!=='in';
@@ -218,22 +271,34 @@ function setMode(m){MODE=m;document.querySelectorAll('#obtabs button').forEach(b
 function msg(t,err){$('obmsg').textContent=t;$('obmsg').className='fin-sub'+(err?' err':'')}
 function showAuth(m){hideAll();clearMap();$('onboard').hidden=false;setMode(m||'in')}
 // load profile + assignments; route the user to auth / pending / home
-async function enter(){if(!AU.s())return showAuth('in');
+async function enter(){try{return await enter2()}catch(e){console.warn('enter',e);ME=ME||LS.get('gpteam_me_v1',null);MYROUTES=MYROUTES||LS.get('gpteam_routes_v1',[]);if(ME&&ME.user_id===AU.uid()&&ME.approved){hideAll();goHome()}else showAuth('in')}}
+async function enter2(){if(!AU.s())return showAuth('in');
   let r;try{r=await rest('team_members?select=user_id,name,email,approved&user_id=eq.'+AU.uid())}catch(e){
-    if(e.status===401)return showAuth('in');ME=LS.get('gpteam_me_v1',null);MYROUTES=LS.get('gpteam_routes_v1',[])}
+    if(e.status===401){showAuth('in');if(AU.expired)msg('Your sign-in expired. Please sign in again.'+(SH.cur()?' Your shift is still running.':''),1);return}ME=LS.get('gpteam_me_v1',null);MYROUTES=LS.get('gpteam_routes_v1',[])}
   if(r){if(r.status===401){await AU.signOut();return showAuth('in')}
     if(r.ok){ME=(await r.json())[0]||{user_id:AU.uid(),email:(AU.s().user||{}).email,approved:false};LS.set('gpteam_me_v1',ME);
-      if(ME.approved){const q=await rest('route_assignments?select=route_id&user_id=eq.'+AU.uid());MYROUTES=q.ok?(await q.json()).map(x=>x.route_id):LS.get('gpteam_routes_v1',[]);LS.set('gpteam_routes_v1',MYROUTES)}}
+      if(ME.approved){let q=null;try{q=await rest('route_assignments?select=route_id&user_id=eq.'+AU.uid())}catch(e){}MYROUTES=q&&q.ok?(await q.json()).map(x=>x.route_id):LS.get('gpteam_routes_v1',[]);LS.set('gpteam_routes_v1',MYROUTES)}}
     else{ME=LS.get('gpteam_me_v1',null);MYROUTES=LS.get('gpteam_routes_v1',[])}}
   if(!ME||ME.user_id!==AU.uid()){ME=null;return showAuth('in')}
-  hideAll();if(!ME.approved){clearMap();$('pending').hidden=false;$('pendemail').textContent=ME.email||'';return}
+  AU.expired=false;netState();hideAll();if(!ME.approved){clearMap();$('pending').hidden=false;$('pendemail').textContent=ME.email||'';return}
   const i=NBS.findIndex(n=>MYROUTES.includes(n.slug));if(i>=0&&!MYROUTES.includes(NBS[pickN].slug)){pickN=i;pickS=0}
   goHome();loadHours();SH.flush()}
 function locNotice(){if(LS.get('gpteam_locnote_v1',false))return Promise.resolve(true);
   return new Promise(res=>{$('locnote').hidden=false;$('locok').onclick=()=>{LS.set('gpteam_locnote_v1',true);$('locnote').hidden=true;res(true)};$('loccancel').onclick=()=>{$('locnote').hidden=true;res(false)}})}
 function boot(){
-  $('clockbtn').onclick=async()=>{const c=SH.cur();if(c){SH.clockOut();toast('Clocked out')}else{if(!(await locNotice()))return;SH.clockIn();toast('Clocked in')}if(navigator.vibrate)navigator.vibrate(40);paintHome()};
-  $('signout').onclick=async()=>{if(SH.cur())return alert('Clock out first.');if(LS.get('gpteam_outbox_v1',[]).length&&!confirm('A shift has not sent yet. It will send next time you sign in. Sign out anyway?'))return;await AU.signOut();ME=null;showAuth('in')};
+  $('clockbtn').onclick=async()=>{if(clockBusy)return;clockBusy=true;try{const c=SH.cur();
+      if(c){buzz(20);const ms=Date.now()-new Date(c.in),h=Math.floor(ms/3600000),m=Math.floor(ms%3600000/60000);
+        if(await ask({title:'Clock out now?',body:`You've been on the clock for ${h?h+' hr ':''}${m} min.`,ok:'Clock out',no:'Keep working',danger:true})&&SH.cur())doClockOut()}
+      else{if(!(await locNotice()))return;if(!SH.cur()){SH.clockIn();buzz(40);toast('Clocked in')}}
+      paintHome()}finally{setTimeout(()=>clockBusy=false,450)}};
+  $('signout').onclick=async()=>{const c=SH.cur();
+    if(c){if(!(await ask({title:"You're still clocked in",body:'Signing out will clock you out first, so your hours are saved.',ok:'Clock out and sign out',no:'Stay signed in',danger:true})))return;doClockOut();for(let k=0;k<50&&SH.busy;k++)await new Promise(r=>setTimeout(r,100));await SH.flush()}
+    else if(pending()&&!(await ask({title:'Sign out?',body:'A shift has not sent yet. It is saved on this phone and will send the next time you sign in.',ok:'Sign out',no:'Cancel'})))return;
+    await AU.signOut();ME=null;AU.expired=false;netState();showAuth('in')};
+  $('netbtn').onclick=()=>{showAuth('in');msg('Sign in again to send your hours.'+(SH.cur()?' Your shift is still running.':''))};
+  $('resume').onclick=()=>{const r=resumable();if(!r)return paintRoutes();pickN=r.i;pickS=r.j;$('home').hidden=true;buzz(20);begin()};
+  $('suntog').onclick=$('suntog2').onclick=()=>{buzz(15);setSun(!document.documentElement.classList.contains('sun'))};
+  $('pwshow').onclick=()=>{const v=$('obpw').type==='password';$('obpw').type=v?'text':'password';$('pwshow').setAttribute('aria-pressed',String(v));$('pwshow').setAttribute('aria-label',v?'Hide password':'Show password');$('pwshow').querySelector('span').textContent=v?'Hide':'Show'};
   $('pendout').onclick=async()=>{await AU.signOut();showAuth('in')};$('pendcheck').onclick=()=>enter();
   $('obtabs').onclick=e=>{const b=e.target.closest('[data-m]');if(b)setMode(b.dataset.m)};
   $('forgot').onclick=()=>setMode('reset');
@@ -241,12 +306,12 @@ function boot(){
     if(MODE!=='newpw'&&!/^\S+@\S+\.\S+$/.test(email))return msg('Enter your email.',1);
     if((MODE==='up'||MODE==='newpw')&&pw.length<8)return msg('Password must be at least 8 characters.',1);
     if(MODE==='up'&&!name)return msg('Enter your name.',1);
-    $('obsubmit').disabled=true;msg('Working…');
+    $('obsubmit').disabled=true;msg(MODE==='in'?'Signing in…':'Working…');
     try{if(MODE==='in'){await AU.signIn(email,pw);await enter()}
       else if(MODE==='up'){const j=await AU.signUp(email,pw,name);if(j.access_token){AU.save(j);await enter()}else{setMode('in');$('obemail').value=email;msg('Check your email for a link to confirm your account, then sign in.')}}
       else if(MODE==='reset'){await AU.recover(email);setMode('in');$('obemail').value=email;msg('If that email has an account, a reset link is on its way.')}
       else{await AU.setPassword(pw);history.replaceState(null,'',location.pathname);await enter();toast('Password saved')}}
-    catch(err){msg(/invalid login/i.test(err.message)?'Email or password is not right.':/not confirmed/i.test(err.message)?'Confirm your email first (check your inbox), then sign in.':err.message,1)}
+    catch(err){msg(friendly(err),1);buzz([30,40,30])}
     finally{$('obsubmit').disabled=false}};
   // links from Supabase emails land here with tokens in the hash (signup confirm or password recovery)
   const hp=new URLSearchParams(location.hash.slice(1));
@@ -259,13 +324,13 @@ function init(){initMap();
   $('nbs').onclick=e=>{const b=e.target.closest('.nb');if(!b||!(MYROUTES||[]).includes(NBS[+b.dataset.i].slug))return;pickN=+b.dataset.i;pickS=0;const n=NBS[pickN],f=n.sessions.findIndex(s=>getSt(n,s).done.length<s.steps.length);pickS=f<0?0:f;renderStart()};
   $('sess').onclick=e=>{const b=e.target.closest('.ses');if(!b)return;pickS=+b.dataset.j;renderStart()};
   $('go').onclick=begin;$('menu').onclick=showStart;
-  $('done').onclick=()=>{const c=cur();if(c>=0)setDone(c,true,true)};
+  let doneT=0;$('done').onclick=()=>{if(Date.now()-doneT<700)return;doneT=Date.now();const c=cur();if(c>=0)setDone(c,true,true)};
   $('back').onclick=()=>{if(!st.done.length)return;SH.step(st.done.pop(),false);prog=0;save();renderAll();toast('Step undone')};
   $('open').onclick=openSheet;$('scrim').onclick=closeSheet;$('sheetclose').onclick=closeSheet;
   document.querySelector('.tabs').onclick=e=>{const t=e.target.closest('[data-t]');if(!t)return;document.querySelectorAll('.tabs [data-t]').forEach(b=>b.classList.toggle('on',b===t));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.id==='t-'+t.dataset.t))};
   $('steps').onclick=e=>{const li=e.target.closest('li');if(li)setDone(+li.dataset.i,!isDone(+li.dataset.i),true)};
-  $('recenter').onclick=()=>{follow=true;$('recenter').classList.add('on');if(last)followTo(last);else fitRoute()};
-  $('reset').onclick=()=>{if(confirm('Reset progress for this session?')){st={done:[]};prog=0;save();renderAll();closeSheet()}};
+  $('recenter').onclick=()=>{follow=true;$('recenter').classList.add('on');buzz(10);if(last)followTo(last);else{fitRoute();toast('No GPS yet · showing the whole route')}};
+  $('reset').onclick=async()=>{if(await ask({title:'Reset this session?',body:'All checked steps for this session will be cleared.',ok:'Reset',danger:true})){st={done:[]};prog=0;save();renderAll();closeSheet()}};
   $('finclose').onclick=()=>{$('fin').hidden=true;goHome()};$('tohome').onclick=goHome;$('toroute').onclick=showStart;
   addEventListener('resize',()=>{measure()});
   fetch('data/index.json',{cache:'no-cache'}).then(r=>r.json()).then(ix=>{RULES=ix.rules||{};
@@ -274,7 +339,7 @@ function init(){initMap();
   .then(list=>{NBS=list;let l=null;try{l=JSON.parse(localStorage.getItem('gpteam_last_v1'))}catch(e){}
     if(l){const i=NBS.findIndex(n=>n.slug===l[0]&&(n.round||1)===(l[1]||1));if(i>=0){pickN=i;pickS=Math.max(0,NBS[i].sessions.findIndex(s=>s.n===l[2]))}}
     MYROUTES=MYROUTES||[];renderStart();startGps();boot()})
-  .catch(()=>{$('nbs').innerHTML='<p>Could not load routes. Check your connection and reload.</p>'})}
+  .catch(e=>{console.warn('routes',e);NBS=[];MYROUTES=MYROUTES||[];$('nbs').innerHTML='<p>Could not load routes. Check your signal and reopen the app.</p>';startGps();boot()})}
 // ---- draggable bottom sheets (route tracker start card + in-route nav card) ----
 function bottomSheet(el,opt){const head=el.querySelector('.bs-head'),body=el.querySelector('.bs-body'),grab=el.querySelector('.bs-grab');
   let state='expanded',h=0,snaps={},drag=null,moved=false;

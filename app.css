@@ -129,3 +129,46 @@ img.leaflet-tile{filter:invert(1) hue-rotate(180deg) brightness(.78) contrast(1.
 #start .start-card{padding-top:var(--s2)}#start .bs-head .brand{margin-bottom:0}#start .bs-foot .btn.big{margin-top:var(--s3)}
 .nav.bs{padding-top:var(--s2)}
 .nav.s-collapsed .bs-body{opacity:0}.nav .bs-body{transition:opacity .2s}
+/* ---- v7 QA + usability ---- */
+html.netoff{--top:calc(env(safe-area-inset-top) + 44px)}
+.netbar{position:fixed;z-index:1050;top:0;left:0;right:0;min-height:calc(44px + env(safe-area-inset-top));padding:env(safe-area-inset-top) var(--s3) 0;display:flex;align-items:center;gap:var(--s2);background:#3a2a06;color:#ffe2a8;font-size:14px;font-weight:750;border-bottom:1px solid rgba(255,207,138,.35)}
+.netbar.signin{background:#3a1416;color:#ffd3d3;border-color:rgba(255,140,140,.35)}
+.netbar span{flex:1;min-width:0}.netbar svg{width:20px;height:20px}
+.netbtn{min-height:36px;padding:0 var(--s3);border-radius:10px;background:rgba(255,255,255,.16);font-weight:800;font-size:14px;white-space:nowrap;position:relative}
+.netbtn::after{content:"";position:absolute;inset:-4px}
+.splash{z-index:1020}.splash .fin-card{display:flex;flex-direction:column;align-items:center;gap:var(--s2)}.splash img{border-radius:14px;background:#fff;padding:4px}
+.spin{width:28px;height:28px;border-radius:50%;border:3px solid rgba(255,255,255,.15);border-top-color:var(--leaf);animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ask{z-index:1045}.tour{z-index:1040}
+.ask h1{font-size:24px}.ask .btn.danger{background:linear-gradient(180deg,#ff6b6b,#c9373c);color:#fff;box-shadow:0 6px 18px rgba(229,72,77,.35)}
+.tour-ic{color:#04130b;background:radial-gradient(circle at 35% 30%,#fff6,transparent 60%),var(--leaf)}
+.tour-n{color:var(--leaf);font-size:13px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;margin:var(--s3) 0 4px}
+.tour h1{font-size:25px}.dots{display:flex;gap:6px;justify-content:center;margin:0 0 var(--s4)}.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25)}.dots i.on{background:var(--leaf);width:22px;border-radius:5px}
+.pend-chip{position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;background:#ffb547;color:#1b1000;font-size:14px;font-weight:900;display:grid;place-items:center}
+.sync{display:flex;align-items:center;justify-content:center;gap:6px}.sync.ok{color:var(--dim)}
+.sync:not(:empty)::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;flex:none}
+.home-top{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--s2)}
+.home-top .brand{min-width:0}.home-top .brand b{overflow-wrap:anywhere}
+.foot a{color:var(--leaf);font-weight:800;display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
+.foot.help{font-size:15px;color:var(--ink);margin-top:var(--s2)}
+.link{min-width:44px;padding:0 var(--s2)}
+.tabs2 button{min-height:44px}
+.pwrow{position:relative}.pwrow .field{padding-right:92px}
+.pwshow{position:absolute;right:5px;top:5px;bottom:5px;min-width:80px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:4px;background:rgba(255,255,255,.1);font-size:14px;font-weight:800}
+.pwshow svg{width:18px;height:18px}.pwshow[aria-pressed=true]{color:var(--leaf)}
+.fin-sub.err{color:#ffb4b4}
+.myroutes .none{display:block;line-height:1.4}
+.nb b,.myroutes li b{overflow-wrap:anywhere}.nb>span:first-child{min-width:0}
+.myroutes li b{min-width:0}
+.sun-tog{margin-top:var(--s3)}
+.sheet .tabs button{min-height:44px}
+/* bright sun: solid panels, bigger, higher-contrast text */
+html.sun{--glass:#050a07;--glass2:rgba(255,255,255,.16);--edge:rgba(255,255,255,.55);--ink:#fff;--dim:#e8f0ea;font-size:18px}
+html.sun body{font-size:18px}
+html.sun .glass{-webkit-backdrop-filter:none;backdrop-filter:none}
+html.sun .action{font-size:26px}html.sun .sub,html.sun .then,html.sun .gps,html.sun .foot{font-size:15px;color:#fff}
+html.sun .btn{font-size:19px;min-height:58px}html.sun .nb small,html.sun .ses small{color:#fff}
+html.sun .leaflet-tile-pane{filter:contrast(1.25) brightness(1.15)}
+html.sun #suntog,html.sun .sun-tog{color:#ffd34d;border-color:#ffd34d}
+.bs-grab{position:relative}.bs-grab::after{content:"";position:absolute;left:0;right:0;top:-18px;bottom:-6px}
+.ses b{color:color-mix(in srgb,var(--c) 55%,#fff)}#steps li.cur .n{color:color-mix(in srgb,var(--sc) 50%,#fff)}
