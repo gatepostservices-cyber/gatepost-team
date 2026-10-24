@@ -5,7 +5,7 @@
 <link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><link rel="icon" href="img/icon-192.png">
 <title>Gatepost Team</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="app.css?v=4">
+<link rel="stylesheet" href="app.css?v=5">
 </head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
  <symbol id="i-straight" viewBox="0 0 48 48"><path d="M24 42V10M12 21 24 9l12 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -71,16 +71,30 @@
  <p class="foot">Gatepost Property Services · (505) 750-3019</p>
 </section>
 
-<!-- First run -->
+<!-- Account -->
 <section id="onboard" class="start" hidden>
- <form class="start-card glass" id="obform" autocomplete="off">
-  <div class="brand"><img src="img/arch-mark.png" alt="" width="40" height="40"><div><b>Welcome to Gatepost Team</b><span>Set up this phone once</span></div></div>
-  <h2 class="lbl">Your name</h2><input id="obname" class="field" maxlength="60" placeholder="First and last name" required autocomplete="name">
-  <h2 class="lbl">4-digit PIN (optional)</h2><input id="obpin" class="field" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="Used to clock in and out">
-  <button class="btn primary big" type="submit"><span>Save and continue</span></button>
-  <p class="foot">Saved only on this phone. Questions? Call (505) 750-3019</p>
+ <form class="start-card glass" id="obform" autocomplete="on">
+  <div class="brand"><img src="img/arch-mark.png" alt="" width="40" height="40"><div><b id="obtitle">Sign in</b><span>Gatepost Team account</span></div></div>
+  <div class="tabs2" id="obtabs"><button type="button" data-m="in" class="on">Sign in</button><button type="button" data-m="up">Create account</button></div>
+  <div id="obnamewrap" hidden><h2 class="lbl">Your name</h2><input id="obname" class="field" maxlength="60" placeholder="First and last name" autocomplete="name"></div>
+  <div id="obemailwrap"><h2 class="lbl">Email</h2><input id="obemail" class="field" type="email" placeholder="you@example.com" autocomplete="email"></div>
+  <div id="obpwwrap"><h2 class="lbl">Password</h2><input id="obpw" class="field" type="password" minlength="8" placeholder="At least 8 characters" autocomplete="current-password"></div>
+  <p class="fin-sub" id="obmsg" role="status"></p>
+  <button class="btn primary big" type="submit" id="obsubmit"><span id="obsubmitlbl">Sign in</span></button>
+  <button class="link" type="button" id="forgot">Forgot password?</button>
+  <p class="foot">Questions? Call (505) 750-3019</p>
  </form>
 </section>
+<section id="pending" class="start" hidden>
+ <div class="start-card glass">
+  <div class="brand"><img src="img/arch-mark.png" alt="" width="40" height="40"><div><b>Waiting for approval</b><span id="pendemail"></span></div></div>
+  <p class="fin-sub">Your account is created. An owner needs to approve it before you can see your hours and routes. Check back after you hear from us.</p>
+  <button class="btn primary big" id="pendcheck"><span>Check again</span></button>
+  <button class="btn ghost big" id="pendout"><span>Sign out</span></button>
+  <p class="foot">Questions? Call (505) 750-3019</p>
+ </div>
+</section>
+<div id="locnote" class="fin" hidden><div class="fin-card glass"><h1 style="font-size:22px">Before your first shift</h1><p class="fin-sub">Your location is recorded while you're clocked in. It stops when you clock out.</p><button class="btn primary big" id="locok"><span>OK, clock me in</span></button><button class="btn ghost big" id="loccancel"><span>Not now</span></button></div></div>
 
 <!-- Home -->
 <section id="home" class="home" hidden>
@@ -92,11 +106,12 @@
  <div class="glass hours">
   <div><b id="hweek">0.0</b><span>hours this week</span></div><div><b id="htotal">0.0</b><span>hours total</span></div>
  </div>
+ <div class="glass myroutes"><h2 class="lbl">Your routes</h2><ul id="myroutes"></ul>
+ </div>
  <p class="sync" id="sync"></p>
  <button id="toroute" class="btn primary big"><svg><use href="#i-map"/></svg><span>Open route tracker</span></button>
- <p class="foot"><button id="rename" class="link">Not you? Change name</button><br>Gatepost Property Services · (505) 750-3019</p>
+ <p class="foot"><button id="signout" class="link">Sign out</button><br>Gatepost Property Services · (505) 750-3019</p>
 </section>
-<div id="pinbox" class="fin" hidden><form class="fin-card glass" id="pinform"><h1 style="font-size:24px">Enter your PIN</h1><input id="pinin" class="field" inputmode="numeric" maxlength="4" autocomplete="off" style="text-align:center;font-size:28px;letter-spacing:.4em;margin:16px 0"><p class="fin-sub" id="pinerr"></p><button class="btn primary big" type="submit"><span>OK</span></button><button class="btn ghost big" type="button" id="pincancel"><span>Cancel</span></button></form></div>
 
 <!-- Start screen -->
 <section id="start" class="start">
@@ -119,6 +134,6 @@
  </div>
 </section>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="config.js?v=1"></script>
-<script src="app.js?v=5"></script>
+<script src="config.js?v=2"></script>
+<script src="app.js?v=6"></script>
 </body></html>

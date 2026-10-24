@@ -1,6 +1,6 @@
 # Gatepost Team
 
-Phone-first web app (PWA) for Gatepost Property Services team members. No login, no pricing, no backend.
+Phone-first web app (PWA) for Gatepost Property Services team members. Each worker signs in with email + password (Supabase Auth); an owner approves the account and assigns routes in Gatepost Admin. No pricing.
 Questions: (505) 750-3019.
 
 ## Door-to-door route tracker
@@ -25,6 +25,7 @@ Then bump `VERSION` in `sw.js`, commit, push (GitHub Pages redeploys).
 ## Test
 ```
 python3 -m http.server 47613 --bind 127.0.0.1 &
+python3 tools/test_accounts.py    # mocked Supabase auth/REST: sign up, pending, approved home, assigned routes only, location notice, GPS path, offline queue, reset link
 python3 tools/test_playwright.py   # Chromium + WebKit at 390x844, mocked GPS walk along Red steps 1-6, screenshots to /workspace/team-preview
 ```
 Logo/icons in `img/` are copied from the official Gatepost assets.
@@ -34,3 +35,7 @@ Logo/icons in `img/` are copied from the official Gatepost assets.
 - Home: Clock In/Out with running timer, hours this week + total hours (computed only from this phone's own shifts, `gpteam_hours_v1`), and the route tracker button. Workers see no houses, pace, miles or other performance data.
 - While clocked in the app silently records, per checked step: estimated homes (session homes x step length / knocking length), estimated minutes (20 min/mi + 0.75 min/home), miles; plus time actually spent in route sessions. On Clock Out one row goes to Supabase `public.team_shifts` (anon INSERT only; admins read via `is_admin()`), queued in `gpteam_outbox_v1` and retried every 60 s / when back online. `pace_ratio` = actual route minutes / estimated minutes (under 1.0 = faster).
 - `config.js` holds the public Supabase URL + publishable key only.
+
+## Accounts
+Schema + RLS: `supabase/team_accounts.sql` (team_members, route_assignments, team_shift_paths, team_shifts.user_id). Route ids are the `slug` values in `data/index.json`.
+While clocked in (only then) the GPS path is kept in localStorage (about one point per 12 m / 15 s) and sent with the clock-out row to `team_shift_paths` (admin-only read). Workers see a notice before their first clock-in.

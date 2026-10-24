@@ -51,8 +51,8 @@ function styleRoute(){const c=cur(),col=ss.color_hex;
   const rest=[];ss.steps.slice(c+1).forEach(x=>rest.push(...x.path));if(rest.length)L.polyline(rest,{color:'#fff',weight:1.5,opacity:.4,className:'rt-flow',interactive:false}).addTo(flowLayer)}
 // ---- start screen ----
 function nbProgress(n){let d=0,t=0;n.sessions.forEach(s=>{d+=getSt(n,s).done.length;t+=s.steps.length});return t?Math.round(d/t*100):0}
-function renderStart(){
-  $('nbs').innerHTML=NBS.map((n,i)=>{const p=nbProgress(n);return `<button class="nb ${i===pickN?'on':''}" data-i="${i}"><span><b>${esc(n.name)}${(n.round||1)>1?' · R'+n.round:''}</b><small>${n.sessions.length} sessions · ${n.total_mi} mi</small></span><span class="pr">${p?p+'%':''}</span></button>`}).join('');
+function renderStart(){if(MYROUTES&&!MYROUTES.includes((NBS[pickN]||{}).slug)){const f=NBS.findIndex(n=>MYROUTES.includes(n.slug));if(f>=0){pickN=f;pickS=0}}
+  $('nbs').innerHTML=NBS.map((n,i)=>{if(!MYROUTES||!MYROUTES.includes(n.slug))return '';const p=nbProgress(n);return `<button class="nb ${i===pickN?'on':''}" data-i="${i}"><span><b>${esc(n.name)}${(n.round||1)>1?' · R'+n.round:''}</b><small>${n.sessions.length} sessions · ${n.total_mi} mi</small></span><span class="pr">${p?p+'%':''}</span></button>`}).join('');
   const n=NBS[pickN];
   $('sess').innerHTML=n.sessions.map((s,j)=>{const g=getSt(n,s),done=g.done.length>=s.steps.length;return `<button class="ses ${j===pickS?'on':''}" style="--c:${s.color_hex}" data-j="${j}">${done?`<span class="dn">${ico('check')}</span>`:''}<b>${cap(s.color)}</b><small>${s.mi} mi</small><small>${g.done.length?g.done.length+'/'+s.steps.length+' steps':s.steps.length+' steps'}</small></button>`}).join('');
   const s=n.sessions[pickS],g=getSt(n,s);
@@ -60,8 +60,8 @@ function renderStart(){
   $('go').style.background=`linear-gradient(180deg,${s.color_hex},color-mix(in srgb,${s.color_hex} 70%,#000))`;$('go').style.color='#fff';$('go').style.boxShadow=`0 8px 22px color-mix(in srgb,${s.color_hex} 45%,transparent)`;
   if(!started){nb=n;ss=s;st=g;drawRoute();fitRouteStart()}}
 function fitRouteStart(){const top=$('start').querySelector('.start-card').getBoundingClientRect().top;map.fitBounds(L.latLngBounds(ss.path),{paddingTopLeft:[24,24],paddingBottomRight:[24,map.getSize().y-top+16]})}
-function showStart(){SH.routeStop();started=false;$('home').hidden=true;$('hud').hidden=true;$('start').classList.remove('out');$('start').hidden=false;closeSheet();renderStart()}
-function begin(){nb=NBS[pickN];ss=nb.sessions[pickS];st=getSt(nb,ss);prog=0;started=true;save();SH.routeStart();
+function showStart(){if(!MYROUTES||!MYROUTES.some(s=>NBS.some(n=>n.slug===s)))return goHome();SH.routeStop();started=false;$('home').hidden=true;$('hud').hidden=true;$('start').classList.remove('out');$('start').hidden=false;closeSheet();renderStart()}
+function begin(){if(!(MYROUTES||[]).includes(NBS[pickN].slug))return goHome();nb=NBS[pickN];ss=nb.sessions[pickS];st=getSt(nb,ss);prog=0;started=true;save();SH.routeStart();
   document.documentElement.style.setProperty('--sc',ss.color_hex);
   $('sdot').style.background=ss.color_hex;$('sname').textContent=cap(ss.color);
   const p=nb.park,u=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;$('parkbtn').href=u;$('finpark').href=u;
@@ -109,6 +109,7 @@ function onPos(p){const ll=[p.coords.latitude,p.coords.longitude],a=p.coords.acc
   else{me.setLatLng(ll);acc.setLatLng(ll).setRadius(a)}
   const el=me.getElement();if(el&&h!=null){el.firstChild.classList.add('h');el.querySelector('.cone').style.transform=`rotate(${h}deg)`}
   last=ll;const g=$('gps');g.className='gps'+(a>MAX_ACC_M?' warn':'');g.innerHTML=ico('gps')+(a>MAX_ACC_M?`Weak GPS (±${Math.round(a*3.281)} ft) · auto-check paused`:`GPS ±${Math.round(a*3.281)} ft · steps check off as you walk`);
+  TRK.add(ll,a);
   if(!started)return;
   if(follow)followTo(ll);
   if(a>MAX_ACC_M)return;
@@ -123,61 +124,136 @@ function onErr(e){const g=$('gps');g.className='gps warn';g.innerHTML=ico('gps')
 function startGps(){if(!('geolocation' in navigator))return onErr({code:2});$('gps').innerHTML=ico('gps')+'Finding your location…';
   navigator.geolocation.watchPosition(onPos,onErr,{enableHighAccuracy:true,maximumAge:3000,timeout:20000})}
 
-// ---- worker identity, shifts (recorded silently; workers only see clock + hours) ----
+// ---- accounts (Supabase Auth over REST), shifts, walked path ----
+// Workers only see clock, hours and their assigned routes; houses/hr, pace and miles are recorded silently.
 const CFG=window.GATEPOST_TEAM_CONFIG||{};
 const LS={get:(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
 const uuid=()=>(crypto.randomUUID?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{const r=Math.random()*16|0;return(c==='x'?r:(r&3|8)).toString(16)}));
-async function pinHash(p,id){const b=new TextEncoder().encode(id+':'+p);if(crypto.subtle){const h=await crypto.subtle.digest('SHA-256',b);return[...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('')}return 'p'+p}
-const worker=()=>LS.get('gpteam_worker_v1',null);
+const SKEY='gpteam_session_v1';
+const AU={
+  s:()=>LS.get(SKEY,null),
+  save(j){const s={access_token:j.access_token,refresh_token:j.refresh_token,expires_at:j.expires_at||Math.floor(Date.now()/1000)+(j.expires_in||3600),user:j.user};LS.set(SKEY,s);return s},
+  async call(path,body,method,tok){const r=await fetch(CFG.SUPABASE_URL+'/auth/v1/'+path,{method:method||'POST',headers:{apikey:CFG.SUPABASE_ANON_KEY,'Content-Type':'application/json',...(tok?{Authorization:'Bearer '+tok}:{})},body:body?JSON.stringify(body):undefined});
+    let j={};try{j=await r.json()}catch(e){}if(!r.ok)throw new Error(j.msg||j.error_description||j.message||('Error '+r.status));return j},
+  redirect:()=>location.origin+location.pathname,
+  signUp:(email,password,name)=>AU.call('signup?redirect_to='+encodeURIComponent(AU.redirect()),{email,password,data:{signup_as:'team',full_name:name}}),
+  async signIn(email,password){return AU.save(await AU.call('token?grant_type=password',{email,password}))},
+  recover:email=>AU.call('recover?redirect_to='+encodeURIComponent(AU.redirect()),{email}),
+  async setPassword(password){const s=AU.s();return AU.call('user',{password},'PUT',s&&s.access_token)},
+  async token(){let s=AU.s();if(!s)return null;if(s.expires_at-60>Date.now()/1000)return s.access_token;
+    try{s=AU.save(await AU.call('token?grant_type=refresh_token',{refresh_token:s.refresh_token}));return s.access_token}catch(e){if(navigator.onLine===false)return s.access_token;if(/invalid|not found|revoked/i.test(e.message))localStorage.removeItem(SKEY);return null}},
+  async signOut(){const s=AU.s();localStorage.removeItem(SKEY);try{if(s)await AU.call('logout',null,'POST',s.access_token)}catch(e){}},
+  uid:()=>{const s=AU.s();return s&&s.user&&s.user.id}};
+async function rest(path,opt){const t=await AU.token();if(!t)throw Object.assign(new Error('signed out'),{status:401});
+  return fetch(CFG.SUPABASE_URL+'/rest/v1/'+path,{...(opt||{}),headers:{apikey:CFG.SUPABASE_ANON_KEY,Authorization:'Bearer '+t,'Content-Type':'application/json',...((opt&&opt.headers)||{})}})}
+let ME=null,MYROUTES=null; // team_members row; assigned route slugs
+const worker=()=>ME&&{id:ME.user_id,name:ME.name||ME.email};
 function stepEst(s,x){const homes=x.mode==='walk_no_knock'||!s.knockLen?0:(s.homes||0)*x.len/s.knockLen;return{homes,min:x.len/1609*20+homes*0.75,mi:x.len/1609}}
+// walked path: only while clocked in; thinned to ~12 m or 15 s
+const TRK={add(ll,a){const c=SH.cur();if(!c||a>MAX_ACC_M)return;const p=LS.get('gpteam_path_v1',[]),l=p[p.length-1],t=Date.now();
+  if(l&&hav([l[0],l[1]],ll)<12&&t-l[2]<15000)return;p.push([+ll[0].toFixed(6),+ll[1].toFixed(6),t,Math.round(a)]);LS.set('gpteam_path_v1',p)}};
 const SH={
   cur:()=>LS.get('gpteam_shift_v1',null),
   put:v=>LS.set('gpteam_shift_v1',v),
   step(i,on){const c=SH.cur();if(!c||!ss)return;const k=`${nb.slug}|${nb.round||1}|${ss.n}|${i}`;
-    if(on){if(!c.steps[k]){const e=stepEst(ss,ss.steps[i]);c.steps[k]={h:e.homes,m:e.min,mi:e.mi,nb:nb.name,s:cap(ss.color)}}}else delete c.steps[k];SH.put(c)},
-  routeStart(){const c=SH.cur();if(!c)return;if(!c.open)c.open=Date.now();c.rs=c.rs||{};const rk=nb.name+' · '+cap(ss.color);c.rs[rk]=c.rs[rk]||{neighborhood:nb.name,session:cap(ss.color)};c.openK=rk;SH.put(c)},
+    if(on){if(!c.steps[k]){const e=stepEst(ss,ss.steps[i]);c.steps[k]={h:e.homes,m:e.min,mi:e.mi,nb:nb.name,s:cap(ss.color),slug:nb.slug}}}else delete c.steps[k];SH.put(c)},
+  routeStart(){const c=SH.cur();if(!c)return;if(!c.open)c.open=Date.now();c.rs=c.rs||{};const rk=nb.name+' · '+cap(ss.color);c.rs[rk]=c.rs[rk]||{neighborhood:nb.name,session:cap(ss.color),route_id:nb.slug,session_n:ss.n};c.openK=rk;SH.put(c)},
   routeStop(){const c=SH.cur();if(!c||!c.open)return;c.routeMs=(c.routeMs||0)+(Date.now()-c.open);c.open=null;SH.put(c)},
-  clockIn(){SH.put({id:uuid(),in:new Date().toISOString(),steps:{},routeMs:0,open:started?Date.now():null,rs:{}});if(started)SH.routeStart()},
-  clockOut(){SH.routeStop();const c=SH.cur();if(!c)return;const w=worker(),out=new Date(),hrs=(out-new Date(c.in))/3600000;
+  clockIn(){localStorage.removeItem('gpteam_path_v1');SH.put({id:uuid(),uid:AU.uid(),in:new Date().toISOString(),steps:{},routeMs:0,open:started?Date.now():null,rs:{}});if(started)SH.routeStart();if(last)TRK.add(last,0)},
+  clockOut(){SH.routeStop();const c=SH.cur();if(!c)return;const w=worker()||{id:c.uid,name:''},out=new Date(),hrs=(out-new Date(c.in))/3600000;
     const v=Object.values(c.steps),houses=Math.round(v.reduce((t,x)=>t+x.h,0)),est=v.reduce((t,x)=>t+x.m,0),act=(c.routeMs||0)/60000,mi=v.reduce((t,x)=>t+x.mi,0);
     const by={};Object.entries(c.steps).forEach(([k,x])=>{const q=x.nb+' · '+x.s;by[q]=(by[q]||0)+1});
     const sessions=Object.entries(c.rs||{}).map(([q,r])=>({...r,steps_checked:by[q]||0}));Object.keys(by).forEach(q=>{if(!c.rs||!c.rs[q]){const[a,b]=q.split(' · ');sessions.push({neighborhood:a,session:b,steps_checked:by[q]})}});
     const r2=n=>Math.round(n*100)/100;
-    const row={id:c.id,worker_id:w.id,worker_name:w.name,clock_in:c.in,clock_out:out.toISOString(),hours:r2(hrs),houses,houses_per_hour:hrs>0?r2(houses/hrs):0,
+    const row={id:c.id,user_id:c.uid||w.id,worker_id:c.uid||w.id,worker_name:w.name,clock_in:c.in,clock_out:out.toISOString(),hours:r2(hrs),houses,houses_per_hour:hrs>0?r2(houses/hrs):0,
       est_minutes:Math.round(est*10)/10,actual_minutes:Math.round(act*10)/10,pace_ratio:est>0?r2(act/est):null,miles:r2(mi),
       neighborhood:[...new Set(sessions.map(x=>x.neighborhood))].join(', ')||null,sessions};
-    const hist=LS.get('gpteam_hours_v1',[]);hist.push({id:c.id,in:c.in,out:row.clock_out,h:hrs});LS.set('gpteam_hours_v1',hist);
-    const ob=LS.get('gpteam_outbox_v1',[]);ob.push(row);LS.set('gpteam_outbox_v1',ob);localStorage.removeItem('gpteam_shift_v1');SH.flush()},
+    const hist=LS.get('gpteam_hours_v1',[]);hist.push({id:c.id,in:c.in,out:row.clock_out,h:hrs,uid:row.user_id});LS.set('gpteam_hours_v1',hist);
+    const ob=LS.get('gpteam_outbox_v1',[]);ob.push(row);LS.set('gpteam_outbox_v1',ob);
+    const pq=LS.get('gpteam_path_outbox_v1',[]);pq.push({shift_id:c.id,user_id:row.user_id,points:LS.get('gpteam_path_v1',[])});LS.set('gpteam_path_outbox_v1',pq);
+    localStorage.removeItem('gpteam_path_v1');localStorage.removeItem('gpteam_shift_v1');SH.flush()},
   busy:false,
-  async flush(){if(SH.busy||!CFG.SUPABASE_URL)return;const ob=LS.get('gpteam_outbox_v1',[]);if(!ob.length)return paintSync();SH.busy=true;
-    try{for(const row of ob){const r=await fetch(CFG.SUPABASE_URL+'/rest/v1/team_shifts',{method:'POST',headers:{apikey:CFG.SUPABASE_ANON_KEY,Authorization:'Bearer '+CFG.SUPABASE_ANON_KEY,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify(row)});
-      if(r.ok||r.status===409){LS.set('gpteam_outbox_v1',LS.get('gpteam_outbox_v1',[]).filter(x=>x.id!==row.id))}else if(r.status>=400&&r.status<500&&r.status!==401&&r.status!==429){console.warn('shift rejected',r.status);LS.set('gpteam_outbox_v1',LS.get('gpteam_outbox_v1',[]).filter(x=>x.id!==row.id));LS.set('gpteam_rejected_v1',LS.get('gpteam_rejected_v1',[]).concat([row]))}else break}}
+  async send(table,k,idk,rows){for(const row of rows){let r;try{r=await rest(table,{method:'POST',headers:{Prefer:'return=minimal'},body:JSON.stringify(row)})}catch(e){return false}
+      const drop=()=>LS.set(k,LS.get(k,[]).filter(x=>x[idk]!==row[idk]));
+      if(r.ok||r.status===409)drop();else if(r.status>=400&&r.status<500&&r.status!==401&&r.status!==403&&r.status!==429){console.warn(table+' rejected',r.status);drop();LS.set('gpteam_rejected_v1',LS.get('gpteam_rejected_v1',[]).concat([{table,row}]))}else return false}return true},
+  async flush(){if(SH.busy||!CFG.SUPABASE_URL||!AU.s())return paintSync();SH.busy=true;
+    try{const ob=LS.get('gpteam_outbox_v1',[]);if(ob.length&&await SH.send('team_shifts','gpteam_outbox_v1','id',ob)){
+        // paths go after their shift row (both sit in the offline queue until sent)
+        const sent=new Set(LS.get('gpteam_outbox_v1',[]).map(x=>x.id));await SH.send('team_shift_paths','gpteam_path_outbox_v1','shift_id',LS.get('gpteam_path_outbox_v1',[]).filter(p=>!sent.has(p.shift_id)))}
+      else if(!ob.length){const pq=LS.get('gpteam_path_outbox_v1',[]);if(pq.length)await SH.send('team_shift_paths','gpteam_path_outbox_v1','shift_id',pq)}
+      if(!LS.get('gpteam_outbox_v1',[]).length)loadHours()}
     catch(e){}finally{SH.busy=false;paintSync()}}};
 addEventListener('online',()=>SH.flush());setInterval(()=>SH.flush(),60000);
 function paintSync(){const n=LS.get('gpteam_outbox_v1',[]).length;$('sync').textContent=n?`${n} shift${n>1?'s':''} waiting to send. It will send when you have signal.`:''}
 const hm=ms=>{const t=Math.max(0,Math.floor(ms/1000)),h=Math.floor(t/3600),m=Math.floor(t%3600/60),x=t%60;return`${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}`};
 function weekStart(){const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d}
-function paintHome(){const w=worker(),c=SH.cur(),hist=LS.get('gpteam_hours_v1',[]),ws=weekStart();if(!w)return;
-  $('hello').textContent='Hi, '+w.name.split(' ')[0];
+// hours: server rows (team_my_hours) + any not-yet-sent local rows
+async function loadHours(){try{const r=await rest('rpc/team_my_hours',{method:'POST',body:'{}'});if(r.ok)LS.set('gpteam_srvhours_v1',{uid:AU.uid(),rows:await r.json()})}catch(e){}if(!$('home').hidden)paintHome()}
+function hourRows(){const uid=AU.uid(),sv=LS.get('gpteam_srvhours_v1',null),srv=sv&&sv.uid===uid?sv.rows:[],ids=new Set(srv.map(x=>x.id));
+  const pend=new Set(LS.get('gpteam_outbox_v1',[]).map(x=>x.id));
+  return srv.map(x=>({in:x.clock_in,h:+x.hours||0})).concat(LS.get('gpteam_hours_v1',[]).filter(x=>x.uid===uid&&!ids.has(x.id)&&pend.has(x.id)).map(x=>({in:x.in,h:x.h})))}
+function paintHome(){const w=worker(),c=SH.cur(),hist=hourRows(),ws=weekStart();if(!w)return;
+  $('hello').textContent='Hi, '+(w.name||'').split(' ')[0];
   let tot=hist.reduce((t,x)=>t+x.h,0),wk=hist.filter(x=>new Date(x.in)>=ws).reduce((t,x)=>t+x.h,0);
   const live=c?(Date.now()-new Date(c.in))/3600000:0;tot+=live;if(c&&new Date(c.in)>=ws)wk+=live;
   $('htotal').textContent=tot.toFixed(1);$('hweek').textContent=wk.toFixed(1);
   $('clockbtn').classList.toggle('on',!!c);$('cblabel').textContent=c?'Clock Out':'Clock In';$('cbtimer').textContent=c?hm(Date.now()-new Date(c.in)):'';
   $('cbsince').textContent=c?'Clocked in at '+new Date(c.in).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'}):'Tap to start your shift';paintSync()}
+function paintRoutes(){const list=NBS.filter(n=>(MYROUTES||[]).includes(n.slug));
+  $('myroutes').innerHTML=list.length?list.map(n=>`<li><b>${esc(n.name)}${(n.round||1)>1?' · R'+n.round:''}</b><small>${n.sessions.length} sessions</small></li>`).join(''):'<li class="none">No routes assigned yet. An owner will assign your routes.</li>';
+  $('toroute').hidden=!list.length}
 setInterval(()=>{if(!$('home').hidden)paintHome()},1000);
-function askPin(){const w=worker();if(!w||!w.pin)return Promise.resolve(true);
-  return new Promise(res=>{$('pinbox').hidden=false;$('pinin').value='';$('pinerr').textContent='';setTimeout(()=>$('pinin').focus(),50);
-    $('pincancel').onclick=()=>{$('pinbox').hidden=true;res(false)};
-    $('pinform').onsubmit=async e=>{e.preventDefault();if(await pinHash($('pinin').value,w.id)===w.pin){$('pinbox').hidden=true;res(true)}else $('pinerr').textContent='That PIN does not match.'}})}
-function goHome(){if(started){SH.routeStop();started=false;$('hud').hidden=true;closeSheet()}$('start').hidden=true;$('fin').hidden=true;$('home').hidden=false;paintHome()}
-function boot(){$('clockbtn').onclick=async()=>{if(!(await askPin()))return;const c=SH.cur();if(c){SH.clockOut();toast('Clocked out')}else{SH.clockIn();toast('Clocked in')}if(navigator.vibrate)navigator.vibrate(40);paintHome()};
-  $('rename').onclick=()=>{if(SH.cur())return alert('Clock out first.');$('home').hidden=true;$('onboard').hidden=false;$('obname').value=(worker()||{}).name||''};
-  $('obform').onsubmit=async e=>{e.preventDefault();const name=$('obname').value.trim(),pin=$('obpin').value.trim();if(!name)return;if(pin&&!/^\d{4}$/.test(pin))return alert('PIN must be 4 digits, or leave it blank.');
-    const old=worker(),id=old&&old.name===name?old.id:'w-'+uuid();LS.set('gpteam_worker_v1',{id,name,pin:pin?await pinHash(pin,id):null,created:new Date().toISOString()});$('onboard').hidden=true;goHome()};
-  if(!worker()){$('start').hidden=true;$('onboard').hidden=false}else goHome();SH.flush()}
+function goHome(){if(started){SH.routeStop();started=false;$('hud').hidden=true;closeSheet()}$('start').hidden=true;$('fin').hidden=true;$('home').hidden=false;paintRoutes();paintHome()}
+function clearMap(){[stepLayer,hiLayer,flowLayer].forEach(l=>l&&l.clearLayers())}
+function hideAll(){['onboard','pending','home','start','hud','fin','locnote'].forEach(i=>$(i).hidden=true)}
+let MODE='in';
+function setMode(m){MODE=m;document.querySelectorAll('#obtabs button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));$('obtabs').hidden=m==='reset'||m==='newpw';
+  $('obnamewrap').hidden=m!=='up';$('obemailwrap').hidden=m==='newpw';$('obpwwrap').hidden=m==='reset';$('forgot').hidden=m!=='in';
+  $('obtitle').textContent={in:'Sign in',up:'Create account',reset:'Reset password',newpw:'Set a new password'}[m];
+  $('obsubmitlbl').textContent={in:'Sign in',up:'Create account',reset:'Email me a reset link',newpw:'Save new password'}[m];
+  $('obpw').autocomplete=m==='in'?'current-password':'new-password';msg('')}
+function msg(t,err){$('obmsg').textContent=t;$('obmsg').className='fin-sub'+(err?' err':'')}
+function showAuth(m){hideAll();clearMap();$('onboard').hidden=false;setMode(m||'in')}
+// load profile + assignments; route the user to auth / pending / home
+async function enter(){if(!AU.s())return showAuth('in');
+  let r;try{r=await rest('team_members?select=user_id,name,email,approved&user_id=eq.'+AU.uid())}catch(e){
+    if(e.status===401)return showAuth('in');ME=LS.get('gpteam_me_v1',null);MYROUTES=LS.get('gpteam_routes_v1',[])}
+  if(r){if(r.status===401){await AU.signOut();return showAuth('in')}
+    if(r.ok){ME=(await r.json())[0]||{user_id:AU.uid(),email:(AU.s().user||{}).email,approved:false};LS.set('gpteam_me_v1',ME);
+      if(ME.approved){const q=await rest('route_assignments?select=route_id&user_id=eq.'+AU.uid());MYROUTES=q.ok?(await q.json()).map(x=>x.route_id):LS.get('gpteam_routes_v1',[]);LS.set('gpteam_routes_v1',MYROUTES)}}
+    else{ME=LS.get('gpteam_me_v1',null);MYROUTES=LS.get('gpteam_routes_v1',[])}}
+  if(!ME||ME.user_id!==AU.uid()){ME=null;return showAuth('in')}
+  hideAll();if(!ME.approved){clearMap();$('pending').hidden=false;$('pendemail').textContent=ME.email||'';return}
+  const i=NBS.findIndex(n=>MYROUTES.includes(n.slug));if(i>=0&&!MYROUTES.includes(NBS[pickN].slug)){pickN=i;pickS=0}
+  goHome();loadHours();SH.flush()}
+function locNotice(){if(LS.get('gpteam_locnote_v1',false))return Promise.resolve(true);
+  return new Promise(res=>{$('locnote').hidden=false;$('locok').onclick=()=>{LS.set('gpteam_locnote_v1',true);$('locnote').hidden=true;res(true)};$('loccancel').onclick=()=>{$('locnote').hidden=true;res(false)}})}
+function boot(){
+  $('clockbtn').onclick=async()=>{const c=SH.cur();if(c){SH.clockOut();toast('Clocked out')}else{if(!(await locNotice()))return;SH.clockIn();toast('Clocked in')}if(navigator.vibrate)navigator.vibrate(40);paintHome()};
+  $('signout').onclick=async()=>{if(SH.cur())return alert('Clock out first.');if(LS.get('gpteam_outbox_v1',[]).length&&!confirm('A shift has not sent yet. It will send next time you sign in. Sign out anyway?'))return;await AU.signOut();ME=null;showAuth('in')};
+  $('pendout').onclick=async()=>{await AU.signOut();showAuth('in')};$('pendcheck').onclick=()=>enter();
+  $('obtabs').onclick=e=>{const b=e.target.closest('[data-m]');if(b)setMode(b.dataset.m)};
+  $('forgot').onclick=()=>setMode('reset');
+  $('obform').onsubmit=async e=>{e.preventDefault();const email=$('obemail').value.trim().toLowerCase(),pw=$('obpw').value,name=$('obname').value.trim();
+    if(MODE!=='newpw'&&!/^\S+@\S+\.\S+$/.test(email))return msg('Enter your email.',1);
+    if((MODE==='up'||MODE==='newpw')&&pw.length<8)return msg('Password must be at least 8 characters.',1);
+    if(MODE==='up'&&!name)return msg('Enter your name.',1);
+    $('obsubmit').disabled=true;msg('Working…');
+    try{if(MODE==='in'){await AU.signIn(email,pw);await enter()}
+      else if(MODE==='up'){const j=await AU.signUp(email,pw,name);if(j.access_token){AU.save(j);await enter()}else{setMode('in');$('obemail').value=email;msg('Check your email for a link to confirm your account, then sign in.')}}
+      else if(MODE==='reset'){await AU.recover(email);setMode('in');$('obemail').value=email;msg('If that email has an account, a reset link is on its way.')}
+      else{await AU.setPassword(pw);history.replaceState(null,'',location.pathname);await enter();toast('Password saved')}}
+    catch(err){msg(/invalid login/i.test(err.message)?'Email or password is not right.':/not confirmed/i.test(err.message)?'Confirm your email first (check your inbox), then sign in.':err.message,1)}
+    finally{$('obsubmit').disabled=false}};
+  // links from Supabase emails land here with tokens in the hash (signup confirm or password recovery)
+  const hp=new URLSearchParams(location.hash.slice(1));
+  if(hp.get('access_token')){AU.save({access_token:hp.get('access_token'),refresh_token:hp.get('refresh_token'),expires_in:+hp.get('expires_in')||3600,user:null});
+    AU.call('user',null,'GET',hp.get('access_token')).then(u=>{const s=AU.s();s.user=u;LS.set(SKEY,s);if(hp.get('type')==='recovery')showAuth('newpw');else{history.replaceState(null,'',location.pathname);enter()}}).catch(()=>showAuth('in'));return}
+  if(hp.get('error_description')){showAuth('in');msg(hp.get('error_description').replace(/\+/g,' '),1);history.replaceState(null,'',location.pathname);return}
+  $('start').hidden=true;enter()}
 // ---- wire up ----
 function init(){initMap();
-  $('nbs').onclick=e=>{const b=e.target.closest('.nb');if(!b)return;pickN=+b.dataset.i;pickS=0;const n=NBS[pickN],f=n.sessions.findIndex(s=>getSt(n,s).done.length<s.steps.length);pickS=f<0?0:f;renderStart()};
+  $('nbs').onclick=e=>{const b=e.target.closest('.nb');if(!b||!(MYROUTES||[]).includes(NBS[+b.dataset.i].slug))return;pickN=+b.dataset.i;pickS=0;const n=NBS[pickN],f=n.sessions.findIndex(s=>getSt(n,s).done.length<s.steps.length);pickS=f<0?0:f;renderStart()};
   $('sess').onclick=e=>{const b=e.target.closest('.ses');if(!b)return;pickS=+b.dataset.j;renderStart()};
   $('go').onclick=begin;$('menu').onclick=showStart;
   $('done').onclick=()=>{const c=cur();if(c>=0)setDone(c,true,true)};
@@ -194,7 +270,7 @@ function init(){initMap();
     return Promise.all(ix.neighborhoods.map(m=>fetch('data/'+m.file,{cache:'no-cache'}).then(x=>x.json()).then(g=>adapt(m,g))))})
   .then(list=>{NBS=list;let l=null;try{l=JSON.parse(localStorage.getItem('gpteam_last_v1'))}catch(e){}
     if(l){const i=NBS.findIndex(n=>n.slug===l[0]&&(n.round||1)===(l[1]||1));if(i>=0){pickN=i;pickS=Math.max(0,NBS[i].sessions.findIndex(s=>s.n===l[2]))}}
-    renderStart();startGps();boot()})
+    MYROUTES=MYROUTES||[];renderStart();startGps();boot()})
   .catch(()=>{$('nbs').innerHTML='<p>Could not load routes. Check your connection and reload.</p>'})}
 document.addEventListener('DOMContentLoaded',init);
 if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
