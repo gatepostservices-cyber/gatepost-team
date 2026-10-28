@@ -1,5 +1,5 @@
 // Bump VERSION on every release. Network-first (4 s timeout on navigations) with cache fallback, so a slow or dead signal still opens the app.
-const VERSION='gp-teamapp-v8';const SHELL=['./','./index.html','./app.css?v=7','./app.js?v=9','./config.js?v=2','./data/index.json','./manifest.json','./img/arch-mark.png','./img/icon-192.png','https://unpkg.com/leaflet@1.9.4/dist/leaflet.css','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
+const VERSION='gp-teamapp-v9';const SHELL=['./','./index.html','./app.css?v=7','./app.js?v=9','./config.js?v=2','./data/index.json','./manifest.json','./img/arch-mark.png','./img/icon-192.png','https://unpkg.com/leaflet@1.9.4/dist/leaflet.css','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(VERSION).then(c=>Promise.all(SHELL.map(u=>c.add(u).catch(()=>{})))));self.skipWaiting()});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==VERSION).map(x=>caches.delete(x)))));self.clients.claim()});
 self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET')return;
